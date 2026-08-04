@@ -1,0 +1,19 @@
+[Unit]
+Description=Thunder Browser Dark Volt Early-Boot Service
+DefaultDependencies=no
+After=local-fs.target systemd-udev-trigger.target
+Before=sysinit.target multi-user.target display-manager.service
+
+[Service]
+Type=simple
+EnvironmentFile=/home/marcel1237/Thunder/Dark Volt/dark-volt-env.sh
+ExecStart=/home/marcel1237/Thunder/Thunder\ Linux/bin/Thunder
+Restart=always
+RestartSec=1
+StandardInput=tty
+StandardOutput=journal
+CPUSchedulingPolicy=fifo
+CPUSchedulingPriority=99
+
+[Install]
+WantedBy=basic.target

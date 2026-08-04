@@ -1,0 +1,6 @@
+set(__QT_DEPLOY_TARGET_ThunderSDK_FILE /home/marcel1237/Thunder/Thunder Linux/build/libThunderSDK.so)
+set(__QT_DEPLOY_TARGET_ThunderSDK_TYPE SHARED_LIBRARY)
+set(__QT_DEPLOY_TARGET_ThunderBrowser_FILE /home/marcel1237/Thunder/Thunder Linux/build/ThunderBrowser)
+set(__QT_DEPLOY_TARGET_ThunderBrowser_TYPE EXECUTABLE)
+set(__QT_DEPLOY_TARGET_ThunderGenericExample_FILE /home/marcel1237/Thunder/Thunder Linux/build/ThunderGenericExample)
+set(__QT_DEPLOY_TARGET_ThunderGenericExample_TYPE EXECUTABLE)

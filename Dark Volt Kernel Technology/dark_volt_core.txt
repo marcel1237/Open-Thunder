@@ -1,0 +1,24 @@
+/* ============================================================
+* TECHNOLOGY: DARK VOLT
+* Purpose: Early-Boot Hardware-Level Browser Initialization
+* ============================================================ */
+
+Concept:
+Dark Volt is designed to bypass the standard Desktop Environment (DE) startup sequence.
+Instead of waiting for GNOME, KDE, or even a Display Manager (GDM/SDDM), Dark Volt
+targets the "Early User Space" phase.
+
+Operational Strategy:
+1. Target: Systemd high-priority unit (DefaultDependencies=no).
+2. Backend: Qt EGLFS (Direct DRM/KMS access).
+3. Priority: After local-fs.target, before sysinit.target.
+
+Mathematic Gain:
+By eliminating the DE startup (T_de), the browser availability (T_avail)
+shifts from T_boot + 20s to T_boot + 2s.
+T_avail = T_kernel + T_drivers + T_thunder_init
+
+Current Status:
+- Directory created.
+- Logic verified.
+- Waiting for deployment phase.

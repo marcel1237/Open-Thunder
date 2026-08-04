@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thunder Browser - Tech Architecture Dashboard</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --accent-color: #58a6ff;
+            --text-primary: #c9d1d9;
+            --text-secondary: #8b949e;
+            --border-color: #30363d;
+            --header-bg: #1f242c;
+            --success-color: #238636;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header {
+            width: 100%;
+            max-width: 1200px;
+            text-align: center;
+            padding-bottom: 40px;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            color: var(--accent-color);
+            font-size: 2.5rem;
+            margin: 0;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .dashboard-container {
+            width: 100%;
+            max-width: 1200px;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        thead {
+            background-color: var(--header-bg);
+        }
+
+        th {
+            padding: 15px 20px;
+            color: var(--accent-color);
+            text-align: left;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        td {
+            padding: 15px 20px;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 0.95rem;
+        }
+
+        .id-badge {
+            background: #1f242c;
+            color: var(--accent-color);
+            padding: 2px 8px;
+            border: 1px solid var(--accent-color);
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .hw-level {
+            color: var(--success-color);
+            font-family: monospace;
+        }
+
+        .tech-merged {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Thunder Browser</h1>
+        <p>Unified Processor & Hardware Matrix Dashboard</p>
+    </div>
+
+    <div class="dashboard-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>System Name</th>
+                    <th>Hardware Level</th>
+                    <th>Integrated Technologies</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="id-badge">TH-01</span></td>
+                    <td><strong>NitroCore CPU-Matrix</strong></td>
+                    <td class="hw-level">Kernel/CPU/Cache/SIMD</td>
+                    <td class="tech-merged">Turbo Scheduler, Core-Lock, vDSO, AVX2 Scan, AES-NI Crypto, L3/L4 Guard, Spectre Bypass</td>
+                    <td>A massive unified processor engine that controls scheduling, instruction sets, and cache hierarchy to eliminate execution latency.</td>
+                </tr>
+                <tr>
+                    <td><span class="id-badge">TH-02</span></td>
+                    <td><strong>OmniLock RAM Architecture</strong></td>
+                    <td class="hw-level">RAM/MMU</td>
+                    <td class="tech-merged">Gigantic-Pages, RAM-Resident Shield, RAM-Disk Storage, KSM-Silence, VMA-Infinity</td>
+                    <td>Full RAM residency with 2MB HugePages, zero-latency /dev/shm storage, and expanded virtual memory limits.</td>
+                </tr>
+                <tr>
+                    <td><span class="id-badge">TH-03</span></td>
+                    <td><strong>HexaDrive Network-Matrix</strong></td>
+                    <td class="hw-level">Network/Logic/HW</td>
+                    <td class="tech-merged">Hex-Parser, Bitmask Ad-Filter, Image-Hex Parser, Busy-Poll NAPI, TCP-Warp, XDP-Warp</td>
+                    <td>Unified transport and logic engine that processes packets via XDP and decodes protocols using O(1) hex logic.</td>
+                </tr>
+                <tr>
+                    <td><span class="id-badge">TH-04</span></td>
+                    <td><strong>Vulkan-Warp Matrix</strong></td>
+                    <td class="hw-level">GPU/PCIe/VRAM</td>
+                    <td class="tech-merged">Bare-Metal GPU, DMA-BUF, Wide-BAR PCIe, Skia-Graphite, Mailbox-Sync, Zero-Error, Hyper-VRAM</td>
+                    <td>A massive next-gen graphics pipeline that bypasses driver validation and OS abstractions for direct-to-silicon rendering.</td>
+                </tr>
+                <tr>
+                    <td><span class="id-badge">TH-05</span></td>
+                    <td><strong>UltraResponse Hardware HID</strong></td>
+                    <td class="hw-level">Input/HID</td>
+                    <td class="tech-merged">Hardware Cursor, Zero-Latency Wakeup, IRQ Affinity</td>
+                    <td>Direct mouse-to-GPU link using hardware planes and 0ns CPU DMA latency for instant feedback.</td>
+                </tr>
+                <tr>
+                    <td><span class="id-badge">TH-06</span></td>
+                    <td><strong>ApexPower Governor</strong></td>
+                    <td class="hw-level">Power/Hardware</td>
+                    <td class="tech-merged">Performance-Max, C-State Disable, Thermal-Unlock</td>
+                    <td>Forcing hardware into 100% duty cycle with performance governors and disabled energy-saving sleep states.</td>
+                </tr>
+                <tr>
+                    <td><span class="id-badge">TH-07</span></td>
+                    <td><strong>Dark Volt Architecture</strong></td>
+                    <td class="hw-level">Kernel/Startup</td>
+                    <td class="tech-merged">Early-Boot Kernel Integration</td>
+                    <td>Initializes the browser in the early-boot stage immediately after the kernel, bypassing display managers and desktop environments for instant availability.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
