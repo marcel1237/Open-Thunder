@@ -1,17 +1,22 @@
-/* ============================================================
-* Thunder SDK - Unified Hardware Acceleration Entry Point
-* Copyright (C) 2025 Marcel
-* ============================================================ */
+/*
+ * Copyright (C) 2025 Marcel Aparecido de Andrade.
+ * Thunder - Hardware-Enforced Next-Gen Intelligence
+ *
+ * PROPRIETARY SOURCE-AVAILABLE LICENSE.
+ * This code is public for visibility but use is governed by the TSAL v1.0.
+ * Unauthorized commercial use or redistribution is strictly prohibited.
+ */
 #ifndef THUNDERSDK_H
 #define THUNDERSDK_H
 
 #include "app/thundercommon.h"
 #include "kernel/kernel_bridge.h"
-#include "kernel/thunder_simd_accelerator.h"
 #include "kernel/thunder_aes_accelerator.h"
 #include "kernel/thunder_cache_optimizer.h"
 #include "kernel/thunder_prefetch.h"
 #include "kernel/thunder_branch_optimizer.h"
+#include "kernel/thunder_huge_tlb.h"
+#include "kernel/thunder_simd_accelerator.h"
 
 namespace Td {
 

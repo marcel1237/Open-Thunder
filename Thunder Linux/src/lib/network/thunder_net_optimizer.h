@@ -1,15 +1,14 @@
-/* ============================================================
-* Thunder - Qt web browser
-* Copyright (C) 2025 Marcel
-*
-* Hex-accelerated Network Protocol Parsers
-* ============================================================ */
+/*
+ * Copyright (C) 2025 Marcel Aparecido de Andrade.
+ * Thunder - Hardware-Enforced Next-Gen Intelligence
+ *
+ * PROPRIETARY SOURCE-AVAILABLE LICENSE.
+ * This code is public for visibility but use is governed by the TSAL v1.0.
+ * Unauthorized commercial use or redistribution is strictly prohibited.
+ */
 #ifndef THUNDER_NET_OPTIMIZER_H
 #define THUNDER_NET_OPTIMIZER_H
 
-#include <QString>
-#include <QByteArray>
-#include <cstdint>
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <netinet/tcp.h>
@@ -27,11 +26,11 @@ inline void optimizeSocket(int fd) {
     int on = 0x1;
 
     // 1. TCP_NODELAY (0x1): Disable Nagle's algorithm.
-    // Matematicamente, envia pacotes instantaneamente sem esperar por buffering.
+    // Mathematically sends packets instantly without waiting for buffering.
     setsockopt(fd, IPPROTO_TCP, TCP_NODELAY, &on, sizeof(on));
 
     // 2. TCP_QUICKACK (0xC): Enable quick acknowledgements.
-    // Reduz a latência de handshake e fluxo ao não esperar por pacotes de dados para dar ACK.
+    // Reduces handshake and flow latency by not waiting for data packets to ACK.
     setsockopt(fd, IPPROTO_TCP, 0xC, &on, sizeof(on));
 
     // 3. SO_PRIORITY (0xC): Set socket priority to high (Hex 0x6)
@@ -65,18 +64,18 @@ enum class HttpMethod : uint64_t {
 
 /**
  * @brief Parses a raw byte buffer for HTTP methods using 64-bit Hex masks.
- * Matematicamente, isso reduz a complexidade de busca de O(L) para O(1)
- * carregando a palavra da memória direto para o registrador.
+ * Mathematically reduces search complexity from O(L) to O(1)
+ * by loading the word from memory directly into the register.
  */
 inline HttpMethod fastParseMethod(const QByteArray &method) {
     if (method.size() < 3) return HttpMethod::UNKNOWN;
 
-    // Carrega os primeiros 8 bytes (ou menos) em um registrador de 64 bits
+    // Load first 8 bytes (or fewer) into a 64-bit register
     uint64_t val = 0;
     int len = qMin(method.size(), 8);
     memcpy(&val, method.constData(), len);
 
-    // Máscaras Hex para ignorar bytes além do tamanho da string (Padding zero)
+    // Hex masks to ignore bytes beyond string length (zero padding)
     uint64_t mask = (len == 8) ? 0xFFFFFFFFFFFFFFFF : (1ULL << (len * 8)) - 1;
     val &= mask;
 
@@ -92,8 +91,6 @@ inline HttpMethod fastParseMethod(const QByteArray &method) {
 /**
  * Image-Hex Parser (TH-03 Refinement)
  * Identifies image formats using 64-bit Hex signatures.
- * Matematicamente, elimina a necessidade de carregar bibliotecas de decodificação
- * para verificar o tipo do arquivo.
  */
 enum class ImageType : uint32_t {
     PNG  = 0x474E5089, // .PNG in hex (LE)
@@ -106,7 +103,7 @@ enum class ImageType : uint32_t {
 inline ImageType fastDetectImageType(const uint8_t* data) {
     uint32_t magic = *reinterpret_cast<const uint32_t*>(data);
 
-    // Comparação em 1 ciclo de clock
+    // Comparison in 1 clock cycle
     if ((magic & 0xFFFFFF00) == 0x474E5000) return ImageType::PNG;
     if ((magic & 0xFFFF) == 0xD8FF) return ImageType::JPEG;
     if (magic == 0x38464947) return ImageType::GIF;
@@ -124,15 +121,22 @@ struct TlsRecordHeader {
     uint16_t length;
 };
 
-inline bool parseTlsHeader(const uint8_t* data, TlsRecordHeader &header) {
-    // Acesso direto via offset hex
-    header.type = data[0x0];
-    // Big-endian to Host conversion via hex shifts
-    header.version = (static_cast<uint16_t>(data[0x1]) << 0x8) | data[0x2];
-    header.length  = (static_cast<uint16_t>(data[0x3]) << 0x8) | data[0x4];
-
-    // Verifica validade em hex (0x14 a 0x18 são tipos válidos de TLS)
-    return (header.type >= 0x14 && header.type <= 0x18);
+/**
+ * @brief TH-03/06: Parallel Bitmask Ad-Filter.
+ * Checks multiple rule bitmasks in a single SIMD cycle.
+ * Mathematically transforms O(N) rule checking into O(1) hardware-speed rejection.
+ */
+inline bool parallelBitmaskFilter(uint64_t requestFlags, const uint64_t* ruleMasks, size_t count) {
+    __m256i req = _mm256_set1_epi64x(requestFlags);
+    for (size_t i = 0; i < count; i += 4) {
+        __m256i rules = _mm256_loadu_si256(reinterpret_cast<const __m256i*>(ruleMasks + i));
+        // Bitwise AND: requestFlags & ruleMask
+        __m256i result = _mm256_and_si256(req, rules);
+        // Compare with rules: if (result == rules) then it's a match
+        __m256i cmp = _mm256_cmpeq_epi64(result, rules);
+        if (!_mm256_testz_si256(cmp, cmp)) return true;
+    }
+    return false;
 }
 
 } // namespace Network

@@ -515,15 +515,9 @@ CMakeFiles/ThunderSDK.dir/src/lib/kernel/kernel_bridge.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/fcntl-linux-fortify.h \
  /usr/include/x86_64-linux-gnu/bits/stat.h \
  /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
- /usr/include/x86_64-linux-gnu/bits/fcntl2.h \
- /usr/include/x86_64-linux-gnu/sys/stat.h \
- /usr/include/x86_64-linux-gnu/bits/statx.h /usr/include/linux/stat.h \
- /usr/include/x86_64-linux-gnu/bits/statx-generic.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h \
- /usr/include/c++/15/iostream /usr/include/c++/15/ostream \
- /usr/include/c++/15/bits/ostream.h /usr/include/c++/15/ios \
- /usr/include/c++/15/bits/basic_ios.h \
+ /usr/include/x86_64-linux-gnu/bits/fcntl2.h /usr/include/c++/15/iostream \
+ /usr/include/c++/15/ostream /usr/include/c++/15/bits/ostream.h \
+ /usr/include/c++/15/ios /usr/include/c++/15/bits/basic_ios.h \
  /usr/include/c++/15/bits/locale_facets.h /usr/include/c++/15/cwctype \
  /usr/include/wctype.h /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
  /usr/include/x86_64-linux-gnu/c++/15/bits/ctype_base.h \
@@ -531,4 +525,36 @@ CMakeFiles/ThunderSDK.dir/src/lib/kernel/kernel_bridge.cpp.o: \
  /usr/include/c++/15/bits/locale_facets.tcc \
  /usr/include/c++/15/bits/basic_ios.tcc \
  /usr/include/c++/15/bits/ostream.tcc /usr/include/c++/15/istream \
- /usr/include/c++/15/bits/istream.tcc
+ /usr/include/c++/15/bits/istream.tcc \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QDir \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qdir.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qdirlisting.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qfiledevice.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevice.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject_impl.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qbindingstorage.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qspan.h \
+ /usr/include/c++/15/cassert \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/q20iterator.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatetime.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcalendar.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qlocale.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/q23utility.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/q20utility.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qfile.h \
+ /usr/include/c++/15/filesystem /usr/include/c++/15/bits/fs_fwd.h \
+ /usr/include/c++/15/bits/fs_path.h /usr/include/c++/15/locale \
+ /usr/include/c++/15/bits/locale_facets_nonio.h \
+ /usr/include/x86_64-linux-gnu/c++/15/bits/time_members.h \
+ /usr/include/x86_64-linux-gnu/c++/15/bits/messages_members.h \
+ /usr/include/libintl.h /usr/include/c++/15/bits/codecvt.h \
+ /usr/include/c++/15/bits/locale_facets_nonio.tcc \
+ /usr/include/c++/15/bits/locale_conv.h /usr/include/c++/15/iomanip \
+ /usr/include/c++/15/bits/quoted_string.h /usr/include/c++/15/sstream \
+ /usr/include/c++/15/bits/sstream.tcc /usr/include/c++/15/codecvt \
+ /usr/include/c++/15/bits/fs_dir.h /usr/include/c++/15/bits/fs_ops.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qfileinfo.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimezone.h

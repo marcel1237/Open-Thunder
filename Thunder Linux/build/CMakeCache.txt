@@ -22,7 +22,7 @@ CMAKE_AR:FILEPATH=/usr/bin/ar
 
 //Choose the type of build, options are: None Debug Release RelWithDebInfo
 // MinSizeRel ...
-CMAKE_BUILD_TYPE:STRING=Release
+CMAKE_BUILD_TYPE:STRING=
 
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
@@ -399,15 +399,6 @@ ThunderSDK_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 ThunderSDK_SOURCE_DIR:STATIC=/home/marcel1237/Thunder/Thunder Linux
-
-//Value Computed by CMake
-Thunder_BINARY_DIR:STATIC=/home/marcel1237/Thunder/Thunder Linux/build
-
-//Value Computed by CMake
-Thunder_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-Thunder_SOURCE_DIR:STATIC=/home/marcel1237/Thunder/Thunder Linux
 
 //Path to a program.
 Vulkan_GLSLANG_VALIDATOR_EXECUTABLE:FILEPATH=Vulkan_GLSLANG_VALIDATOR_EXECUTABLE-NOTFOUND

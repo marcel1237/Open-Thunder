@@ -315,6 +315,14 @@ CMakeFiles/ThunderBrowser.dir/src/main/main.cpp.o: /home/marcel1237/Thunder/Thun
   /home/marcel1237/Thunder/Thunder\ Linux/src/lib/app/mainapplication.h \
   /home/marcel1237/Thunder/Thunder\ Linux/src/lib/app/thundercommon.h \
   /home/marcel1237/Thunder/Thunder\ Linux/src/lib/kernel/kernel_bridge.h \
+  /home/marcel1237/Thunder/Thunder\ Linux/src/lib/kernel/thunder_aes_accelerator.h \
+  /home/marcel1237/Thunder/Thunder\ Linux/src/lib/kernel/thunder_branch_optimizer.h \
+  /home/marcel1237/Thunder/Thunder\ Linux/src/lib/kernel/thunder_cache_optimizer.h \
+  /home/marcel1237/Thunder/Thunder\ Linux/src/lib/kernel/thunder_hex_utils.h \
+  /home/marcel1237/Thunder/Thunder\ Linux/src/lib/kernel/thunder_huge_tlb.h \
+  /home/marcel1237/Thunder/Thunder\ Linux/src/lib/kernel/thunder_prefetch.h \
+  /home/marcel1237/Thunder/Thunder\ Linux/src/lib/kernel/thunder_simd_accelerator.h \
+  /home/marcel1237/Thunder/Thunder\ Linux/src/lib/thundersdk.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \
@@ -553,6 +561,11 @@ CMakeFiles/ThunderBrowser.dir/src/main/main.cpp.o: /home/marcel1237/Thunder/Thun
   /usr/include/x86_64-linux-gnu/bits/mathcalls-macros.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+  /usr/include/x86_64-linux-gnu/bits/mman-linux.h \
+  /usr/include/x86_64-linux-gnu/bits/mman-map-flags-generic.h \
+  /usr/include/x86_64-linux-gnu/bits/mman-shared.h \
+  /usr/include/x86_64-linux-gnu/bits/mman.h \
+  /usr/include/x86_64-linux-gnu/bits/mman_ext.h \
   /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
   /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
   /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
@@ -634,7 +647,9 @@ CMakeFiles/ThunderBrowser.dir/src/main/main.cpp.o: /home/marcel1237/Thunder/Thun
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QDebug \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QFlags \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QMessageLogContext \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QtGlobal \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q17memory.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q20functional.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q20iterator.h \
@@ -795,6 +810,7 @@ CMakeFiles/ThunderBrowser.dir/src/main/main.cpp.o: /home/marcel1237/Thunder/Thun
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsexports.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/sys/mman.h \
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
@@ -1151,8 +1167,6 @@ CMakeFiles/ThunderBrowser.dir/ThunderBrowser_autogen/mocs_compilation.cpp.o:
 /usr/lib/x86_64-linux-gnu/libXau.so.6:
 
 /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.10.2:
-
-/usr/lib/x86_64-linux-gnu/libQt6WebEngineWidgets.so.6:
 
 /usr/lib/x86_64-linux-gnu/libQt6WebChannel.so.6:
 
@@ -1544,7 +1558,7 @@ CMakeFiles/ThunderBrowser.dir/ThunderBrowser_autogen/mocs_compilation.cpp.o:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/q17memory.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/QString:
+/usr/include/x86_64-linux-gnu/qt6/QtCore/QMessageLogContext:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/QDebug:
 
@@ -1573,10 +1587,6 @@ CMakeFiles/ThunderBrowser.dir/ThunderBrowser_autogen/mocs_compilation.cpp.o:
 /usr/include/x86_64-linux-gnu/c++/15/bits/ctype_inline.h:
 
 /usr/include/x86_64-linux-gnu/c++/15/bits/cpu_defines.h:
-
-/usr/lib/x86_64-linux-gnu/libbz2.so.1.0:
-
-/usr/include/x86_64-linux-gnu/c++/15/bits/atomic_word.h:
 
 /usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
 
@@ -1674,6 +1684,14 @@ CMakeFiles/ThunderBrowser.dir/ThunderBrowser_autogen/mocs_compilation.cpp.o:
 
 /usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtCore/QString:
+
+/usr/include/x86_64-linux-gnu/bits/mman_ext.h:
+
+/usr/include/x86_64-linux-gnu/bits/mman.h:
+
+/usr/include/x86_64-linux-gnu/bits/mman-map-flags-generic.h:
+
 /usr/include/x86_64-linux-gnu/bits/mathcalls-macros.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
@@ -1687,6 +1705,24 @@ CMakeFiles/ThunderBrowser.dir/ThunderBrowser_autogen/mocs_compilation.cpp.o:
 /usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/locale.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/15/include/avxneconvertintrin.h:
+
+/usr/include/x86_64-linux-gnu/bits/local_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
+
+/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
+
+/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
+
+/usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.10.2:
+
+/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qstringalgorithms.h:
+
+/usr/include/x86_64-linux-gnu/bits/floatn.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake:
 
@@ -1707,6 +1743,8 @@ CMakeFiles/ThunderBrowser.dir/ThunderBrowser_autogen/mocs_compilation.cpp.o:
 /usr/lib/x86_64-linux-gnu/libicuuc.so.78:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6WebEngineWidgets/Qt6WebEngineWidgetsDependencies.cmake:
+
+/home/marcel1237/Thunder/Thunder\ Linux/src/lib/kernel/thunder_huge_tlb.h:
 
 /home/marcel1237/Thunder/Thunder\ Linux/CMakeLists.txt:
 
@@ -1822,6 +1860,12 @@ CMakeFiles/ThunderBrowser.dir/ThunderBrowser_autogen/mocs_compilation.cpp.o:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsVersionlessAliasTargets.cmake:
 
+/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
+
+/usr/include/c++/15/tuple:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Quick/Qt6QuickConfig.cmake:
+
 /usr/lib/x86_64-linux-gnu/cmake/Qt6QmlWorkerScript/Qt6QmlWorkerScriptVersionlessAliasTargets.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6WebChannel/Qt6WebChannelTargets.cmake:
@@ -1835,6 +1879,8 @@ CMakeFiles/ThunderBrowser.dir/ThunderBrowser_autogen/mocs_compilation.cpp.o:
 /usr/lib/x86_64-linux-gnu/cmake/Qt6QmlWorkerScript/Qt6QmlWorkerScriptConfigVersion.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qfunctionaltools_impl.h:
+
+/usr/include/x86_64-linux-gnu/bits/mman-linux.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6QmlWorkerScript/Qt6QmlWorkerScriptConfig.cmake:
 
@@ -1914,6 +1960,8 @@ CMakeFiles/ThunderBrowser.dir/ThunderBrowser_autogen/mocs_compilation.cpp.o:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6QmlMeta/Qt6QmlMetaConfigVersion.cmake:
 
+/usr/include/x86_64-linux-gnu/bits/mman-shared.h:
+
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake:
 
 /usr/lib/gcc/x86_64-linux-gnu/15/include/rtmintrin.h:
@@ -1981,12 +2029,6 @@ CMakeFiles/ThunderBrowser.dir/ThunderBrowser_autogen/mocs_compilation.cpp.o:
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Qml/Qt6QmlConfigVersion.cmake:
-
-/usr/include/c++/15/tuple:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Quick/Qt6QuickConfig.cmake:
-
-/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Qml/Qt6QmlAdditionalTargetInfo.cmake:
 
@@ -2171,8 +2213,6 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
 /usr/bin/cmake:
-
-/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6QmlModels/Qt6QmlModelsDependencies.cmake:
 
@@ -2568,6 +2608,8 @@ CMakeFiles/ThunderBrowser.dir/src/main/main.cpp.o:
 
 /usr/share/cmake-4.2/Modules/CMakeCommonLanguageInclude.cmake:
 
+/home/marcel1237/Thunder/Thunder\ Linux/src/lib/kernel/thunder_cache_optimizer.h:
+
 /usr/include/x86_64-linux-gnu/qt6/QtCore/q20iterator.h:
 
 /usr/include/c++/15/vector:
@@ -2732,6 +2774,26 @@ ThunderBrowser_autogen/mocs_compilation.cpp:
 
 /usr/include/c++/15/bits/stl_iterator_base_types.h:
 
+/home/marcel1237/Thunder/Thunder\ Linux/src/lib/kernel/thunder_aes_accelerator.h:
+
+/home/marcel1237/Thunder/Thunder\ Linux/src/lib/kernel/thunder_branch_optimizer.h:
+
+/usr/lib/x86_64-linux-gnu/libQt6WebEngineWidgets.so.6:
+
+/home/marcel1237/Thunder/Thunder\ Linux/src/lib/kernel/thunder_hex_utils.h:
+
+/home/marcel1237/Thunder/Thunder\ Linux/src/lib/kernel/thunder_prefetch.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qdatastream.h:
+
+/usr/include/c++/15/bits/stl_set.h:
+
+/usr/lib/x86_64-linux-gnu/libbz2.so.1.0:
+
+/usr/include/x86_64-linux-gnu/c++/15/bits/atomic_word.h:
+
+/home/marcel1237/Thunder/Thunder\ Linux/src/lib/thundersdk.h:
+
 /usr/include/alloca.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake:
@@ -2803,6 +2865,8 @@ ThunderBrowser_autogen/mocs_compilation.cpp:
 /usr/include/c++/15/bits/cxxabi_forced.h:
 
 /usr/include/c++/15/compare:
+
+/usr/include/x86_64-linux-gnu/sys/mman.h:
 
 /usr/include/c++/15/bits/cxxabi_init_exception.h:
 
@@ -2892,15 +2956,9 @@ libThunderSDK.so:
 
 /usr/include/c++/15/bits/std_function.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/15/include/avxneconvertintrin.h:
-
-/usr/include/x86_64-linux-gnu/bits/local_lim.h:
-
 /usr/lib/x86_64-linux-gnu/cmake/Qt6QmlWorkerScript/Qt6QmlWorkerScriptConfigVersionImpl.cmake:
 
 /usr/include/c++/15/bits/stl_bvector.h:
-
-/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
 
 /usr/include/c++/15/bits/memory_resource.h:
 
@@ -2919,10 +2977,6 @@ libThunderSDK.so:
 /usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:
 
 /usr/include/c++/15/bits/stl_multiset.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qdatastream.h:
-
-/usr/include/c++/15/bits/stl_set.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512dqintrin.h:
 
@@ -3104,6 +3158,8 @@ libThunderSDK.so:
 
 /usr/include/limits.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtCore/QtGlobal:
+
 /usr/lib/x86_64-linux-gnu/cmake/Qt6WebEngineWidgets/Qt6WebEngineWidgetsTargets.cmake:
 
 /usr/include/linux/posix_types.h:
@@ -3136,6 +3192,8 @@ libThunderSDK.so:
 
 /usr/include/wchar.h:
 
+/home/marcel1237/Thunder/Thunder\ Linux/src/lib/kernel/thunder_simd_accelerator.h:
+
 /usr/include/x86_64-linux-gnu/asm/errno.h:
 
 /usr/include/x86_64-linux-gnu/asm/posix_types_64.h:
@@ -3159,13 +3217,3 @@ libThunderSDK.so:
 /usr/include/linux/sched/types.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qstringalgorithms.h:
-
-/usr/include/x86_64-linux-gnu/bits/floatn.h:
-
-/usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.10.2:
-
-/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
-
-/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:

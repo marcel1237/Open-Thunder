@@ -1,11 +1,15 @@
-/* ============================================================
-* Thunder SDK - Generic Application Example
-* Demonstrating Hardware-Level performance for non-browser apps.
-* ============================================================ */
-#include "../lib/thundersdk.h"
+/*
+ * Copyright (C) 2025 Marcel Aparecido de Andrade.
+ * Thunder - Hardware-Enforced Next-Gen Intelligence
+ *
+ * PROPRIETARY SOURCE-AVAILABLE LICENSE.
+ * This code is public for visibility but use is governed by the TSAL v1.0.
+ * Unauthorized commercial use or redistribution is strictly prohibited.
+ */
 #include <iostream>
-#include <vector>
 #include <chrono>
+#include <cstdint>
+#include "thundersdk.h"
 
 void heavy_computation() {
     // A sample CPU-heavy task
@@ -17,6 +21,7 @@ void heavy_computation() {
 }
 
 int main(int argc, char* argv[]) {
+    (void)argc; (void)argv;
     std::cout << "--- Thunder SDK Generic Software Accelerator ---" << std::endl;
 
     // 1. INITIALIZE HARDWARE MATRIX

@@ -1,9 +1,11 @@
-/* ============================================================
-* Thunder - Qt web browser
-* Copyright (C) 2025 Marcel
-*
-* Hardware-Level Memory Bus Prefetching Utilities
-* ============================================================ */
+/*
+ * Copyright (C) 2025 Marcel Aparecido de Andrade.
+ * Thunder - Hardware-Enforced Next-Gen Intelligence
+ *
+ * PROPRIETARY SOURCE-AVAILABLE LICENSE.
+ * This code is public for visibility but use is governed by the TSAL v1.0.
+ * Unauthorized commercial use or redistribution is strictly prohibited.
+ */
 #ifndef THUNDER_PREFETCH_H
 #define THUNDER_PREFETCH_H
 
@@ -14,8 +16,8 @@ namespace Hardware {
 
 /**
  * @brief Prefetches a memory block into the CPU Cache (L1/L2/L3).
- * Matematicamente, esconde a latência da memória (T_mem) sobrepondo-a
- * com o processamento da CPU (T_cpu).
+ * Mathematically hides memory latency (T_mem) by overlapping it
+ * with CPU processing (T_cpu).
  *
  * RW: 0 = Read, 1 = Write
  * Locality: 0 = None, 1 = L3, 2 = L2, 3 = L1

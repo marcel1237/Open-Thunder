@@ -2,10 +2,8 @@ CMakeFiles/ThunderSDK.dir/src/lib/adblock/adblockrule.cpp.o: \
  /home/marcel1237/Thunder/Thunder\ Linux/src/lib/adblock/adblockrule.cpp \
  /usr/include/stdc-predef.h \
  /home/marcel1237/Thunder/Thunder\ Linux/src/lib/adblock/adblockrule.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qnamespace.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QRegularExpression \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qregularexpression.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qglobal.h \
  /usr/include/c++/15/type_traits \
  /usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h \
@@ -175,6 +173,8 @@ CMakeFiles/ThunderSDK.dir/src/lib/adblock/adblockrule.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtresource.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qttranslation.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qstring.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qchar.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcompare.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstdlibdetection.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcomparehelpers.h \
@@ -202,13 +202,22 @@ CMakeFiles/ThunderSDK.dir/src/lib/adblock/adblockrule.cpp.o: \
  /usr/include/c++/15/bits/stl_bvector.h \
  /usr/include/c++/15/bits/vector.tcc /usr/include/c++/15/array \
  /usr/include/c++/15/compare \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringview.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearray.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qrefcount.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qnamespace.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtmetamacros.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs_impl.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qfunctionaltools_impl.h \
- /usr/include/c++/15/memory \
- /usr/include/c++/15/bits/stl_raw_storage_iter.h \
- /usr/include/c++/15/bits/align.h /usr/include/c++/15/bits/unique_ptr.h \
- /usr/include/c++/15/bits/shared_ptr.h /usr/include/c++/15/iosfwd \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydata.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qpair.h /usr/include/string.h \
+ /usr/include/strings.h \
+ /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
+ /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydatapointer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydataops.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainertools_impl.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qxptype_traits.h \
+ /usr/include/c++/15/cstring /usr/include/c++/15/iterator \
+ /usr/include/c++/15/bits/stream_iterator.h /usr/include/c++/15/iosfwd \
  /usr/include/c++/15/bits/stringfwd.h /usr/include/c++/15/bits/postypes.h \
  /usr/include/c++/15/cwchar /usr/include/wchar.h \
  /usr/lib/gcc/x86_64-linux-gnu/15/include/stdarg.h \
@@ -219,8 +228,12 @@ CMakeFiles/ThunderSDK.dir/src/lib/adblock/adblockrule.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
  /usr/include/x86_64-linux-gnu/bits/wchar2-decl.h \
  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
- /usr/include/c++/15/bits/shared_ptr_base.h \
- /usr/include/c++/15/bits/allocated_ptr.h \
+ /usr/include/c++/15/bits/streambuf_iterator.h \
+ /usr/include/c++/15/streambuf /usr/include/c++/15/bits/localefwd.h \
+ /usr/include/x86_64-linux-gnu/c++/15/bits/c++locale.h \
+ /usr/include/c++/15/clocale /usr/include/locale.h \
+ /usr/include/x86_64-linux-gnu/bits/locale.h /usr/include/c++/15/cctype \
+ /usr/include/ctype.h /usr/include/c++/15/bits/ios_base.h \
  /usr/include/c++/15/ext/atomicity.h \
  /usr/include/x86_64-linux-gnu/c++/15/bits/gthr.h \
  /usr/include/x86_64-linux-gnu/c++/15/bits/gthr-default.h \
@@ -246,32 +259,6 @@ CMakeFiles/ThunderSDK.dir/src/lib/adblock/adblockrule.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
  /usr/include/x86_64-linux-gnu/c++/15/bits/atomic_word.h \
  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
- /usr/include/c++/15/ext/concurrence.h \
- /usr/include/c++/15/bits/shared_ptr_atomic.h \
- /usr/include/c++/15/backward/auto_ptr.h \
- /usr/include/c++/15/pstl/glue_memory_defs.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qstring.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qchar.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringview.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearray.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qrefcount.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydata.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qpair.h /usr/include/string.h \
- /usr/include/strings.h \
- /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
- /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydatapointer.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydataops.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainertools_impl.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qxptype_traits.h \
- /usr/include/c++/15/cstring /usr/include/c++/15/iterator \
- /usr/include/c++/15/bits/stream_iterator.h \
- /usr/include/c++/15/bits/streambuf_iterator.h \
- /usr/include/c++/15/streambuf /usr/include/c++/15/bits/localefwd.h \
- /usr/include/x86_64-linux-gnu/c++/15/bits/c++locale.h \
- /usr/include/c++/15/clocale /usr/include/locale.h \
- /usr/include/x86_64-linux-gnu/bits/locale.h /usr/include/c++/15/cctype \
- /usr/include/ctype.h /usr/include/c++/15/bits/ios_base.h \
  /usr/include/c++/15/bits/locale_classes.h /usr/include/c++/15/string \
  /usr/include/c++/15/bits/char_traits.h \
  /usr/include/c++/15/bits/ostream_insert.h \
@@ -297,6 +284,16 @@ CMakeFiles/ThunderSDK.dir/src/lib/adblock/adblockrule.cpp.o: \
  /usr/include/c++/15/system_error \
  /usr/include/x86_64-linux-gnu/c++/15/bits/error_constants.h \
  /usr/include/c++/15/stdexcept /usr/include/c++/15/bits/streambuf.tcc \
+ /usr/include/c++/15/memory \
+ /usr/include/c++/15/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/15/bits/align.h /usr/include/c++/15/bits/unique_ptr.h \
+ /usr/include/c++/15/bits/shared_ptr.h \
+ /usr/include/c++/15/bits/shared_ptr_base.h \
+ /usr/include/c++/15/bits/allocated_ptr.h \
+ /usr/include/c++/15/ext/concurrence.h \
+ /usr/include/c++/15/bits/shared_ptr_atomic.h \
+ /usr/include/c++/15/backward/auto_ptr.h \
+ /usr/include/c++/15/pstl/glue_memory_defs.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/q20functional.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/q20memory.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/q17memory.h \
@@ -313,21 +310,18 @@ CMakeFiles/ThunderSDK.dir/src/lib/adblock/adblockrule.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringbuilder.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringconverter.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringconverter_base.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qlist.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qhashfunctions.h \
  /usr/include/c++/15/numeric /usr/include/c++/15/bits/stl_numeric.h \
  /usr/include/c++/15/pstl/glue_numeric_defs.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qiterator.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearraylist.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringlist.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qalgorithms.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringmatcher.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qscopedpointer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmetatype.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatastream.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevicebase.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qscopedpointer.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfloat16.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmath.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qalgorithms.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtformat_impl.h \
  /usr/lib/gcc/x86_64-linux-gnu/15/include/immintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/15/include/x86gprintrin.h \
@@ -446,23 +440,14 @@ CMakeFiles/ThunderSDK.dir/src/lib/adblock/adblockrule.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtaggedpointer.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmetacontainer.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainerinfo.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs_impl.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qfunctionaltools_impl.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qscopeguard.h \
  /usr/include/c++/15/list /usr/include/c++/15/bits/stl_list.h \
  /usr/include/c++/15/bits/list.tcc /usr/include/c++/15/map \
  /usr/include/c++/15/bits/stl_tree.h /usr/include/c++/15/bits/stl_map.h \
  /usr/include/c++/15/bits/stl_multimap.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject_impl.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qbindingstorage.h \
- /usr/include/c++/15/chrono /usr/include/c++/15/bits/chrono.h \
- /usr/include/c++/15/ratio /usr/include/c++/15/ctime \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QStringList \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringlist.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QStringMatcher \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringmatcher.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QRegularExpression \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qregularexpression.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtextstream.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontiguouscache.h \
@@ -477,10 +462,17 @@ CMakeFiles/ThunderSDK.dir/src/lib/adblock/adblockrule.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedpointer.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedpointer_impl.h \
+ /usr/include/c++/15/chrono /usr/include/c++/15/bits/chrono.h \
+ /usr/include/c++/15/ratio /usr/include/c++/15/ctime \
  /usr/include/c++/15/set /usr/include/c++/15/bits/stl_set.h \
  /usr/include/c++/15/bits/stl_multiset.h \
  /usr/include/c++/15/unordered_set \
  /usr/include/c++/15/bits/unordered_set.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qlist.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qiterator.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearraylist.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringlist.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringmatcher.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmap.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata_impl.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qset.h \
@@ -490,6 +482,8 @@ CMakeFiles/ThunderSDK.dir/src/lib/adblock/adblockrule.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/q23utility.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/q20utility.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject_impl.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qbindingstorage.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QUrl \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qurl.h \
  /home/marcel1237/Thunder/Thunder\ Linux/src/lib/app/thundercommon.h \
@@ -498,5 +492,4 @@ CMakeFiles/ThunderSDK.dir/src/lib/adblock/adblockrule.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QFlags \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qflags.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qlist.h \
- /home/marcel1237/Thunder/Thunder\ Linux/src/lib/kernel/thunder_branch_optimizer.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qlist.h

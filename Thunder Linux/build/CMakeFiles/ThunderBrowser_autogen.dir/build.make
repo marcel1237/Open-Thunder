@@ -72,7 +72,7 @@ ThunderBrowser_autogen/timestamp: /usr/lib/qt6/libexec/moc
 ThunderBrowser_autogen/timestamp: /usr/lib/qt6/libexec/uic
 ThunderBrowser_autogen/timestamp: CMakeFiles/ThunderBrowser_autogen.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="/home/marcel1237/Thunder/Thunder Linux/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target ThunderBrowser"
-	/usr/bin/cmake -E cmake_autogen "/home/marcel1237/Thunder/Thunder Linux/build/CMakeFiles/ThunderBrowser_autogen.dir/AutogenInfo.json" Release
+	/usr/bin/cmake -E cmake_autogen "/home/marcel1237/Thunder/Thunder Linux/build/CMakeFiles/ThunderBrowser_autogen.dir/AutogenInfo.json" ""
 	/usr/bin/cmake -E touch "/home/marcel1237/Thunder/Thunder Linux/build/ThunderBrowser_autogen/timestamp"
 
 CMakeFiles/ThunderBrowser_autogen.dir/codegen:

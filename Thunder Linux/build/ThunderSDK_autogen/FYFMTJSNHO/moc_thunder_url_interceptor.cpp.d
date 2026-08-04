@@ -291,11 +291,9 @@
   /usr/include/x86_64-linux-gnu/c++/15/bits/os_defines.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QByteArray \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QDebug \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QFlags \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q17memory.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q20functional.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q20iterator.h \

@@ -1,0 +1,4 @@
+Thunder Performance Log
+Baseline: 0.901673s
+Thunder: 1.15379s
+Speedup: 0.781491x

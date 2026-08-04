@@ -1,0 +1,1 @@
+/usr/bin/c++ -flto=auto -fno-fat-lto-objects -flto -Wl,-O1 -Wl,--as-needed -Wl,--sort-common -Wl,--dependency-file=CMakeFiles/NoThunderBaseline.dir/link.d CMakeFiles/NoThunderBaseline.dir/NoThunderBaseline_autogen/mocs_compilation.cpp.o CMakeFiles/NoThunderBaseline.dir/src/examples/no_thunder_app.cpp.o -o NoThunderBaseline

@@ -1,14 +1,15 @@
-/* ============================================================
-* Thunder - Qt web browser
-* Copyright (C) 2025 Marcel
-*
-* General Purpose Hexadecimal & Bitwise Utilities
-* ============================================================ */
+/*
+ * Copyright (C) 2025 Marcel Aparecido de Andrade.
+ * Thunder - Hardware-Enforced Next-Gen Intelligence
+ *
+ * PROPRIETARY SOURCE-AVAILABLE LICENSE.
+ * This code is public for visibility but use is governed by the TSAL v1.0.
+ * Unauthorized commercial use or redistribution is strictly prohibited.
+ */
 #ifndef THUNDER_HEX_UTILS_H
 #define THUNDER_HEX_UTILS_H
 
 #include <cstdint>
-#include <cstddef>
 
 namespace Td {
 namespace Utils {
@@ -31,7 +32,7 @@ inline uint32_t hexToUint32(const char* hex) {
 
 /**
  * @brief Branchless Hex-to-ASCII conversion.
- * Matematicamente superior por evitar saltos de pipeline (CPU Prediction).
+ * Mathematically superior as it avoids pipeline stalls (CPU Prediction).
  */
 inline char nibbleToHex(uint8_t nibble) {
     return nibble + 0x30 + ((nibble > 0x9) ? 0x7 : 0x0);

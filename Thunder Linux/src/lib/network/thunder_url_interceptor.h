@@ -1,12 +1,17 @@
-/* ============================================================
-* Thunder - Qt web browser
-* Copyright (C) 2025 Marcel
-* ============================================================ */
+/*
+ * Copyright (C) 2025 Marcel Aparecido de Andrade.
+ * Thunder - Hardware-Enforced Next-Gen Intelligence
+ *
+ * PROPRIETARY SOURCE-AVAILABLE LICENSE.
+ * This code is public for visibility but use is governed by the TSAL v1.0.
+ * Unauthorized commercial use or redistribution is strictly prohibited.
+ */
 #ifndef THUNDER_URL_INTERCEPTOR_H
 #define THUNDER_URL_INTERCEPTOR_H
 
 #include <QWebEngineUrlRequestInterceptor>
 #include <QWebEngineUrlRequestInfo>
+#include "thundercommon.h"
 #include "thunder_net_optimizer.h"
 #include "thunder_simd_accelerator.h"
 
@@ -21,20 +26,20 @@ public:
         : QWebEngineUrlRequestInterceptor(parent) {}
 
     /**
-     * @brief Intercepta requisições usando aceleração SIMD/AVX2.
-     * Roda na thread de IO do Kernel/Chromium.
+     * @brief Intercepts requests using SIMD/AVX2 acceleration.
+     * Runs on the Kernel/Chromium IO thread.
      */
     void interceptRequest(QWebEngineUrlRequestInfo &info) override {
-        // Hex Fast-Path: Verifica método HTTP
+        // Hex Fast-Path: Verify HTTP method
         HttpMethod method = fastParseMethod(info.requestMethod());
 
-        // Scan de Hardware para caracteres suspeitos na URL usando AVX2
+        // Hardware scan for suspicious characters in URL using AVX2
         QByteArray urlData = info.requestUrl().toString().toLatin1();
-        if (Td::Hardware::fastScanByte(urlData.constData(), 0x3F /* '?' em hex */, urlData.size())) {
-            // Aceleração de busca de parâmetros via Hardware detectada
+        if (Td::Hardware::fastScanByte(urlData.constData(), 0x3F /* '?' in hex */, urlData.size())) {
+            // Hardware-accelerated parameter search detected
         }
 
-        // Alinhamento de buffers via Hex mask 0xFFF
+        // Buffer alignment via Hex mask 0xFFF
         if (info.requestUrl().toString().length() > 0x1000) {
             // URL > 4096 bytes
         }

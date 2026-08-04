@@ -1,14 +1,15 @@
-/* ============================================================
-* Thunder - Qt web browser
-* Copyright (C) 2025 Marcel
-*
-* Hardware-Level L3 Cache & Memory Locality Optimizer
-* ============================================================ */
+/*
+ * Copyright (C) 2025 Marcel Aparecido de Andrade.
+ * Thunder - Hardware-Enforced Next-Gen Intelligence
+ *
+ * PROPRIETARY SOURCE-AVAILABLE LICENSE.
+ * This code is public for visibility but use is governed by the TSAL v1.0.
+ * Unauthorized commercial use or redistribution is strictly prohibited.
+ */
 #ifndef THUNDER_CACHE_OPTIMIZER_H
 #define THUNDER_CACHE_OPTIMIZER_H
 
 #include <cstddef>
-#include <new>
 
 namespace Td {
 namespace Hardware {
@@ -25,13 +26,9 @@ constexpr size_t CacheLineSize = 0x40;
 
 /**
  * @brief Hints the Kernel to prioritize this process's memory in the L3 cache.
- * While Intel CAT requires root, we can use process "Niceness" and
- * Memory Advice to maintain a hot cache set.
  */
 inline void prioritizeCacheLocality() {
-    // We already use mlockall in kernel_bridge, which is the foundation.
-    // Here we could add specific MSR (Model Specific Register) tweaks
-    // if we had ring 0 access, but we'll focus on Cache-friendly allocation.
+    // Already use mlockall in kernel_bridge, which is the foundation.
 }
 
 } // namespace Hardware

@@ -309,7 +309,6 @@ ThunderSDK_autogen/timestamp: /home/marcel1237/Thunder/Thunder\ Linux/CMakeLists
   /usr/include/x86_64-linux-gnu/c++/15/bits/os_defines.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QByteArray \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QDebug \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QFlags \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
@@ -918,15 +917,32 @@ ThunderSDK_autogen/timestamp: /home/marcel1237/Thunder/Thunder\ Linux/CMakeLists
   /usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-none.cmake \
   /usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake \
   /usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake \
+  /usr/share/cmake-4.2/Modules/CMakeCXXCompiler.cmake.in \
+  /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp \
   /usr/share/cmake-4.2/Modules/CMakeCXXInformation.cmake \
   /usr/share/cmake-4.2/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
   /usr/share/cmake-4.2/Modules/CMakeCommonLanguageInclude.cmake \
+  /usr/share/cmake-4.2/Modules/CMakeCompilerIdDetection.cmake \
+  /usr/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/CMakeDetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake \
+  /usr/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake \
+  /usr/share/cmake-4.2/Modules/CMakeDetermineCompilerSupport.cmake \
+  /usr/share/cmake-4.2/Modules/CMakeDetermineSystem.cmake \
+  /usr/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake \
   /usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake \
   /usr/share/cmake-4.2/Modules/CMakeGenericSystem.cmake \
   /usr/share/cmake-4.2/Modules/CMakeInitializeConfigs.cmake \
   /usr/share/cmake-4.2/Modules/CMakeLanguageInformation.cmake \
+  /usr/share/cmake-4.2/Modules/CMakeParseImplicitIncludeInfo.cmake \
+  /usr/share/cmake-4.2/Modules/CMakeParseImplicitLinkInfo.cmake \
+  /usr/share/cmake-4.2/Modules/CMakeParseLibraryArchitecture.cmake \
+  /usr/share/cmake-4.2/Modules/CMakeSystem.cmake.in \
   /usr/share/cmake-4.2/Modules/CMakeSystemSpecificInformation.cmake \
   /usr/share/cmake-4.2/Modules/CMakeSystemSpecificInitialize.cmake \
+  /usr/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/CMakeTestCompilerCommon.cmake \
+  /usr/share/cmake-4.2/Modules/CMakeUnixFindMake.cmake \
   /usr/share/cmake-4.2/Modules/CheckCXXCompilerFlag.cmake \
   /usr/share/cmake-4.2/Modules/CheckCXXSourceCompiles.cmake \
   /usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake \
@@ -935,9 +951,51 @@ ThunderSDK_autogen/timestamp: /home/marcel1237/Thunder/Thunder\ Linux/CMakeLists
   /usr/share/cmake-4.2/Modules/CheckIPOSupported/main.cpp \
   /usr/share/cmake-4.2/Modules/CheckIncludeFileCXX.cmake \
   /usr/share/cmake-4.2/Modules/CheckLibraryExists.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/ADSP-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/ARMCC-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/ARMClang-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/AppleClang-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/Borland-DetermineCompiler.cmake \
   /usr/share/cmake-4.2/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/Clang-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/Clang-DetermineCompilerInternal.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/Cray-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/CrayClang-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/Diab-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/Embarcadero-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/Fujitsu-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/GHS-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake \
   /usr/share/cmake-4.2/Modules/Compiler/GNU-CXX.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/GNU-FindBinUtils.cmake \
   /usr/share/cmake-4.2/Modules/Compiler/GNU.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/HP-CXX-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/IAR-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/Intel-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/MSVC-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/NVHPC-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/NVIDIA-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/OrangeC-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/PGI-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/PathScale-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/Renesas-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/SCO-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/TI-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/TIClang-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/Tasking-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/Watcom-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/XL-CXX-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake \
   /usr/share/cmake-4.2/Modules/FindCups.cmake \
   /usr/share/cmake-4.2/Modules/FindOpenGL.cmake \
   /usr/share/cmake-4.2/Modules/FindPackageHandleStandardArgs.cmake \
@@ -947,15 +1005,19 @@ ThunderSDK_autogen/timestamp: /home/marcel1237/Thunder/Thunder\ Linux/CMakeLists
   /usr/share/cmake-4.2/Modules/GNUInstallDirs.cmake \
   /usr/share/cmake-4.2/Modules/Internal/CMakeCXXLinkerInformation.cmake \
   /usr/share/cmake-4.2/Modules/Internal/CMakeCommonLinkerInformation.cmake \
+  /usr/share/cmake-4.2/Modules/Internal/CMakeDetermineLinkerId.cmake \
+  /usr/share/cmake-4.2/Modules/Internal/CMakeInspectCXXLinker.cmake \
   /usr/share/cmake-4.2/Modules/Internal/CheckCompilerFlag.cmake \
   /usr/share/cmake-4.2/Modules/Internal/CheckFlagCommonConfig.cmake \
   /usr/share/cmake-4.2/Modules/Internal/CheckSourceCompiles.cmake \
+  /usr/share/cmake-4.2/Modules/Internal/FeatureTesting.cmake \
   /usr/share/cmake-4.2/Modules/Linker/GNU-CXX.cmake \
   /usr/share/cmake-4.2/Modules/Linker/GNU.cmake \
   /usr/share/cmake-4.2/Modules/MacroAddFileDependencies.cmake \
   /usr/share/cmake-4.2/Modules/Platform/Linker/GNU.cmake \
   /usr/share/cmake-4.2/Modules/Platform/Linker/Linux-GNU-CXX.cmake \
   /usr/share/cmake-4.2/Modules/Platform/Linker/Linux-GNU.cmake \
+  /usr/share/cmake-4.2/Modules/Platform/Linux-Determine-CXX.cmake \
   /usr/share/cmake-4.2/Modules/Platform/Linux-GNU-CXX.cmake \
   /usr/share/cmake-4.2/Modules/Platform/Linux-GNU.cmake \
   /usr/share/cmake-4.2/Modules/Platform/Linux-Initialize.cmake \
@@ -965,9 +1027,9 @@ ThunderSDK_autogen/timestamp: /home/marcel1237/Thunder/Thunder\ Linux/CMakeLists
 
 /usr/share/cmake-4.2/Modules/Platform/Linux-Initialize.cmake:
 
-/usr/share/cmake-4.2/Modules/Platform/Linker/Linux-GNU-CXX.cmake:
+/usr/share/cmake-4.2/Modules/Platform/Linux-Determine-CXX.cmake:
 
-/usr/share/cmake-4.2/Modules/Linker/GNU.cmake:
+/usr/share/cmake-4.2/Modules/Platform/Linker/Linux-GNU-CXX.cmake:
 
 /usr/share/cmake-4.2/Modules/Internal/CheckFlagCommonConfig.cmake:
 
@@ -987,21 +1049,91 @@ ThunderSDK_autogen/timestamp: /home/marcel1237/Thunder/Thunder\ Linux/CMakeLists
 
 /usr/share/cmake-4.2/Modules/FindCups.cmake:
 
+/usr/share/cmake-4.2/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/Tasking-DetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/SCO-DetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/Renesas-DetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/OrangeC-DetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/NVIDIA-DetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/MSVC-DetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/IAR-DetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/HP-CXX-DetermineCompiler.cmake:
+
 /usr/share/cmake-4.2/Modules/Compiler/GNU-CXX.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/Fujitsu-DetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/Embarcadero-DetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/CrayClang-DetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/Cray-DetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/Borland-DetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/AppleClang-DetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/ARMClang-DetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/ARMCC-DetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/ADSP-DetermineCompiler.cmake:
 
 /usr/share/cmake-4.2/Modules/CheckLibraryExists.cmake:
 
 /usr/share/cmake-4.2/Modules/CheckIPOSupported/CMakeLists-CXX.txt.in:
 
+/usr/share/cmake-4.2/Modules/CMakeUnixFindMake.cmake:
+
+/usr/share/cmake-4.2/Modules/CMakeTestCompilerCommon.cmake:
+
 /usr/share/cmake-4.2/Modules/CMakeSystemSpecificInitialize.cmake:
 
 /usr/share/cmake-4.2/Modules/CMakeSystemSpecificInformation.cmake:
+
+/usr/share/cmake-4.2/Modules/CMakeParseLibraryArchitecture.cmake:
+
+/usr/share/cmake-4.2/Modules/CMakeParseImplicitIncludeInfo.cmake:
 
 /usr/share/cmake-4.2/Modules/CMakeLanguageInformation.cmake:
 
 /usr/share/cmake-4.2/Modules/CMakeInitializeConfigs.cmake:
 
+/usr/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:
+
+/usr/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:
+
+/usr/share/cmake-4.2/Modules/Linker/GNU.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/Clang-DetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:
+
+/usr/share/cmake-4.2/Modules/CMakeDetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/CMakeCompilerIdDetection.cmake:
+
 /usr/share/cmake-4.2/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake:
+
+/usr/share/cmake-4.2/Modules/CMakeCXXCompiler.cmake.in:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsDependencies.cmake:
 
@@ -1083,6 +1215,12 @@ ThunderSDK_autogen/timestamp: /home/marcel1237/Thunder/Thunder\ Linux/CMakeLists
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6QmlModels/Qt6QmlModelsConfigVersionImpl.cmake:
 
+/usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6QmlModels/Qt6QmlModelsConfigVersion.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake:
+
 /usr/lib/x86_64-linux-gnu/cmake/Qt6QmlModels/Qt6QmlModelsConfig.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6QmlModels/Qt6QmlModelsAdditionalTargetInfo.cmake:
@@ -1152,6 +1290,8 @@ ThunderSDK_autogen/timestamp: /home/marcel1237/Thunder/Thunder\ Linux/CMakeLists
 /usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGL/Qt6OpenGLConfigVersionImpl.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiConfigVersionImpl.cmake:
+
+/usr/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiConfig.cmake:
 
@@ -1240,6 +1380,8 @@ ThunderSDK_autogen/timestamp: /home/marcel1237/Thunder/Thunder\ Linux/CMakeLists
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomSystemDepHelpers.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicCMakeEarlyPolicyHelpers.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/Watcom-DetermineCompiler.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicAppleHelpers.cmake:
 
@@ -1417,6 +1559,8 @@ ThunderSDK_autogen/timestamp: /home/marcel1237/Thunder/Thunder\ Linux/CMakeLists
 
 /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512bwintrin.h:
 
+/usr/share/cmake-4.2/Modules/Compiler/GNU-FindBinUtils.cmake:
+
 /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512bitalgvlintrin.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512bf16intrin.h:
@@ -1456,8 +1600,6 @@ ThunderSDK_autogen/timestamp: /home/marcel1237/Thunder/Thunder\ Linux/CMakeLists
 /usr/lib/gcc/x86_64-linux-gnu/15/include/amxbf16intrin.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/15/include/amxavx512intrin.h:
-
-/usr/include/x86_64-linux-gnu/sys/socket.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
@@ -1523,11 +1665,15 @@ ThunderSDK_autogen/timestamp: /home/marcel1237/Thunder/Thunder\ Linux/CMakeLists
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
 
+/usr/share/cmake-4.2/Modules/Compiler/Intel-DetermineCompiler.cmake:
+
 /usr/include/linux/stddef.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Positioning/Qt6PositioningConfigVersion.cmake:
 
 /usr/include/c++/15/list:
+
+/usr/share/cmake-4.2/Modules/Compiler/Clang-DetermineCompilerInternal.cmake:
 
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
@@ -1563,9 +1709,13 @@ ThunderSDK_autogen/timestamp: /home/marcel1237/Thunder/Thunder\ Linux/CMakeLists
 
 /usr/share/cmake-4.2/Modules/MacroAddFileDependencies.cmake:
 
+/usr/share/cmake-4.2/Modules/Compiler/PathScale-DetermineCompiler.cmake:
+
 /usr/lib/x86_64-linux-gnu/cmake/Qt6DBusTools/Qt6DBusToolsAdditionalTargetInfo.cmake:
 
 /usr/include/c++/15/tr1/special_function_util.h:
+
+/usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
@@ -1578,6 +1728,8 @@ ThunderSDK_autogen/timestamp: /home/marcel1237/Thunder/Thunder\ Linux/CMakeLists
 /home/marcel1237/Thunder/Thunder\ Linux/src/lib/adblock/adblockrule.h:
 
 /usr/include/c++/15/tr1/poly_laguerre.tcc:
+
+/usr/share/cmake-4.2/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qtypeinfo.h:
 
@@ -1629,6 +1781,8 @@ ThunderSDK_autogen/timestamp: /home/marcel1237/Thunder/Thunder\ Linux/CMakeLists
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
+/usr/share/cmake-4.2/Modules/Internal/CMakeInspectCXXLinker.cmake:
+
 /usr/lib/x86_64-linux-gnu/cmake/Qt6WebEngineCore/Qt6WebEngineCoreConfigVersionImpl.cmake:
 
 /usr/lib/gcc/x86_64-linux-gnu/15/include/amxmovrsintrin.h:
@@ -1646,6 +1800,8 @@ ThunderSDK_autogen/timestamp: /home/marcel1237/Thunder/Thunder\ Linux/CMakeLists
 /usr/lib/x86_64-linux-gnu/cmake/Qt6PrintSupport/Qt6PrintSupportVersionlessAliasTargets.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qtnetwork-config.h:
+
+/usr/share/cmake-4.2/Modules/Compiler/XL-CXX-DetermineCompiler.cmake:
 
 /usr/include/c++/15/set:
 
@@ -1707,6 +1863,8 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 
 /usr/include/c++/15/bits/exception_ptr.h:
 
+/usr/share/cmake-4.2/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake:
+
 /usr/include/linux/types.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qmath.h:
@@ -1718,6 +1876,8 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qtcore-config.h:
 
 /usr/include/x86_64-linux-gnu/asm/types.h:
+
+/usr/share/cmake-4.2/Modules/Internal/FeatureTesting.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qdarwinhelpers.h:
 
@@ -1734,12 +1894,6 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 /usr/include/c++/15/debug/assertions.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextcursor.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6QmlModels/Qt6QmlModelsConfigVersion.cmake:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/QByteArray:
 
 /usr/lib/gcc/x86_64-linux-gnu/15/include/avxvnniint8intrin.h:
 
@@ -1768,6 +1922,8 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512vp2intersectintrin.h:
 
 /usr/include/c++/15/backward/auto_ptr.h:
+
+/usr/share/cmake-4.2/Modules/Compiler/TI-DetermineCompiler.cmake:
 
 /usr/include/c++/15/bits/exception_defines.h:
 
@@ -1831,6 +1987,8 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 
 /usr/include/c++/15/pstl/pstl_config.h:
 
+/usr/share/cmake-4.2/Modules/Compiler/NVHPC-DetermineCompiler.cmake:
+
 /home/marcel1237/Thunder/Thunder\ Linux/src/lib/app/thundercommon.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomAttributionHelpers.cmake:
@@ -1882,6 +2040,8 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QHBoxLayout:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject_impl.h:
+
+/usr/share/cmake-4.2/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake:
 
 /usr/include/c++/15/bits/specfun.h:
 
@@ -2017,6 +2177,8 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /usr/include/c++/15/cstdlib:
 
+/usr/share/cmake-4.2/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake:
+
 /usr/lib/x86_64-linux-gnu/cmake/Qt6QmlWorkerScript/Qt6QmlWorkerScriptConfig.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qfunctionaltools_impl.h:
@@ -2095,6 +2257,8 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qsslcertificate.h:
 
+/usr/include/x86_64-linux-gnu/sys/socket.h:
+
 /home/marcel1237/Thunder/Thunder\ Linux/src/lib/app/thunder_ui_constants.h:
 
 /home/marcel1237/Thunder/Thunder\ Linux/src/lib/kernel/kernel_bridge.cpp:
@@ -2104,6 +2268,8 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Quick/Qt6QuickConfig.cmake:
 
 /usr/include/c++/15/tuple:
+
+/usr/share/cmake-4.2/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextformat.h:
 
@@ -2124,6 +2290,8 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /usr/include/c++/15/bits/hashtable.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
+
+/usr/share/cmake-4.2/Modules/Compiler/GHS-DetermineCompiler.cmake:
 
 /usr/include/c++/15/bits/invoke.h:
 
@@ -2163,6 +2331,8 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /usr/include/c++/15/bits/new_allocator.h:
 
+/usr/share/cmake-4.2/Modules/CMakeDetermineCompilerSupport.cmake:
+
 /usr/include/x86_64-linux-gnu/c++/15/bits/os_defines.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qinputmethod.h:
@@ -2180,6 +2350,8 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /usr/include/c++/15/bits/stl_uninitialized.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs_impl.h:
+
+/usr/share/cmake-4.2/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake:
 
 /usr/include/c++/15/bits/range_access.h:
 
@@ -2563,6 +2735,10 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qcheckedint_impl.h:
 
+/usr/share/cmake-4.2/Modules/Compiler/Diab-DetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/CMakeSystem.cmake.in:
+
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qcompare.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qiterator.h:
@@ -2657,6 +2833,8 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qmetacontainer.h:
 
+/usr/share/cmake-4.2/Modules/CMakeDetermineSystem.cmake:
+
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qmetatype.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qoverload.h:
@@ -2681,6 +2859,8 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qscopedpointer.h:
 
+/usr/share/cmake-4.2/Modules/Compiler/PGI-DetermineCompiler.cmake:
+
 /usr/include/x86_64-linux-gnu/qt6/QtWebEngineCore/QWebEngineUrlRequestInfo:
 
 /usr/include/c++/15/string_view:
@@ -2692,6 +2872,8 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qset.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata.h:
+
+/usr/share/cmake-4.2/Modules/Internal/CMakeDetermineLinkerId.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qalloc.h:
 
@@ -2726,6 +2908,8 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixmap.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringmatcher.h:
+
+/usr/share/cmake-4.2/Modules/CMakeParseImplicitLinkInfo.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringtokenizer.h:
 
@@ -2852,6 +3036,8 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /usr/include/c++/15/bits/streambuf.tcc:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLineEdit:
+
+/usr/share/cmake-4.2/Modules/Compiler/TIClang-DetermineCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qsystemdetection.h:
 

@@ -6,5 +6,5 @@ CXX_DEFINES = -DQT_CORE_LIB -DQT_NO_DEBUG -DTHUNDER_SHAREDLIBRARY
 
 CXX_INCLUDES = -I"/home/marcel1237/Thunder/Thunder Linux/build/ThunderGenericExample_autogen/include" -I"/home/marcel1237/Thunder/Thunder Linux/src/lib" -I"/home/marcel1237/Thunder/Thunder Linux/src/lib/app" -I"/home/marcel1237/Thunder/Thunder Linux/src/lib/adblock" -I"/home/marcel1237/Thunder/Thunder Linux/src/lib/kernel" -I"/home/marcel1237/Thunder/Thunder Linux/src/lib/network" -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++
 
-CXX_FLAGS = -O3 -DNDEBUG -std=gnu++17 -flto=auto -fno-fat-lto-objects -O3 -march=native -flto -fno-plt -mavx2 -msse4.2 -mfma -maes -mpclmul -D_FORTIFY_SOURCE=2
+CXX_FLAGS = -std=gnu++17 -flto=auto -fno-fat-lto-objects -O3 -march=native -flto -fno-plt -mavx2 -msse4.2 -mfma -maes -mpclmul -D_FORTIFY_SOURCE=2
 

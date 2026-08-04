@@ -1,6 +1,11 @@
 /home/marcel1237/Thunder/Thunder Linux/build/CMakeFiles/ThunderSDK.dir
 /home/marcel1237/Thunder/Thunder Linux/build/CMakeFiles/ThunderBrowser.dir
 /home/marcel1237/Thunder/Thunder Linux/build/CMakeFiles/ThunderGenericExample.dir
+/home/marcel1237/Thunder/Thunder Linux/build/CMakeFiles/NoThunderBaseline.dir
+/home/marcel1237/Thunder/Thunder Linux/build/CMakeFiles/With_Thunder.dir
+/home/marcel1237/Thunder/Thunder Linux/build/CMakeFiles/No_Thunder.dir
+/home/marcel1237/Thunder/Thunder Linux/build/CMakeFiles/Thunder_Ultimate_Benchmark.dir
+/home/marcel1237/Thunder/Thunder Linux/build/CMakeFiles/Thunder_Hardware_Stress.dir
 /home/marcel1237/Thunder/Thunder Linux/build/CMakeFiles/edit_cache.dir
 /home/marcel1237/Thunder/Thunder Linux/build/CMakeFiles/rebuild_cache.dir
 /home/marcel1237/Thunder/Thunder Linux/build/CMakeFiles/list_install_components.dir
@@ -13,3 +18,13 @@
 /home/marcel1237/Thunder/Thunder Linux/build/CMakeFiles/ThunderBrowser_autogen.dir
 /home/marcel1237/Thunder/Thunder Linux/build/CMakeFiles/ThunderGenericExample_autogen_timestamp_deps.dir
 /home/marcel1237/Thunder/Thunder Linux/build/CMakeFiles/ThunderGenericExample_autogen.dir
+/home/marcel1237/Thunder/Thunder Linux/build/CMakeFiles/NoThunderBaseline_autogen_timestamp_deps.dir
+/home/marcel1237/Thunder/Thunder Linux/build/CMakeFiles/NoThunderBaseline_autogen.dir
+/home/marcel1237/Thunder/Thunder Linux/build/CMakeFiles/With_Thunder_autogen_timestamp_deps.dir
+/home/marcel1237/Thunder/Thunder Linux/build/CMakeFiles/With_Thunder_autogen.dir
+/home/marcel1237/Thunder/Thunder Linux/build/CMakeFiles/No_Thunder_autogen_timestamp_deps.dir
+/home/marcel1237/Thunder/Thunder Linux/build/CMakeFiles/No_Thunder_autogen.dir
+/home/marcel1237/Thunder/Thunder Linux/build/CMakeFiles/Thunder_Ultimate_Benchmark_autogen_timestamp_deps.dir
+/home/marcel1237/Thunder/Thunder Linux/build/CMakeFiles/Thunder_Ultimate_Benchmark_autogen.dir
+/home/marcel1237/Thunder/Thunder Linux/build/CMakeFiles/Thunder_Hardware_Stress_autogen_timestamp_deps.dir
+/home/marcel1237/Thunder/Thunder Linux/build/CMakeFiles/Thunder_Hardware_Stress_autogen.dir

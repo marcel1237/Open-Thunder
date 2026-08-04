@@ -102,6 +102,23 @@
     <div class="header">
         <h1>Thunder Browser</h1>
         <p>Unified Processor & Hardware Matrix Dashboard</p>
+        <div style="margin-top: 15px;">
+            <span class="status-ready" style="background: rgba(35, 134, 54, 0.1); padding: 5px 15px; border-radius: 20px; border: 1px solid var(--success-color);">
+                Hardware Permissions: [READY VIA CAPABILITIES]
+            </span>
+        </div>
+    </div>
+
+    <div class="dashboard-container" style="margin-bottom: 30px; padding: 20px; border: 1px solid var(--accent-color); background: rgba(88, 166, 255, 0.05); max-width: 1200px;">
+        <h3 style="color: var(--accent-color); margin-top: 0;">🛡️ Kernel Authorization Status</h3>
+        <ul style="list-style: none; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; font-size: 0.85rem;">
+            <li style="color: var(--text-primary);">✅ <strong>NitroCore RT:</strong> sched_rt_runtime_us = -1</li>
+            <li style="color: var(--text-primary);">✅ <strong>OmniLock VMA:</strong> max_map_count = 1,000,000</li>
+            <li style="color: var(--text-primary);">✅ <strong>HexaDrive NAPI:</strong> busy_poll = 50µs</li>
+            <li style="color: var(--text-primary);">✅ <strong>XDP JIT:</strong> bpf_jit_enable = 1</li>
+            <li style="color: var(--text-primary);">✅ <strong>CAP_SYS_NICE:</strong> Real-time Scheduling</li>
+            <li style="color: var(--text-primary);">✅ <strong>CAP_IPC_LOCK:</strong> RAM Residency</li>
+        </ul>
     </div>
 
     <div class="dashboard-container">

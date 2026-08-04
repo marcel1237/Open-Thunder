@@ -1,15 +1,19 @@
-/* ============================================================
-* Thunder - Qt web browser
-* Copyright (C) 2025 Marcel
-*
-* Zero-Copy DMA (Direct Memory Access) Buffer Optimization
-* ============================================================ */
-#ifndef THUNDER_DMA_OPTIMIZER_H
-#define THUNDER_DMA_OPTIMIZER_H
-
-#include <cstdint>
-#include <sys/ioctl.h>
-#include "thundercommon.h"
+/*
+ * Copyright (C) 2025 Marcel Aparecido de Andrade.
+ * Thunder - Hardware-Enforced Next-Gen Intelligence
+ *
+ * PROPRIETARY SOURCE-AVAILABLE LICENSE.
+ * This code is public for visibility but use is governed by the TSAL v1.0.
+ * Unauthorized commercial use or redistribution is strictly prohibited.
+ */
+/**
+ * Hexadecimal IOCTL codes for DMA-BUF synchronization.
+ * Direct communication with the Linux DMA-BUF subsystem.
+ */
+/**
+ * @brief Optimizes a file descriptor for DMA-BUF sharing.
+ * Bypasses CPU cache for graphics-ready buffers.
+ */
 
 namespace Td {
 namespace Kernel {

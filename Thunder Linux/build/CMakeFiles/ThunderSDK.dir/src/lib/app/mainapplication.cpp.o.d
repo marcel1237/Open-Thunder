@@ -547,6 +547,15 @@ CMakeFiles/ThunderSDK.dir/src/lib/app/mainapplication.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontvariableaxis.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLineEdit \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlineedit.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextcursor.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextdocument.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qurl.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextformat.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextoption.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWebEngineWidgets/QWebEngineView \
  /usr/include/x86_64-linux-gnu/qt6/QtWebEngineWidgets/qwebengineview.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPageLayout \
@@ -568,7 +577,6 @@ CMakeFiles/ThunderSDK.dir/src/lib/app/mainapplication.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qssl.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QFlags \
  /usr/include/x86_64-linux-gnu/qt6/QtWebEngineCore/qwebenginedownloadrequest.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qurl.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWebEngineCore/qwebenginequotarequest.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWebEngineCore/qwebengineframe.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
@@ -582,14 +590,6 @@ CMakeFiles/ThunderSDK.dir/src/lib/app/mainapplication.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedpointer.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWebEngineCore/qwebenginepermission.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpagelayout.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLineEdit \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlineedit.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextcursor.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextdocument.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextformat.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextoption.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \

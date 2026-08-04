@@ -299,11 +299,9 @@
  mdp:/usr/include/x86_64-linux-gnu/c++/15/bits/os_defines.h
  mdp:/usr/include/x86_64-linux-gnu/gnu/stubs-64.h
  mdp:/usr/include/x86_64-linux-gnu/gnu/stubs.h
- mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QByteArray
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QDebug
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QFlags
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QList
- mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QString
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/q17memory.h
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/q20functional.h
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/q20iterator.h

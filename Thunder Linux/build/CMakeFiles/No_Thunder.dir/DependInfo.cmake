@@ -1,0 +1,26 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
+# The set of languages for which implicit dependencies are needed:
+set(CMAKE_DEPENDS_LANGUAGES
+  )
+
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "" "No_Thunder_autogen/timestamp" "custom" "No_Thunder_autogen/deps"
+  "/home/marcel1237/Thunder/Thunder Linux/build/No_Thunder_autogen/mocs_compilation.cpp" "CMakeFiles/No_Thunder.dir/No_Thunder_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/No_Thunder.dir/No_Thunder_autogen/mocs_compilation.cpp.o.d"
+  "/home/marcel1237/Thunder/Thunder Linux/src/examples/no_thunder_report.cpp" "CMakeFiles/No_Thunder.dir/src/examples/no_thunder_report.cpp.o" "gcc" "CMakeFiles/No_Thunder.dir/src/examples/no_thunder_report.cpp.o.d"
+  "" "No_Thunder" "gcc" "CMakeFiles/No_Thunder.dir/link.d"
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
+  )
+
+# Fortran module output directory.
+set(CMAKE_Fortran_TARGET_MODULE_DIR "")
