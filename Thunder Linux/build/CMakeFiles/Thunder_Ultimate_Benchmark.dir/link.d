@@ -4,7 +4,7 @@ Thunder_Ultimate_Benchmark: \
   /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o \
   CMakeFiles/Thunder_Ultimate_Benchmark.dir/Thunder_Ultimate_Benchmark_autogen/mocs_compilation.cpp.o \
   CMakeFiles/Thunder_Ultimate_Benchmark.dir/src/examples/thunder_ultimate_benchmark.cpp.o \
-  libThunderSDK.so \
+  /home/marcel1237/Thunder/Thunder Linux/../ThunderSDK/build/libThunderSDK.so \
   /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.10.2 \
   /usr/lib/gcc/x86_64-linux-gnu/15/libstdc++.so \
   /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libm.so \
@@ -169,7 +169,7 @@ CMakeFiles/Thunder_Ultimate_Benchmark.dir/Thunder_Ultimate_Benchmark_autogen/moc
 
 CMakeFiles/Thunder_Ultimate_Benchmark.dir/src/examples/thunder_ultimate_benchmark.cpp.o:
 
-libThunderSDK.so:
+/home/marcel1237/Thunder/Thunder Linux/../ThunderSDK/build/libThunderSDK.so:
 
 /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.10.2:
 

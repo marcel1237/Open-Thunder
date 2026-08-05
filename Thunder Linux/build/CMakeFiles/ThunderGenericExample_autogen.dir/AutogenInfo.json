@@ -412,7 +412,7 @@
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "/home/marcel1237/Thunder/Thunder Linux/build/ThunderGenericExample_autogen/include",
 	"MOC_COMPILATION_FILE" : "/home/marcel1237/Thunder/Thunder Linux/build/ThunderGenericExample_autogen/mocs_compilation.cpp",
-	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_NO_DEBUG", "THUNDER_SHAREDLIBRARY" ],
+	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_NO_DEBUG" ],
 	"MOC_DEPEND_FILTERS" : 
 	[
 		[
@@ -422,11 +422,11 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"/home/marcel1237/Thunder/Thunder Linux/src/lib",
-		"/home/marcel1237/Thunder/Thunder Linux/src/lib/app",
-		"/home/marcel1237/Thunder/Thunder Linux/src/lib/adblock",
-		"/home/marcel1237/Thunder/Thunder Linux/src/lib/kernel",
-		"/home/marcel1237/Thunder/Thunder Linux/src/lib/network",
+		"/home/marcel1237/Thunder/ThunderSDK/src",
+		"/home/marcel1237/Thunder/ThunderSDK/src/app",
+		"/home/marcel1237/Thunder/ThunderSDK/src/adblock",
+		"/home/marcel1237/Thunder/ThunderSDK/src/kernel",
+		"/home/marcel1237/Thunder/ThunderSDK/src/network",
 		"/usr/include/x86_64-linux-gnu/qt6/QtCore",
 		"/usr/include/x86_64-linux-gnu/qt6",
 		"/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++",
@@ -462,8 +462,7 @@
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : 
 	[
-		"/home/marcel1237/Thunder/Thunder Linux/build/ThunderBrowser_autogen/mocs_compilation.cpp",
-		"/home/marcel1237/Thunder/Thunder Linux/build/ThunderSDK_autogen/mocs_compilation.cpp"
+		"/home/marcel1237/Thunder/Thunder Linux/build/ThunderBrowser_autogen/mocs_compilation.cpp"
 	],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 4,
@@ -485,8 +484,7 @@
 	"UIC_SEARCH_PATHS" : [],
 	"UIC_SKIP" : 
 	[
-		"/home/marcel1237/Thunder/Thunder Linux/build/ThunderBrowser_autogen/mocs_compilation.cpp",
-		"/home/marcel1237/Thunder/Thunder Linux/build/ThunderSDK_autogen/mocs_compilation.cpp"
+		"/home/marcel1237/Thunder/Thunder Linux/build/ThunderBrowser_autogen/mocs_compilation.cpp"
 	],
 	"UIC_UI_FILES" : [],
 	"USE_BETTER_GRAPH" : true,

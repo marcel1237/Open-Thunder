@@ -85,51 +85,6 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-.PHONY : list_install_components/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
-
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/marcel1237/Thunder/Thunder Linux/build/CMakeFiles" "/home/marcel1237/Thunder/Thunder Linux/build//CMakeFiles/progress.marks"
@@ -162,19 +117,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named ThunderSDK
-
-# Build rule for target.
-ThunderSDK: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ThunderSDK
-.PHONY : ThunderSDK
-
-# fast build rule for target.
-ThunderSDK/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThunderSDK.dir/build.make CMakeFiles/ThunderSDK.dir/build
-.PHONY : ThunderSDK/fast
-
-#=============================================================================
 # Target rules for targets named ThunderBrowser
 
 # Build rule for target.
@@ -199,45 +141,6 @@ ThunderGenericExample: cmake_check_build_system
 ThunderGenericExample/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThunderGenericExample.dir/build.make CMakeFiles/ThunderGenericExample.dir/build
 .PHONY : ThunderGenericExample/fast
-
-#=============================================================================
-# Target rules for targets named NoThunderBaseline
-
-# Build rule for target.
-NoThunderBaseline: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NoThunderBaseline
-.PHONY : NoThunderBaseline
-
-# fast build rule for target.
-NoThunderBaseline/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NoThunderBaseline.dir/build.make CMakeFiles/NoThunderBaseline.dir/build
-.PHONY : NoThunderBaseline/fast
-
-#=============================================================================
-# Target rules for targets named With_Thunder
-
-# Build rule for target.
-With_Thunder: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 With_Thunder
-.PHONY : With_Thunder
-
-# fast build rule for target.
-With_Thunder/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/With_Thunder.dir/build.make CMakeFiles/With_Thunder.dir/build
-.PHONY : With_Thunder/fast
-
-#=============================================================================
-# Target rules for targets named No_Thunder
-
-# Build rule for target.
-No_Thunder: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 No_Thunder
-.PHONY : No_Thunder
-
-# fast build rule for target.
-No_Thunder/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/No_Thunder.dir/build.make CMakeFiles/No_Thunder.dir/build
-.PHONY : No_Thunder/fast
 
 #=============================================================================
 # Target rules for targets named Thunder_Ultimate_Benchmark
@@ -266,30 +169,30 @@ Thunder_Hardware_Stress/fast:
 .PHONY : Thunder_Hardware_Stress/fast
 
 #=============================================================================
-# Target rules for targets named ThunderSDK_autogen_timestamp_deps
+# Target rules for targets named With_Thunder
 
 # Build rule for target.
-ThunderSDK_autogen_timestamp_deps: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ThunderSDK_autogen_timestamp_deps
-.PHONY : ThunderSDK_autogen_timestamp_deps
+With_Thunder: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 With_Thunder
+.PHONY : With_Thunder
 
 # fast build rule for target.
-ThunderSDK_autogen_timestamp_deps/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThunderSDK_autogen_timestamp_deps.dir/build.make CMakeFiles/ThunderSDK_autogen_timestamp_deps.dir/build
-.PHONY : ThunderSDK_autogen_timestamp_deps/fast
+With_Thunder/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/With_Thunder.dir/build.make CMakeFiles/With_Thunder.dir/build
+.PHONY : With_Thunder/fast
 
 #=============================================================================
-# Target rules for targets named ThunderSDK_autogen
+# Target rules for targets named No_Thunder
 
 # Build rule for target.
-ThunderSDK_autogen: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ThunderSDK_autogen
-.PHONY : ThunderSDK_autogen
+No_Thunder: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 No_Thunder
+.PHONY : No_Thunder
 
 # fast build rule for target.
-ThunderSDK_autogen/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThunderSDK_autogen.dir/build.make CMakeFiles/ThunderSDK_autogen.dir/build
-.PHONY : ThunderSDK_autogen/fast
+No_Thunder/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/No_Thunder.dir/build.make CMakeFiles/No_Thunder.dir/build
+.PHONY : No_Thunder/fast
 
 #=============================================================================
 # Target rules for targets named ThunderBrowser_autogen_timestamp_deps
@@ -344,30 +247,56 @@ ThunderGenericExample_autogen/fast:
 .PHONY : ThunderGenericExample_autogen/fast
 
 #=============================================================================
-# Target rules for targets named NoThunderBaseline_autogen_timestamp_deps
+# Target rules for targets named Thunder_Ultimate_Benchmark_autogen_timestamp_deps
 
 # Build rule for target.
-NoThunderBaseline_autogen_timestamp_deps: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NoThunderBaseline_autogen_timestamp_deps
-.PHONY : NoThunderBaseline_autogen_timestamp_deps
+Thunder_Ultimate_Benchmark_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Thunder_Ultimate_Benchmark_autogen_timestamp_deps
+.PHONY : Thunder_Ultimate_Benchmark_autogen_timestamp_deps
 
 # fast build rule for target.
-NoThunderBaseline_autogen_timestamp_deps/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NoThunderBaseline_autogen_timestamp_deps.dir/build.make CMakeFiles/NoThunderBaseline_autogen_timestamp_deps.dir/build
-.PHONY : NoThunderBaseline_autogen_timestamp_deps/fast
+Thunder_Ultimate_Benchmark_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Thunder_Ultimate_Benchmark_autogen_timestamp_deps.dir/build.make CMakeFiles/Thunder_Ultimate_Benchmark_autogen_timestamp_deps.dir/build
+.PHONY : Thunder_Ultimate_Benchmark_autogen_timestamp_deps/fast
 
 #=============================================================================
-# Target rules for targets named NoThunderBaseline_autogen
+# Target rules for targets named Thunder_Ultimate_Benchmark_autogen
 
 # Build rule for target.
-NoThunderBaseline_autogen: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NoThunderBaseline_autogen
-.PHONY : NoThunderBaseline_autogen
+Thunder_Ultimate_Benchmark_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Thunder_Ultimate_Benchmark_autogen
+.PHONY : Thunder_Ultimate_Benchmark_autogen
 
 # fast build rule for target.
-NoThunderBaseline_autogen/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NoThunderBaseline_autogen.dir/build.make CMakeFiles/NoThunderBaseline_autogen.dir/build
-.PHONY : NoThunderBaseline_autogen/fast
+Thunder_Ultimate_Benchmark_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Thunder_Ultimate_Benchmark_autogen.dir/build.make CMakeFiles/Thunder_Ultimate_Benchmark_autogen.dir/build
+.PHONY : Thunder_Ultimate_Benchmark_autogen/fast
+
+#=============================================================================
+# Target rules for targets named Thunder_Hardware_Stress_autogen_timestamp_deps
+
+# Build rule for target.
+Thunder_Hardware_Stress_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Thunder_Hardware_Stress_autogen_timestamp_deps
+.PHONY : Thunder_Hardware_Stress_autogen_timestamp_deps
+
+# fast build rule for target.
+Thunder_Hardware_Stress_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Thunder_Hardware_Stress_autogen_timestamp_deps.dir/build.make CMakeFiles/Thunder_Hardware_Stress_autogen_timestamp_deps.dir/build
+.PHONY : Thunder_Hardware_Stress_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named Thunder_Hardware_Stress_autogen
+
+# Build rule for target.
+Thunder_Hardware_Stress_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Thunder_Hardware_Stress_autogen
+.PHONY : Thunder_Hardware_Stress_autogen
+
+# fast build rule for target.
+Thunder_Hardware_Stress_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Thunder_Hardware_Stress_autogen.dir/build.make CMakeFiles/Thunder_Hardware_Stress_autogen.dir/build
+.PHONY : Thunder_Hardware_Stress_autogen/fast
 
 #=============================================================================
 # Target rules for targets named With_Thunder_autogen_timestamp_deps
@@ -420,82 +349,6 @@ No_Thunder_autogen: cmake_check_build_system
 No_Thunder_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/No_Thunder_autogen.dir/build.make CMakeFiles/No_Thunder_autogen.dir/build
 .PHONY : No_Thunder_autogen/fast
-
-#=============================================================================
-# Target rules for targets named Thunder_Ultimate_Benchmark_autogen_timestamp_deps
-
-# Build rule for target.
-Thunder_Ultimate_Benchmark_autogen_timestamp_deps: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Thunder_Ultimate_Benchmark_autogen_timestamp_deps
-.PHONY : Thunder_Ultimate_Benchmark_autogen_timestamp_deps
-
-# fast build rule for target.
-Thunder_Ultimate_Benchmark_autogen_timestamp_deps/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Thunder_Ultimate_Benchmark_autogen_timestamp_deps.dir/build.make CMakeFiles/Thunder_Ultimate_Benchmark_autogen_timestamp_deps.dir/build
-.PHONY : Thunder_Ultimate_Benchmark_autogen_timestamp_deps/fast
-
-#=============================================================================
-# Target rules for targets named Thunder_Ultimate_Benchmark_autogen
-
-# Build rule for target.
-Thunder_Ultimate_Benchmark_autogen: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Thunder_Ultimate_Benchmark_autogen
-.PHONY : Thunder_Ultimate_Benchmark_autogen
-
-# fast build rule for target.
-Thunder_Ultimate_Benchmark_autogen/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Thunder_Ultimate_Benchmark_autogen.dir/build.make CMakeFiles/Thunder_Ultimate_Benchmark_autogen.dir/build
-.PHONY : Thunder_Ultimate_Benchmark_autogen/fast
-
-#=============================================================================
-# Target rules for targets named Thunder_Hardware_Stress_autogen_timestamp_deps
-
-# Build rule for target.
-Thunder_Hardware_Stress_autogen_timestamp_deps: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Thunder_Hardware_Stress_autogen_timestamp_deps
-.PHONY : Thunder_Hardware_Stress_autogen_timestamp_deps
-
-# fast build rule for target.
-Thunder_Hardware_Stress_autogen_timestamp_deps/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Thunder_Hardware_Stress_autogen_timestamp_deps.dir/build.make CMakeFiles/Thunder_Hardware_Stress_autogen_timestamp_deps.dir/build
-.PHONY : Thunder_Hardware_Stress_autogen_timestamp_deps/fast
-
-#=============================================================================
-# Target rules for targets named Thunder_Hardware_Stress_autogen
-
-# Build rule for target.
-Thunder_Hardware_Stress_autogen: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Thunder_Hardware_Stress_autogen
-.PHONY : Thunder_Hardware_Stress_autogen
-
-# fast build rule for target.
-Thunder_Hardware_Stress_autogen/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Thunder_Hardware_Stress_autogen.dir/build.make CMakeFiles/Thunder_Hardware_Stress_autogen.dir/build
-.PHONY : Thunder_Hardware_Stress_autogen/fast
-
-NoThunderBaseline_autogen/mocs_compilation.o: NoThunderBaseline_autogen/mocs_compilation.cpp.o
-.PHONY : NoThunderBaseline_autogen/mocs_compilation.o
-
-# target to build an object file
-NoThunderBaseline_autogen/mocs_compilation.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NoThunderBaseline.dir/build.make CMakeFiles/NoThunderBaseline.dir/NoThunderBaseline_autogen/mocs_compilation.cpp.o
-.PHONY : NoThunderBaseline_autogen/mocs_compilation.cpp.o
-
-NoThunderBaseline_autogen/mocs_compilation.i: NoThunderBaseline_autogen/mocs_compilation.cpp.i
-.PHONY : NoThunderBaseline_autogen/mocs_compilation.i
-
-# target to preprocess a source file
-NoThunderBaseline_autogen/mocs_compilation.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NoThunderBaseline.dir/build.make CMakeFiles/NoThunderBaseline.dir/NoThunderBaseline_autogen/mocs_compilation.cpp.i
-.PHONY : NoThunderBaseline_autogen/mocs_compilation.cpp.i
-
-NoThunderBaseline_autogen/mocs_compilation.s: NoThunderBaseline_autogen/mocs_compilation.cpp.s
-.PHONY : NoThunderBaseline_autogen/mocs_compilation.s
-
-# target to generate assembly for a file
-NoThunderBaseline_autogen/mocs_compilation.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NoThunderBaseline.dir/build.make CMakeFiles/NoThunderBaseline.dir/NoThunderBaseline_autogen/mocs_compilation.cpp.s
-.PHONY : NoThunderBaseline_autogen/mocs_compilation.cpp.s
 
 No_Thunder_autogen/mocs_compilation.o: No_Thunder_autogen/mocs_compilation.cpp.o
 .PHONY : No_Thunder_autogen/mocs_compilation.o
@@ -568,30 +421,6 @@ ThunderGenericExample_autogen/mocs_compilation.s: ThunderGenericExample_autogen/
 ThunderGenericExample_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThunderGenericExample.dir/build.make CMakeFiles/ThunderGenericExample.dir/ThunderGenericExample_autogen/mocs_compilation.cpp.s
 .PHONY : ThunderGenericExample_autogen/mocs_compilation.cpp.s
-
-ThunderSDK_autogen/mocs_compilation.o: ThunderSDK_autogen/mocs_compilation.cpp.o
-.PHONY : ThunderSDK_autogen/mocs_compilation.o
-
-# target to build an object file
-ThunderSDK_autogen/mocs_compilation.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThunderSDK.dir/build.make CMakeFiles/ThunderSDK.dir/ThunderSDK_autogen/mocs_compilation.cpp.o
-.PHONY : ThunderSDK_autogen/mocs_compilation.cpp.o
-
-ThunderSDK_autogen/mocs_compilation.i: ThunderSDK_autogen/mocs_compilation.cpp.i
-.PHONY : ThunderSDK_autogen/mocs_compilation.i
-
-# target to preprocess a source file
-ThunderSDK_autogen/mocs_compilation.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThunderSDK.dir/build.make CMakeFiles/ThunderSDK.dir/ThunderSDK_autogen/mocs_compilation.cpp.i
-.PHONY : ThunderSDK_autogen/mocs_compilation.cpp.i
-
-ThunderSDK_autogen/mocs_compilation.s: ThunderSDK_autogen/mocs_compilation.cpp.s
-.PHONY : ThunderSDK_autogen/mocs_compilation.s
-
-# target to generate assembly for a file
-ThunderSDK_autogen/mocs_compilation.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThunderSDK.dir/build.make CMakeFiles/ThunderSDK.dir/ThunderSDK_autogen/mocs_compilation.cpp.s
-.PHONY : ThunderSDK_autogen/mocs_compilation.cpp.s
 
 Thunder_Hardware_Stress_autogen/mocs_compilation.o: Thunder_Hardware_Stress_autogen/mocs_compilation.cpp.o
 .PHONY : Thunder_Hardware_Stress_autogen/mocs_compilation.o
@@ -689,30 +518,6 @@ src/examples/generic_app.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThunderGenericExample.dir/build.make CMakeFiles/ThunderGenericExample.dir/src/examples/generic_app.cpp.s
 .PHONY : src/examples/generic_app.cpp.s
 
-src/examples/no_thunder_app.o: src/examples/no_thunder_app.cpp.o
-.PHONY : src/examples/no_thunder_app.o
-
-# target to build an object file
-src/examples/no_thunder_app.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NoThunderBaseline.dir/build.make CMakeFiles/NoThunderBaseline.dir/src/examples/no_thunder_app.cpp.o
-.PHONY : src/examples/no_thunder_app.cpp.o
-
-src/examples/no_thunder_app.i: src/examples/no_thunder_app.cpp.i
-.PHONY : src/examples/no_thunder_app.i
-
-# target to preprocess a source file
-src/examples/no_thunder_app.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NoThunderBaseline.dir/build.make CMakeFiles/NoThunderBaseline.dir/src/examples/no_thunder_app.cpp.i
-.PHONY : src/examples/no_thunder_app.cpp.i
-
-src/examples/no_thunder_app.s: src/examples/no_thunder_app.cpp.s
-.PHONY : src/examples/no_thunder_app.s
-
-# target to generate assembly for a file
-src/examples/no_thunder_app.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NoThunderBaseline.dir/build.make CMakeFiles/NoThunderBaseline.dir/src/examples/no_thunder_app.cpp.s
-.PHONY : src/examples/no_thunder_app.cpp.s
-
 src/examples/no_thunder_report.o: src/examples/no_thunder_report.cpp.o
 .PHONY : src/examples/no_thunder_report.o
 
@@ -809,150 +614,6 @@ src/examples/with_thunder_report.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/With_Thunder.dir/build.make CMakeFiles/With_Thunder.dir/src/examples/with_thunder_report.cpp.s
 .PHONY : src/examples/with_thunder_report.cpp.s
 
-src/lib/adblock/adblockrule.o: src/lib/adblock/adblockrule.cpp.o
-.PHONY : src/lib/adblock/adblockrule.o
-
-# target to build an object file
-src/lib/adblock/adblockrule.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThunderSDK.dir/build.make CMakeFiles/ThunderSDK.dir/src/lib/adblock/adblockrule.cpp.o
-.PHONY : src/lib/adblock/adblockrule.cpp.o
-
-src/lib/adblock/adblockrule.i: src/lib/adblock/adblockrule.cpp.i
-.PHONY : src/lib/adblock/adblockrule.i
-
-# target to preprocess a source file
-src/lib/adblock/adblockrule.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThunderSDK.dir/build.make CMakeFiles/ThunderSDK.dir/src/lib/adblock/adblockrule.cpp.i
-.PHONY : src/lib/adblock/adblockrule.cpp.i
-
-src/lib/adblock/adblockrule.s: src/lib/adblock/adblockrule.cpp.s
-.PHONY : src/lib/adblock/adblockrule.s
-
-# target to generate assembly for a file
-src/lib/adblock/adblockrule.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThunderSDK.dir/build.make CMakeFiles/ThunderSDK.dir/src/lib/adblock/adblockrule.cpp.s
-.PHONY : src/lib/adblock/adblockrule.cpp.s
-
-src/lib/app/browserwindow.o: src/lib/app/browserwindow.cpp.o
-.PHONY : src/lib/app/browserwindow.o
-
-# target to build an object file
-src/lib/app/browserwindow.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThunderSDK.dir/build.make CMakeFiles/ThunderSDK.dir/src/lib/app/browserwindow.cpp.o
-.PHONY : src/lib/app/browserwindow.cpp.o
-
-src/lib/app/browserwindow.i: src/lib/app/browserwindow.cpp.i
-.PHONY : src/lib/app/browserwindow.i
-
-# target to preprocess a source file
-src/lib/app/browserwindow.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThunderSDK.dir/build.make CMakeFiles/ThunderSDK.dir/src/lib/app/browserwindow.cpp.i
-.PHONY : src/lib/app/browserwindow.cpp.i
-
-src/lib/app/browserwindow.s: src/lib/app/browserwindow.cpp.s
-.PHONY : src/lib/app/browserwindow.s
-
-# target to generate assembly for a file
-src/lib/app/browserwindow.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThunderSDK.dir/build.make CMakeFiles/ThunderSDK.dir/src/lib/app/browserwindow.cpp.s
-.PHONY : src/lib/app/browserwindow.cpp.s
-
-src/lib/app/mainapplication.o: src/lib/app/mainapplication.cpp.o
-.PHONY : src/lib/app/mainapplication.o
-
-# target to build an object file
-src/lib/app/mainapplication.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThunderSDK.dir/build.make CMakeFiles/ThunderSDK.dir/src/lib/app/mainapplication.cpp.o
-.PHONY : src/lib/app/mainapplication.cpp.o
-
-src/lib/app/mainapplication.i: src/lib/app/mainapplication.cpp.i
-.PHONY : src/lib/app/mainapplication.i
-
-# target to preprocess a source file
-src/lib/app/mainapplication.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThunderSDK.dir/build.make CMakeFiles/ThunderSDK.dir/src/lib/app/mainapplication.cpp.i
-.PHONY : src/lib/app/mainapplication.cpp.i
-
-src/lib/app/mainapplication.s: src/lib/app/mainapplication.cpp.s
-.PHONY : src/lib/app/mainapplication.s
-
-# target to generate assembly for a file
-src/lib/app/mainapplication.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThunderSDK.dir/build.make CMakeFiles/ThunderSDK.dir/src/lib/app/mainapplication.cpp.s
-.PHONY : src/lib/app/mainapplication.cpp.s
-
-src/lib/app/thundercommon.o: src/lib/app/thundercommon.cpp.o
-.PHONY : src/lib/app/thundercommon.o
-
-# target to build an object file
-src/lib/app/thundercommon.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThunderSDK.dir/build.make CMakeFiles/ThunderSDK.dir/src/lib/app/thundercommon.cpp.o
-.PHONY : src/lib/app/thundercommon.cpp.o
-
-src/lib/app/thundercommon.i: src/lib/app/thundercommon.cpp.i
-.PHONY : src/lib/app/thundercommon.i
-
-# target to preprocess a source file
-src/lib/app/thundercommon.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThunderSDK.dir/build.make CMakeFiles/ThunderSDK.dir/src/lib/app/thundercommon.cpp.i
-.PHONY : src/lib/app/thundercommon.cpp.i
-
-src/lib/app/thundercommon.s: src/lib/app/thundercommon.cpp.s
-.PHONY : src/lib/app/thundercommon.s
-
-# target to generate assembly for a file
-src/lib/app/thundercommon.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThunderSDK.dir/build.make CMakeFiles/ThunderSDK.dir/src/lib/app/thundercommon.cpp.s
-.PHONY : src/lib/app/thundercommon.cpp.s
-
-src/lib/kernel/kernel_bridge.o: src/lib/kernel/kernel_bridge.cpp.o
-.PHONY : src/lib/kernel/kernel_bridge.o
-
-# target to build an object file
-src/lib/kernel/kernel_bridge.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThunderSDK.dir/build.make CMakeFiles/ThunderSDK.dir/src/lib/kernel/kernel_bridge.cpp.o
-.PHONY : src/lib/kernel/kernel_bridge.cpp.o
-
-src/lib/kernel/kernel_bridge.i: src/lib/kernel/kernel_bridge.cpp.i
-.PHONY : src/lib/kernel/kernel_bridge.i
-
-# target to preprocess a source file
-src/lib/kernel/kernel_bridge.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThunderSDK.dir/build.make CMakeFiles/ThunderSDK.dir/src/lib/kernel/kernel_bridge.cpp.i
-.PHONY : src/lib/kernel/kernel_bridge.cpp.i
-
-src/lib/kernel/kernel_bridge.s: src/lib/kernel/kernel_bridge.cpp.s
-.PHONY : src/lib/kernel/kernel_bridge.s
-
-# target to generate assembly for a file
-src/lib/kernel/kernel_bridge.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThunderSDK.dir/build.make CMakeFiles/ThunderSDK.dir/src/lib/kernel/kernel_bridge.cpp.s
-.PHONY : src/lib/kernel/kernel_bridge.cpp.s
-
-src/lib/network/thunder_url_interceptor.o: src/lib/network/thunder_url_interceptor.cpp.o
-.PHONY : src/lib/network/thunder_url_interceptor.o
-
-# target to build an object file
-src/lib/network/thunder_url_interceptor.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThunderSDK.dir/build.make CMakeFiles/ThunderSDK.dir/src/lib/network/thunder_url_interceptor.cpp.o
-.PHONY : src/lib/network/thunder_url_interceptor.cpp.o
-
-src/lib/network/thunder_url_interceptor.i: src/lib/network/thunder_url_interceptor.cpp.i
-.PHONY : src/lib/network/thunder_url_interceptor.i
-
-# target to preprocess a source file
-src/lib/network/thunder_url_interceptor.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThunderSDK.dir/build.make CMakeFiles/ThunderSDK.dir/src/lib/network/thunder_url_interceptor.cpp.i
-.PHONY : src/lib/network/thunder_url_interceptor.cpp.i
-
-src/lib/network/thunder_url_interceptor.s: src/lib/network/thunder_url_interceptor.cpp.s
-.PHONY : src/lib/network/thunder_url_interceptor.s
-
-# target to generate assembly for a file
-src/lib/network/thunder_url_interceptor.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThunderSDK.dir/build.make CMakeFiles/ThunderSDK.dir/src/lib/network/thunder_url_interceptor.cpp.s
-.PHONY : src/lib/network/thunder_url_interceptor.cpp.s
-
 src/main/main.o: src/main/main.cpp.o
 .PHONY : src/main/main.o
 
@@ -984,38 +645,25 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... install"
-	@echo "... install/local"
-	@echo "... install/strip"
-	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... NoThunderBaseline_autogen"
-	@echo "... NoThunderBaseline_autogen_timestamp_deps"
 	@echo "... No_Thunder_autogen"
 	@echo "... No_Thunder_autogen_timestamp_deps"
 	@echo "... ThunderBrowser_autogen"
 	@echo "... ThunderBrowser_autogen_timestamp_deps"
 	@echo "... ThunderGenericExample_autogen"
 	@echo "... ThunderGenericExample_autogen_timestamp_deps"
-	@echo "... ThunderSDK_autogen"
-	@echo "... ThunderSDK_autogen_timestamp_deps"
 	@echo "... Thunder_Hardware_Stress_autogen"
 	@echo "... Thunder_Hardware_Stress_autogen_timestamp_deps"
 	@echo "... Thunder_Ultimate_Benchmark_autogen"
 	@echo "... Thunder_Ultimate_Benchmark_autogen_timestamp_deps"
 	@echo "... With_Thunder_autogen"
 	@echo "... With_Thunder_autogen_timestamp_deps"
-	@echo "... NoThunderBaseline"
 	@echo "... No_Thunder"
 	@echo "... ThunderBrowser"
 	@echo "... ThunderGenericExample"
-	@echo "... ThunderSDK"
 	@echo "... Thunder_Hardware_Stress"
 	@echo "... Thunder_Ultimate_Benchmark"
 	@echo "... With_Thunder"
-	@echo "... NoThunderBaseline_autogen/mocs_compilation.o"
-	@echo "... NoThunderBaseline_autogen/mocs_compilation.i"
-	@echo "... NoThunderBaseline_autogen/mocs_compilation.s"
 	@echo "... No_Thunder_autogen/mocs_compilation.o"
 	@echo "... No_Thunder_autogen/mocs_compilation.i"
 	@echo "... No_Thunder_autogen/mocs_compilation.s"
@@ -1025,9 +673,6 @@ help:
 	@echo "... ThunderGenericExample_autogen/mocs_compilation.o"
 	@echo "... ThunderGenericExample_autogen/mocs_compilation.i"
 	@echo "... ThunderGenericExample_autogen/mocs_compilation.s"
-	@echo "... ThunderSDK_autogen/mocs_compilation.o"
-	@echo "... ThunderSDK_autogen/mocs_compilation.i"
-	@echo "... ThunderSDK_autogen/mocs_compilation.s"
 	@echo "... Thunder_Hardware_Stress_autogen/mocs_compilation.o"
 	@echo "... Thunder_Hardware_Stress_autogen/mocs_compilation.i"
 	@echo "... Thunder_Hardware_Stress_autogen/mocs_compilation.s"
@@ -1040,9 +685,6 @@ help:
 	@echo "... src/examples/generic_app.o"
 	@echo "... src/examples/generic_app.i"
 	@echo "... src/examples/generic_app.s"
-	@echo "... src/examples/no_thunder_app.o"
-	@echo "... src/examples/no_thunder_app.i"
-	@echo "... src/examples/no_thunder_app.s"
 	@echo "... src/examples/no_thunder_report.o"
 	@echo "... src/examples/no_thunder_report.i"
 	@echo "... src/examples/no_thunder_report.s"
@@ -1055,24 +697,6 @@ help:
 	@echo "... src/examples/with_thunder_report.o"
 	@echo "... src/examples/with_thunder_report.i"
 	@echo "... src/examples/with_thunder_report.s"
-	@echo "... src/lib/adblock/adblockrule.o"
-	@echo "... src/lib/adblock/adblockrule.i"
-	@echo "... src/lib/adblock/adblockrule.s"
-	@echo "... src/lib/app/browserwindow.o"
-	@echo "... src/lib/app/browserwindow.i"
-	@echo "... src/lib/app/browserwindow.s"
-	@echo "... src/lib/app/mainapplication.o"
-	@echo "... src/lib/app/mainapplication.i"
-	@echo "... src/lib/app/mainapplication.s"
-	@echo "... src/lib/app/thundercommon.o"
-	@echo "... src/lib/app/thundercommon.i"
-	@echo "... src/lib/app/thundercommon.s"
-	@echo "... src/lib/kernel/kernel_bridge.o"
-	@echo "... src/lib/kernel/kernel_bridge.i"
-	@echo "... src/lib/kernel/kernel_bridge.s"
-	@echo "... src/lib/network/thunder_url_interceptor.o"
-	@echo "... src/lib/network/thunder_url_interceptor.i"
-	@echo "... src/lib/network/thunder_url_interceptor.s"
 	@echo "... src/main/main.o"
 	@echo "... src/main/main.i"
 	@echo "... src/main/main.s"

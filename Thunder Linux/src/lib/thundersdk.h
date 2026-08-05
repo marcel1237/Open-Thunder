@@ -17,22 +17,20 @@
 #include "kernel/thunder_branch_optimizer.h"
 #include "kernel/thunder_huge_tlb.h"
 #include "kernel/thunder_simd_accelerator.h"
+#include "kernel/thunder_io_matrix.h"
 
 namespace Td {
 
 /**
  * @brief Initializes the entire Thunder Hardware Matrix for any application.
- *
- * Calling this function will:
- * 1. Pining process to specific CPU Cores.
- * 2. Lock memory to RAM (Resident mode).
- * 3. Set Real-Time scheduling priorities.
- * 4. Optimize Kernel IRQ affinity.
- * 5. Enable Spectre/Meltdown bypass for speed.
+ * Now expanded with TH-12 (IO-Uring).
  */
 inline void initializeHardwareAcceleration() {
-    // TH-01: NitroCore Kernel-Warp
+    // TH-01, TH-09, TH-10: Core, Power, Spectre
     Td::Kernel::optimizeProcess();
+
+    // TH-12: IO-Uring Warp
+    Td::IO::ThunderIORing::instance()->init();
 
     // TH-10: Spectre-Speed Bypass
     Td::Kernel::enableSpeculationSpeed();

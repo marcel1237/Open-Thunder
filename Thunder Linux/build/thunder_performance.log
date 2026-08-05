@@ -1,4 +1,4 @@
-Thunder Performance Log
-Baseline: 0.901673s
-Thunder: 1.15379s
-Speedup: 0.781491x
+Thunder Performance Log - Expansion Phase
+Baseline: 1.13114s
+Thunder: 1.18241s
+Speedup: 0.956641x

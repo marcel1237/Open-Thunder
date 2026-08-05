@@ -416,9 +416,18 @@
 	[
 		"QT_CORE_LIB",
 		"QT_GUI_LIB",
+		"QT_NETWORK_LIB",
 		"QT_NO_DEBUG",
-		"QT_WIDGETS_LIB",
-		"THUNDER_SHAREDLIBRARY"
+		"QT_OPENGL_LIB",
+		"QT_POSITIONING_LIB",
+		"QT_PRINTSUPPORT_LIB",
+		"QT_QMLINTEGRATION_LIB",
+		"QT_QML_LIB",
+		"QT_QUICK_LIB",
+		"QT_WEBCHANNEL_LIB",
+		"QT_WEBENGINECORE_LIB",
+		"QT_WEBENGINEWIDGETS_LIB",
+		"QT_WIDGETS_LIB"
 	],
 	"MOC_DEPEND_FILTERS" : 
 	[
@@ -429,16 +438,26 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"/home/marcel1237/Thunder/Thunder Linux/src/lib",
-		"/home/marcel1237/Thunder/Thunder Linux/src/lib/app",
-		"/home/marcel1237/Thunder/Thunder Linux/src/lib/adblock",
-		"/home/marcel1237/Thunder/Thunder Linux/src/lib/kernel",
-		"/home/marcel1237/Thunder/Thunder Linux/src/lib/network",
+		"/home/marcel1237/Thunder/ThunderSDK/src",
+		"/home/marcel1237/Thunder/ThunderSDK/src/app",
+		"/home/marcel1237/Thunder/ThunderSDK/src/adblock",
+		"/home/marcel1237/Thunder/ThunderSDK/src/kernel",
+		"/home/marcel1237/Thunder/ThunderSDK/src/network",
 		"/usr/include/x86_64-linux-gnu/qt6/QtWidgets",
 		"/usr/include/x86_64-linux-gnu/qt6",
 		"/usr/include/x86_64-linux-gnu/qt6/QtCore",
 		"/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++",
 		"/usr/include/x86_64-linux-gnu/qt6/QtGui",
+		"/usr/include/x86_64-linux-gnu/qt6/QtWebEngineWidgets",
+		"/usr/include/x86_64-linux-gnu/qt6/QtWebEngineCore",
+		"/usr/include/x86_64-linux-gnu/qt6/QtNetwork",
+		"/usr/include/x86_64-linux-gnu/qt6/QtQuick",
+		"/usr/include/x86_64-linux-gnu/qt6/QtQml",
+		"/usr/include/x86_64-linux-gnu/qt6/QtQmlIntegration",
+		"/usr/include/x86_64-linux-gnu/qt6/QtOpenGL",
+		"/usr/include/x86_64-linux-gnu/qt6/QtWebChannel",
+		"/usr/include/x86_64-linux-gnu/qt6/QtPositioning",
+		"/usr/include/x86_64-linux-gnu/qt6/QtPrintSupport",
 		"/usr/include",
 		"/usr/include/c++/15",
 		"/usr/include/x86_64-linux-gnu/c++/15",
@@ -469,10 +488,7 @@
 	],
 	"MOC_PREDEFS_FILE" : "/home/marcel1237/Thunder/Thunder Linux/build/ThunderBrowser_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
-	"MOC_SKIP" : 
-	[
-		"/home/marcel1237/Thunder/Thunder Linux/build/ThunderSDK_autogen/mocs_compilation.cpp"
-	],
+	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 4,
 	"PARSE_CACHE_FILE" : "/home/marcel1237/Thunder/Thunder Linux/build/CMakeFiles/ThunderBrowser_autogen.dir/ParseCache.txt",
@@ -491,10 +507,7 @@
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],
-	"UIC_SKIP" : 
-	[
-		"/home/marcel1237/Thunder/Thunder Linux/build/ThunderSDK_autogen/mocs_compilation.cpp"
-	],
+	"UIC_SKIP" : [],
 	"UIC_UI_FILES" : [],
 	"USE_BETTER_GRAPH" : true,
 	"VERBOSITY" : 0

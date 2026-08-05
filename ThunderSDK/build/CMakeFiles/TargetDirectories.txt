@@ -1,0 +1,9 @@
+/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/ThunderSDK.dir
+/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/edit_cache.dir
+/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/rebuild_cache.dir
+/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/list_install_components.dir
+/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/install.dir
+/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/install/local.dir
+/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/install/strip.dir
+/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/ThunderSDK_autogen_timestamp_deps.dir
+/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/ThunderSDK_autogen.dir

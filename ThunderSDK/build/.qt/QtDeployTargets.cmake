@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_ThunderSDK_FILE /home/marcel1237/Thunder/ThunderSDK/build/libThunderSDK.so)
+set(__QT_DEPLOY_TARGET_ThunderSDK_TYPE SHARED_LIBRARY)

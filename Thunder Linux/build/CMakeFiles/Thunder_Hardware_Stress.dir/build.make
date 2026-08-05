@@ -119,7 +119,7 @@ Thunder_Hardware_Stress: CMakeFiles/Thunder_Hardware_Stress.dir/Thunder_Hardware
 Thunder_Hardware_Stress: CMakeFiles/Thunder_Hardware_Stress.dir/src/examples/ultimate_stress_test.cpp.o
 Thunder_Hardware_Stress: CMakeFiles/Thunder_Hardware_Stress.dir/build.make
 Thunder_Hardware_Stress: CMakeFiles/Thunder_Hardware_Stress.dir/compiler_depend.ts
-Thunder_Hardware_Stress: libThunderSDK.so
+Thunder_Hardware_Stress: /home/marcel1237/Thunder/Thunder\ Linux/../ThunderSDK/build/libThunderSDK.so
 Thunder_Hardware_Stress: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.10.2
 Thunder_Hardware_Stress: CMakeFiles/Thunder_Hardware_Stress.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/marcel1237/Thunder/Thunder Linux/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Thunder_Hardware_Stress"

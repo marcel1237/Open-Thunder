@@ -173,7 +173,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=ThunderSDK
+CMAKE_PROJECT_NAME:STATIC=ThunderBrowser
 
 //Value Computed by CMake
 CMAKE_PROJECT_SPDX_LICENSE:STATIC=
@@ -392,13 +392,13 @@ Qt6Widgets_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets
 Qt6_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt6
 
 //Value Computed by CMake
-ThunderSDK_BINARY_DIR:STATIC=/home/marcel1237/Thunder/Thunder Linux/build
+ThunderBrowser_BINARY_DIR:STATIC=/home/marcel1237/Thunder/Thunder Linux/build
 
 //Value Computed by CMake
-ThunderSDK_IS_TOP_LEVEL:STATIC=ON
+ThunderBrowser_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-ThunderSDK_SOURCE_DIR:STATIC=/home/marcel1237/Thunder/Thunder Linux
+ThunderBrowser_SOURCE_DIR:STATIC=/home/marcel1237/Thunder/Thunder Linux
 
 //Path to a program.
 Vulkan_GLSLANG_VALIDATOR_EXECUTABLE:FILEPATH=Vulkan_GLSLANG_VALIDATOR_EXECUTABLE-NOTFOUND
