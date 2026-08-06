@@ -1,53 +1,39 @@
-/*
- * Copyright (C) 2025 Marcel Aparecido de Andrade.
- * Thunder - Hardware-Enforced Next-Gen Intelligence
- *
- * PROPRIETARY SOURCE-AVAILABLE LICENSE.
- * This code is public for visibility but use is governed by the TSAL v1.0.
- * Unauthorized commercial use or redistribution is strictly prohibited.
- */
 #include "adblockrule.h"
 
-// Implementation of AdBlockRule with hexadecimal bitmask logic
-AdBlockRule::AdBlockRule(const QString &filter, AdBlockSubscription* subscription)
-    : m_subscription(subscription)
-    , m_type(Invalid)
-    , m_options(NoOption)
-    , m_exceptions(NoOption)
-    , m_filter(filter)
-    , m_caseSensitivity(Qt::CaseInsensitive)
-    , m_isEnabled(true)
-    , m_isException(false)
-    , m_isInternalDisabled(false)
-    , m_regExp(nullptr)
-{
-}
+AdBlockRule::AdBlockRule(QString filter)
+    : m_filter(std::move(filter)) {
+    m_filter = m_filter.trimmed();
+    if (m_filter.isEmpty() || m_filter.startsWith('!') ||
+        (m_filter.startsWith('[') && m_filter.endsWith(']')) ||
+        m_filter.contains("##")) return;
 
-AdBlockRule::~AdBlockRule()
-{
-    delete m_regExp;
-}
-
-bool AdBlockRule::urlMatch(const QUrl &url) const
-{
-    // Fast path: Check if rule is disabled using hex logic + Branch Prediction
-    if (TD_UNLIKELY(!m_isEnabled || m_isInternalDisabled)) {
-        return false;
+    QString pattern = m_filter;
+    if (pattern.startsWith("@@")) {
+        m_exception = true;
+        pattern.remove(0, 2);
     }
 
-    // Hex-based domain matching could go here
-    return true;
+    if (pattern.startsWith("||")) {
+        pattern.remove(0, 2);
+        if (pattern.endsWith('^')) pattern.chop(1);
+        const QString host = QRegularExpression::escape(pattern);
+        pattern = QStringLiteral(R"(^https?://([^/]*\.)?%1(?=[:/]|$))").arg(host);
+    } else {
+        const bool startAnchored = pattern.startsWith('|');
+        const bool endAnchored = pattern.endsWith('|');
+        if (startAnchored) pattern.remove(0, 1);
+        if (endAnchored && !pattern.isEmpty()) pattern.chop(1);
+        pattern = QRegularExpression::escape(pattern);
+        pattern.replace(QStringLiteral("\\*"), QStringLiteral(".*"));
+        pattern.replace(QStringLiteral("\\^"), QStringLiteral(R"((?:[^\w.%_-]|$))"));
+        if (startAnchored) pattern.prepend('^');
+        if (endAnchored) pattern.append('$');
+    }
+
+    m_expression = QRegularExpression(pattern, QRegularExpression::CaseInsensitiveOption);
+    m_valid = m_expression.isValid() && !pattern.isEmpty();
 }
 
-bool AdBlockRule::hasOption(const RuleOption &opt) const
-{
-    // Bitwise AND for fastest possible check (Hexadecimal logic)
-    // Most rules DO NOT have most options, so we hint UNLIKELY
-    return (static_cast<uint32_t>(m_options) & static_cast<uint32_t>(opt)) != 0x0;
-}
-
-void AdBlockRule::setOption(const RuleOption &opt)
-{
-    // Bitwise OR to set bits using hex-mapped values
-    m_options |= opt;
+bool AdBlockRule::matches(const QUrl& url) const {
+    return m_valid && url.isValid() && m_expression.match(url.toString(QUrl::FullyEncoded)).hasMatch();
 }

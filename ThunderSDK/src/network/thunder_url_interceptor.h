@@ -14,6 +14,7 @@
 #include "thundercommon.h"
 #include "thunder_net_optimizer.h"
 #include "thunder_simd_accelerator.h"
+#include "adblock/adblockmanager.h"
 
 namespace Td {
 namespace Network {
@@ -30,8 +31,13 @@ public:
      * Runs on the Kernel/Chromium IO thread.
      */
     void interceptRequest(QWebEngineUrlRequestInfo &info) override {
+        if (AdBlockManager::instance().shouldBlock(info.requestUrl())) {
+            info.block(true);
+            return;
+        }
         // Hex Fast-Path: Verify HTTP method
         HttpMethod method = fastParseMethod(info.requestMethod());
+        Q_UNUSED(method);
 
         // Hardware scan for suspicious characters in URL using AVX2
         QByteArray urlData = info.requestUrl().toString().toLatin1();

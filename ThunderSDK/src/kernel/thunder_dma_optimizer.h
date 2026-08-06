@@ -6,6 +6,12 @@
  * This code is public for visibility but use is governed by the TSAL v1.0.
  * Unauthorized commercial use or redistribution is strictly prohibited.
  */
+#ifndef THUNDER_DMA_OPTIMIZER_H
+#define THUNDER_DMA_OPTIMIZER_H
+
+#include <cstdint>
+#include <sys/ioctl.h>
+
 /**
  * Hexadecimal IOCTL codes for DMA-BUF synchronization.
  * Direct communication with the Linux DMA-BUF subsystem.
@@ -39,13 +45,13 @@ struct dma_buf_sync {
  * @brief Optimizes a file descriptor for DMA-BUF sharing.
  * Bypasses CPU cache for graphics-ready buffers.
  */
-inline void hardwareSyncBuffer(int fd, bool start) {
+inline bool hardwareSyncBuffer(int fd, bool start) {
     struct dma_buf_sync sync;
     sync.flags = T_DMA_BUF_SYNC_READ | T_DMA_BUF_SYNC_WRITE;
     sync.flags |= start ? T_DMA_BUF_SYNC_START : T_DMA_BUF_SYNC_END;
 
     // Direct IOCTL to Kernel DMA subsystem
-    ioctl(fd, T_DMA_BUF_IOCTL_SYNC, &sync);
+    return ioctl(fd, T_DMA_BUF_IOCTL_SYNC, &sync) == 0;
 }
 
 } // namespace Kernel

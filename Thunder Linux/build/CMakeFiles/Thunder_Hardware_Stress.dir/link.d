@@ -4,7 +4,7 @@ Thunder_Hardware_Stress: \
   /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o \
   CMakeFiles/Thunder_Hardware_Stress.dir/Thunder_Hardware_Stress_autogen/mocs_compilation.cpp.o \
   CMakeFiles/Thunder_Hardware_Stress.dir/src/examples/ultimate_stress_test.cpp.o \
-  /home/marcel1237/Thunder/Thunder Linux/../ThunderSDK/build/libThunderSDK.so \
+  ThunderSDK/libThunderSDK.so \
   /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.10.2 \
   /usr/lib/gcc/x86_64-linux-gnu/15/libstdc++.so \
   /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libm.so \
@@ -169,7 +169,7 @@ CMakeFiles/Thunder_Hardware_Stress.dir/Thunder_Hardware_Stress_autogen/mocs_comp
 
 CMakeFiles/Thunder_Hardware_Stress.dir/src/examples/ultimate_stress_test.cpp.o:
 
-/home/marcel1237/Thunder/Thunder Linux/../ThunderSDK/build/libThunderSDK.so:
+ThunderSDK/libThunderSDK.so:
 
 /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.10.2:
 

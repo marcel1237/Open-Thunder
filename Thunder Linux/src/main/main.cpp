@@ -25,6 +25,12 @@ void msgHandler(QtMsgType type, const QMessageLogContext &context, const QString
 
 int main(int argc, char* argv[])
 {
+    // Qt WebEngine consumes Chromium flags during process initialization.
+    // Advanced flags are therefore explicit, user-supplied and applied before
+    // QApplication exists; no driver-specific flags are forced by default.
+    const QByteArray experimentalFlags = qgetenv("THUNDER_EXPERIMENTAL_GPU_FLAGS");
+    if (!experimentalFlags.isEmpty())
+        qputenv("QTWEBENGINE_CHROMIUM_FLAGS", experimentalFlags);
 #ifdef Q_OS_LINUX
     // Apply Kernel Optimizations BEFORE initializing the GUI
     Td::Kernel::optimizeProcess();

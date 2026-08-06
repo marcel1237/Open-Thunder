@@ -9,7 +9,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "ThunderSDK_autogen/timestamp" "custom" "ThunderSDK_autogen/deps"
+  "/home/marcel1237/Thunder/ThunderSDK/build/ThunderSDK_autogen/ISMKEKEPX5/qrc_resources.cpp" "CMakeFiles/ThunderSDK.dir/ThunderSDK_autogen/ISMKEKEPX5/qrc_resources.cpp.o" "gcc" "CMakeFiles/ThunderSDK.dir/ThunderSDK_autogen/ISMKEKEPX5/qrc_resources.cpp.o.d"
   "/home/marcel1237/Thunder/ThunderSDK/build/ThunderSDK_autogen/mocs_compilation.cpp" "CMakeFiles/ThunderSDK.dir/ThunderSDK_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/ThunderSDK.dir/ThunderSDK_autogen/mocs_compilation.cpp.o.d"
+  "/home/marcel1237/Thunder/ThunderSDK/src/adblock/adblockmanager.cpp" "CMakeFiles/ThunderSDK.dir/src/adblock/adblockmanager.cpp.o" "gcc" "CMakeFiles/ThunderSDK.dir/src/adblock/adblockmanager.cpp.o.d"
   "/home/marcel1237/Thunder/ThunderSDK/src/adblock/adblockrule.cpp" "CMakeFiles/ThunderSDK.dir/src/adblock/adblockrule.cpp.o" "gcc" "CMakeFiles/ThunderSDK.dir/src/adblock/adblockrule.cpp.o.d"
   "/home/marcel1237/Thunder/ThunderSDK/src/app/browserwindow.cpp" "CMakeFiles/ThunderSDK.dir/src/app/browserwindow.cpp.o" "gcc" "CMakeFiles/ThunderSDK.dir/src/app/browserwindow.cpp.o.d"
   "/home/marcel1237/Thunder/ThunderSDK/src/app/mainapplication.cpp" "CMakeFiles/ThunderSDK.dir/src/app/mainapplication.cpp.o" "gcc" "CMakeFiles/ThunderSDK.dir/src/app/mainapplication.cpp.o.d"

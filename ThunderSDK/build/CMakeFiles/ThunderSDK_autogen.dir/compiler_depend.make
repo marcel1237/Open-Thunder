@@ -5,13 +5,16 @@ ThunderSDK_autogen/timestamp: /home/marcel1237/Thunder/ThunderSDK/CMakeLists.txt
   CMakeFiles/4.2.3/CMakeCXXCompiler.cmake \
   CMakeFiles/4.2.3/CMakeSystem.cmake \
   ThunderSDK_autogen/moc_predefs.h \
+  /home/marcel1237/Thunder/ThunderSDK/cmake/ThunderSDKConfig.cmake.in \
+  /home/marcel1237/Thunder/ThunderSDK/src/adblock/adblockmanager.cpp \
+  /home/marcel1237/Thunder/ThunderSDK/src/adblock/adblockmanager.h \
   /home/marcel1237/Thunder/ThunderSDK/src/adblock/adblockrule.cpp \
   /home/marcel1237/Thunder/ThunderSDK/src/adblock/adblockrule.h \
   /home/marcel1237/Thunder/ThunderSDK/src/app/browserwindow.cpp \
   /home/marcel1237/Thunder/ThunderSDK/src/app/browserwindow.h \
   /home/marcel1237/Thunder/ThunderSDK/src/app/mainapplication.cpp \
   /home/marcel1237/Thunder/ThunderSDK/src/app/mainapplication.h \
-  /home/marcel1237/Thunder/ThunderSDK/src/app/thunder_ui_constants.h \
+  /home/marcel1237/Thunder/ThunderSDK/src/app/resources.qrc \
   /home/marcel1237/Thunder/ThunderSDK/src/app/thundercommon.cpp \
   /home/marcel1237/Thunder/ThunderSDK/src/app/thundercommon.h \
   /home/marcel1237/Thunder/ThunderSDK/src/kernel/kernel_bridge.cpp \
@@ -312,6 +315,11 @@ ThunderSDK_autogen/timestamp: /home/marcel1237/Thunder/ThunderSDK/CMakeLists.txt
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QDebug \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QFlags \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QReadWriteLock \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QRect \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QRegularExpression \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QSize \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QSizeF \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QUrl \
@@ -325,6 +333,7 @@ ThunderSDK_autogen/timestamp: /home/marcel1237/Thunder/ThunderSDK/CMakeLists.txt
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q23type_traits.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q23utility.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstracteventdispatcher.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractitemmodel.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qalgorithms.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qalloc.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qanystringview.h \
@@ -403,8 +412,10 @@ ThunderSDK_autogen/timestamp: /home/marcel1237/Thunder/ThunderSDK/CMakeLists.txt
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qpair.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qpoint.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qprocessordetection.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qreadwritelock.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qrect.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qrefcount.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qregularexpression.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qscopedpointer.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qscopeguard.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qset.h \
@@ -457,12 +468,16 @@ ThunderSDK_autogen/timestamp: /home/marcel1237/Thunder/ThunderSDK/CMakeLists.txt
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qxptype_traits.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qyieldcpu.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/QCloseEvent \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QPageLayout \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/QTransform \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qaction.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qbitmap.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qbrush.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qcolor.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qcursor.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qevent.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qeventpoint.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qfont.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontinfo.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontmetrics.h \
@@ -471,6 +486,7 @@ ThunderSDK_autogen/timestamp: /home/marcel1237/Thunder/ThunderSDK/CMakeLists.txt
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication_platform.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qicon.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qimage.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qinputdevice.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qinputmethod.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qkeysequence.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qpagelayout.h \
@@ -481,10 +497,13 @@ ThunderSDK_autogen/timestamp: /home/marcel1237/Thunder/ThunderSDK/CMakeLists.txt
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixelformat.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixmap.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpointingdevice.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qpolygon.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qregion.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qrgb.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qrgba64.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qscreen.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qscreen_platform.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextcursor.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextdocument.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextformat.h \
@@ -493,6 +512,9 @@ ThunderSDK_autogen/timestamp: /home/marcel1237/Thunder/ThunderSDK/CMakeLists.txt
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiexports.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qvalidator.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qvector2d.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qvectornd.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h \
   /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qssl.h \
   /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qsslcertificate.h \
@@ -515,15 +537,21 @@ ThunderSDK_autogen/timestamp: /home/marcel1237/Thunder/ThunderSDK/CMakeLists.txt
   /usr/include/x86_64-linux-gnu/qt6/QtWebEngineWidgets/qtwebenginewidgetsglobal.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWebEngineWidgets/qwebengineview.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QComboBox \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QHBoxLayout \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLineEdit \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QProgressBar \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QTabWidget \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemdelegate.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractspinbox.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qapplication.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcombobox.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgridlayout.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayout.h \
@@ -532,7 +560,12 @@ ThunderSDK_autogen/timestamp: /home/marcel1237/Thunder/ThunderSDK/CMakeLists.txt
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qprogressbar.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qrubberband.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qslider.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyle.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyleoption.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabbar.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgets-config.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsexports.h \
@@ -917,6 +950,7 @@ ThunderSDK_autogen/timestamp: /home/marcel1237/Thunder/ThunderSDK/CMakeLists.txt
   /usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-none.cmake \
   /usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake \
   /usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake \
+  /usr/share/cmake-4.2/Modules/BasicConfigVersion-SameMajorVersion.cmake.in \
   /usr/share/cmake-4.2/Modules/CMakeCXXInformation.cmake \
   /usr/share/cmake-4.2/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
   /usr/share/cmake-4.2/Modules/CMakeCommonLanguageInclude.cmake \
@@ -924,8 +958,12 @@ ThunderSDK_autogen/timestamp: /home/marcel1237/Thunder/ThunderSDK/CMakeLists.txt
   /usr/share/cmake-4.2/Modules/CMakeGenericSystem.cmake \
   /usr/share/cmake-4.2/Modules/CMakeInitializeConfigs.cmake \
   /usr/share/cmake-4.2/Modules/CMakeLanguageInformation.cmake \
+  /usr/share/cmake-4.2/Modules/CMakePackageConfigHelpers.cmake \
   /usr/share/cmake-4.2/Modules/CMakeSystemSpecificInformation.cmake \
   /usr/share/cmake-4.2/Modules/CMakeSystemSpecificInitialize.cmake \
+  /usr/share/cmake-4.2/Modules/CTest.cmake \
+  /usr/share/cmake-4.2/Modules/CTestTargets.cmake \
+  /usr/share/cmake-4.2/Modules/CTestUseLaunchers.cmake \
   /usr/share/cmake-4.2/Modules/CheckCXXCompilerFlag.cmake \
   /usr/share/cmake-4.2/Modules/CheckCXXSourceCompiles.cmake \
   /usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake \
@@ -937,6 +975,7 @@ ThunderSDK_autogen/timestamp: /home/marcel1237/Thunder/ThunderSDK/CMakeLists.txt
   /usr/share/cmake-4.2/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
   /usr/share/cmake-4.2/Modules/Compiler/GNU-CXX.cmake \
   /usr/share/cmake-4.2/Modules/Compiler/GNU.cmake \
+  /usr/share/cmake-4.2/Modules/DartConfiguration.tcl.in \
   /usr/share/cmake-4.2/Modules/FindCups.cmake \
   /usr/share/cmake-4.2/Modules/FindOpenGL.cmake \
   /usr/share/cmake-4.2/Modules/FindPackageHandleStandardArgs.cmake \
@@ -959,8 +998,12 @@ ThunderSDK_autogen/timestamp: /home/marcel1237/Thunder/ThunderSDK/CMakeLists.txt
   /usr/share/cmake-4.2/Modules/Platform/Linux-GNU.cmake \
   /usr/share/cmake-4.2/Modules/Platform/Linux-Initialize.cmake \
   /usr/share/cmake-4.2/Modules/Platform/Linux.cmake \
-  /usr/share/cmake-4.2/Modules/Platform/UnixPaths.cmake
+  /usr/share/cmake-4.2/Modules/Platform/UnixPaths.cmake \
+  /usr/share/cmake-4.2/Modules/WriteBasicConfigVersionFile.cmake \
+  /usr/share/cmake-4.2/Templates/CTestScript.cmake.in
 
+
+/usr/share/cmake-4.2/Templates/CTestScript.cmake.in:
 
 /usr/share/cmake-4.2/Modules/Platform/Linux-Initialize.cmake:
 
@@ -994,15 +1037,23 @@ ThunderSDK_autogen/timestamp: /home/marcel1237/Thunder/ThunderSDK/CMakeLists.txt
 
 /usr/share/cmake-4.2/Modules/CheckIPOSupported/CMakeLists-CXX.txt.in:
 
+/usr/share/cmake-4.2/Modules/CTestUseLaunchers.cmake:
+
+/usr/share/cmake-4.2/Modules/CTestTargets.cmake:
+
 /usr/share/cmake-4.2/Modules/CMakeSystemSpecificInitialize.cmake:
 
 /usr/share/cmake-4.2/Modules/CMakeSystemSpecificInformation.cmake:
+
+/usr/share/cmake-4.2/Modules/CMakePackageConfigHelpers.cmake:
 
 /usr/share/cmake-4.2/Modules/CMakeLanguageInformation.cmake:
 
 /usr/share/cmake-4.2/Modules/CMakeInitializeConfigs.cmake:
 
 /usr/share/cmake-4.2/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake:
+
+/usr/share/cmake-4.2/Modules/BasicConfigVersion-SameMajorVersion.cmake.in:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsDependencies.cmake:
 
@@ -1216,13 +1267,7 @@ ThunderSDK_autogen/timestamp: /home/marcel1237/Thunder/ThunderSDK/CMakeLists.txt
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreConfigVersion.cmake:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreConfigExtras.cmake:
-
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreAdditionalTargetInfo.cmake:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicWindowsHelpers.cmake:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicToolHelpers.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicTargetHelpers.cmake:
 
@@ -1420,8 +1465,6 @@ ThunderSDK_autogen/timestamp: /home/marcel1237/Thunder/ThunderSDK/CMakeLists.txt
 
 /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512cdintrin.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/15/include/avx512bwintrin.h:
-
 /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512bitalgvlintrin.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512bf16intrin.h:
@@ -1462,15 +1505,57 @@ ThunderSDK_autogen/timestamp: /home/marcel1237/Thunder/ThunderSDK/CMakeLists.txt
 
 /usr/lib/gcc/x86_64-linux-gnu/15/include/amxavx512intrin.h:
 
-/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
+/usr/include/x86_64-linux-gnu/sys/socket.h:
 
-/usr/include/c++/15/tr1/poly_hermite.tcc:
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Positioning/Qt6PositioningTargets.cmake:
 
-/usr/lib/gcc/x86_64-linux-gnu/15/include/shaintrin.h:
+/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qpaintdevice.h:
+/usr/include/x86_64-linux-gnu/sys/select.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtWebEngineCore/qwebengineframe.h:
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomCycloneDXHelpers.cmake:
+
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicPluginHelpers.cmake:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsexports.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgets-config.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicWindowsHelpers.cmake:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyle.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6WebEngineCoreTools/Qt6WebEngineCoreToolsDependencies.cmake:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayoutitem.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgridlayout.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcombobox.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractspinbox.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemdelegate.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6PrintSupport/Qt6PrintSupportTargets.cmake:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QTabWidget:
 
 /usr/include/x86_64-linux-gnu/bits/timex.h:
 
@@ -1500,9 +1585,11 @@ ThunderSDK_autogen/timestamp: /home/marcel1237/Thunder/ThunderSDK/CMakeLists.txt
 
 /usr/include/c++/15/bits/stream_iterator.h:
 
-/usr/include/x86_64-linux-gnu/sys/select.h:
-
 /usr/include/stdlib.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayout.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/QCloseEvent:
 
 /usr/include/sched.h:
 
@@ -1592,10 +1679,6 @@ ThunderSDK_autogen/timestamp: /home/marcel1237/Thunder/ThunderSDK/CMakeLists.txt
 
 /usr/include/c++/15/tr1/hypergeometric.tcc:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomCycloneDXHelpers.cmake:
-
-/usr/include/x86_64-linux-gnu/sys/cdefs.h:
-
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreConfig.cmake:
 
 /usr/include/c++/15/tr1/bessel_function.tcc:
@@ -1630,6 +1713,8 @@ ThunderSDK_autogen/timestamp: /home/marcel1237/Thunder/ThunderSDK/CMakeLists.txt
 
 /usr/include/c++/15/set:
 
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QComboBox:
+
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6WebEngineCore/Qt6WebEngineCoreVersionlessAliasTargets.cmake:
@@ -1641,6 +1726,8 @@ ThunderSDK_autogen/timestamp: /home/marcel1237/Thunder/ThunderSDK/CMakeLists.txt
 /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qtnetworkglobal.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/15/include/uintrintrin.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyleoption.h:
 
 /home/marcel1237/Thunder/ThunderSDK/src/network/thunder_net_optimizer.h:
 
@@ -1700,6 +1787,8 @@ ThunderSDK_autogen/timestamp: /home/marcel1237/Thunder/ThunderSDK/CMakeLists.txt
 
 /usr/include/c++/15/bits/list.tcc:
 
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qvectornd.h:
+
 /usr/include/c++/15/ctime:
 
 /usr/lib/gcc/x86_64-linux-gnu/15/include/mmintrin.h:
@@ -1712,29 +1801,7 @@ ThunderSDK_autogen/timestamp: /home/marcel1237/Thunder/ThunderSDK/CMakeLists.txt
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextcursor.h:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomHelpers.cmake:
-
-/usr/include/c++/15/bits/exception_ptr.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/15/include/avxvnniint8intrin.h:
-
-/usr/include/pthread.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/15/include/wmmintrin.h:
-
-/usr/include/c++/15/bit:
-
-/usr/include/c++/15/bits/allocator.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6WebEngineCore/Qt6WebEngineCoreDependencies.cmake:
-
-/usr/include/asm-generic/posix_types.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6PrintSupport/Qt6PrintSupportAdditionalTargetInfo.cmake:
-
-/usr/include/features.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtNetwork/qtnetworkexports.h:
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qscreen.h:
 
 /usr/include/c++/15/bits/cxxabi_init_exception.h:
 
@@ -1744,13 +1811,13 @@ ThunderSDK_autogen/timestamp: /home/marcel1237/Thunder/ThunderSDK/CMakeLists.txt
 
 /usr/include/c++/15/backward/auto_ptr.h:
 
-/usr/include/c++/15/bits/exception_defines.h:
-
 /usr/include/c++/15/bits/cxxabi_forced.h:
 
 /usr/include/c++/15/compare:
 
 /usr/include/c++/15/bits/stl_algo.h:
+
+/usr/share/cmake-4.2/Modules/CTest.cmake:
 
 /usr/include/c++/15/bits/basic_string.tcc:
 
@@ -1772,15 +1839,25 @@ ThunderSDK_autogen/timestamp: /home/marcel1237/Thunder/ThunderSDK/CMakeLists.txt
 
 /usr/include/c++/15/bits/atomic_base.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout:
-
 /usr/include/c++/15/bits/align.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomHelpers.cmake:
+
+/usr/include/c++/15/bits/exception_ptr.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h:
+
+/home/marcel1237/Thunder/ThunderSDK/src/kernel/kernel_bridge.h:
 
 /usr/include/c++/15/unordered_set:
 
 /usr/lib/gcc/x86_64-linux-gnu/15/include/wbnoinvdintrin.h:
 
 /home/marcel1237/Thunder/ThunderSDK/src/adblock/adblockrule.cpp:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/QString:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6QmlWorkerScript/Qt6QmlWorkerScriptConfigVersion.cmake:
 
@@ -1790,9 +1867,41 @@ ThunderSDK_autogen/timestamp: /home/marcel1237/Thunder/ThunderSDK/CMakeLists.txt
 
 /usr/include/c++/15/bits/functexcept.h:
 
+/usr/lib/gcc/x86_64-linux-gnu/15/include/avxvnniint8intrin.h:
+
+/usr/include/pthread.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/15/include/wmmintrin.h:
+
+/usr/include/c++/15/bit:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6WebEngineCore/Qt6WebEngineCoreDependencies.cmake:
+
+/usr/include/asm-generic/posix_types.h:
+
+/usr/include/c++/15/bits/allocator.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6PrintSupport/Qt6PrintSupportAdditionalTargetInfo.cmake:
+
+/usr/include/features.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtNetwork/qtnetworkexports.h:
+
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject_impl.h:
 
 /usr/include/c++/15/bits/specfun.h:
+
+/usr/include/c++/15/bits/version.h:
+
+/usr/include/c++/15/bits/concept_check.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicWalkLibsHelpers.cmake:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/q20memory.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlineedit.h:
+
+/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
 
 /usr/include/c++/15/streambuf:
 
@@ -1803,6 +1912,8 @@ ThunderSDK_autogen/timestamp: /home/marcel1237/Thunder/ThunderSDK/CMakeLists.txt
 /usr/include/c++/15/bits/basic_string.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/QPageLayout:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/QRegularExpression:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicGitHelpers.cmake:
 
@@ -1830,53 +1941,17 @@ ThunderSDK_autogen/timestamp: /home/marcel1237/Thunder/ThunderSDK/CMakeLists.txt
 
 /usr/include/c++/15/array:
 
-/usr/include/asm-generic/sockios.h:
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractitemmodel.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qyieldcpu.h:
+/usr/include/x86_64-linux-gnu/sys/types.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/15/include/hresetintrin.h:
+/usr/include/asm-generic/socket.h:
 
-/usr/include/c++/15/bits/unique_ptr.h:
+/usr/lib/gcc/x86_64-linux-gnu/15/include/avx512bf16vlintrin.h:
 
-/usr/include/c++/15/bits/move.h:
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qscopedpointer.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QHBoxLayout:
-
-/usr/include/x86_64-linux-gnu/bits/socket_type.h:
-
-/usr/include/c++/15/bits/ptr_traits.h:
-
-/usr/include/c++/15/bits/stl_construct.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
-
-/usr/include/c++/15/tr1/gamma.tcc:
-
-/usr/include/limits.h:
-
-/usr/include/c++/15/ext/concurrence.h:
-
-/usr/include/c++/15/ext/atomicity.h:
-
-/usr/include/c++/15/bits/enable_special_members.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsTargets-none.cmake:
-
-/usr/include/c++/15/bits/algorithmfwd.h:
-
-/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
-
-/usr/include/c++/15/initializer_list:
-
-/usr/include/strings.h:
-
-/usr/include/x86_64-linux-gnu/asm/posix_types.h:
-
-/usr/include/c++/15/bits/postypes.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6QmlTools/Qt6QmlToolsTargets.cmake:
-
-/home/marcel1237/Thunder/ThunderSDK/CMakeLists.txt:
+/usr/include/x86_64-linux-gnu/qt6/QtWebEngineCore/QWebEngineUrlRequestInfo:
 
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
@@ -1890,8 +1965,6 @@ ThunderSDK_autogen/timestamp: /home/marcel1237/Thunder/ThunderSDK/CMakeLists.txt
 
 /usr/include/c++/15/pstl/glue_numeric_defs.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayoutitem.h:
-
 /usr/include/c++/15/bits/stl_relops.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6QmlMeta/Qt6QmlMetaTargets.cmake:
@@ -1899,6 +1972,8 @@ ThunderSDK_autogen/timestamp: /home/marcel1237/Thunder/ThunderSDK/CMakeLists.txt
 /usr/lib/gcc/x86_64-linux-gnu/15/include/popcntintrin.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/QFlags:
+
+/usr/include/strings.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6QmlWorkerScript/Qt6QmlWorkerScriptDependencies.cmake:
 
@@ -1913,6 +1988,12 @@ ThunderSDK_autogen/timestamp: /home/marcel1237/Thunder/ThunderSDK/CMakeLists.txt
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qoverload.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qinputmethod.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6QmlTools/Qt6QmlToolsTargets.cmake:
+
+/home/marcel1237/Thunder/ThunderSDK/CMakeLists.txt:
+
+/usr/include/c++/15/bits/postypes.h:
 
 /usr/include/x86_64-linux-gnu/bits/sockaddr.h:
 
@@ -1936,9 +2017,33 @@ ThunderSDK_autogen/timestamp: /home/marcel1237/Thunder/ThunderSDK/CMakeLists.txt
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qtypes.h:
 
-/usr/include/x86_64-linux-gnu/sys/types.h:
+/home/marcel1237/Thunder/ThunderSDK/cmake/ThunderSDKConfig.cmake.in:
 
-/usr/include/asm-generic/socket.h:
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreConfigExtras.cmake:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qvector2d.h:
+
+/usr/include/c++/15/tr1/poly_hermite.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/15/include/shaintrin.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qpaintdevice.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWebEngineCore/qwebengineframe.h:
+
+/usr/include/asm-generic/sockios.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qyieldcpu.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/15/include/hresetintrin.h:
+
+/usr/include/c++/15/bits/unique_ptr.h:
+
+/usr/include/c++/15/bits/move.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QHBoxLayout:
 
 /usr/lib/gcc/x86_64-linux-gnu/15/include/serializeintrin.h:
 
@@ -1952,21 +2057,13 @@ ThunderSDK_autogen/timestamp: /home/marcel1237/Thunder/ThunderSDK/CMakeLists.txt
 
 ThunderSDK_autogen/moc_predefs.h:
 
-/usr/include/c++/15/bits/concept_check.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicWalkLibsHelpers.cmake:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/q20memory.h:
-
-/usr/include/c++/15/bits/version.h:
-
 /usr/share/cmake-4.2/Modules/CheckIPOSupported/foo.cpp:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Quick/Qt6QuickPlugins.cmake:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qtclasshelpermacros.h:
-
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qglobalstatic.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qtclasshelpermacros.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Qml/Qt6QmlConfig.cmake:
 
@@ -2036,9 +2133,33 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 
 /usr/include/c++/15/bits/std_abs.h:
 
-/home/marcel1237/Thunder/ThunderSDK/src/app/thundercommon.cpp:
+/usr/include/x86_64-linux-gnu/bits/socket_type.h:
+
+/usr/include/c++/15/bits/ptr_traits.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qrubberband.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontmetrics.h:
+
+/home/marcel1237/Thunder/ThunderSDK/src/app/thundercommon.cpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
+
+/usr/include/c++/15/tr1/gamma.tcc:
+
+/usr/include/limits.h:
+
+/usr/include/c++/15/ext/concurrence.h:
+
+/usr/include/c++/15/ext/atomicity.h:
+
+/usr/include/c++/15/bits/enable_special_members.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsTargets-none.cmake:
+
+/usr/include/c++/15/bits/algorithmfwd.h:
+
+/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
 /usr/include/c++/15/tr1/ell_integral.tcc:
 
@@ -2047,6 +2168,8 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomAttributionHelpers.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qregularexpression.h:
 
 CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
@@ -2076,6 +2199,8 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qrect.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtCore/QRect:
+
 /usr/include/c++/15/version:
 
 /usr/include/c++/15/climits:
@@ -2088,11 +2213,9 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /usr/include/netinet/tcp.h:
 
-/usr/share/cmake-4.2/Modules/Platform/Linux.cmake:
-
-/usr/include/c++/15/bits/erase_if.h:
-
 /usr/include/c++/15/bits/stringfwd.h:
+
+/home/marcel1237/Thunder/ThunderSDK/src/adblock/adblockmanager.cpp:
 
 /usr/include/c++/15/bits/ios_base.h:
 
@@ -2100,9 +2223,11 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qtformat_impl.h:
 
-/home/marcel1237/Thunder/ThunderSDK/src/app/thunder_ui_constants.h:
-
 /usr/include/x86_64-linux-gnu/asm/errno.h:
+
+/usr/include/c++/15/bits/exception_defines.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qeventpoint.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs_impl.h:
 
@@ -2112,11 +2237,15 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /usr/include/c++/15/bits/stl_multimap.h:
 
+/usr/share/cmake-4.2/Modules/WriteBasicConfigVersionFile.cmake:
+
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QProgressBar:
 
 /usr/include/alloca.h:
+
+/usr/include/c++/15/initializer_list:
 
 /usr/include/c++/15/ext/type_traits.h:
 
@@ -2143,6 +2272,10 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /usr/include/c++/15/bits/invoke.h:
 
 /usr/include/c++/15/bits/locale_classes.tcc:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qhashfunctions.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWebEngineCore/qwebenginedownloadrequest.h:
 
@@ -2174,13 +2307,9 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /usr/include/c++/15/bits/ostream_insert.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
-
-/usr/include/wchar.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qprogressbar.h:
-
 /usr/include/c++/15/bits/parse_numbers.h:
+
+/usr/include/x86_64-linux-gnu/asm/posix_types.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Network/Qt6NetworkConfigVersion.cmake:
 
@@ -2228,10 +2357,6 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /usr/include/c++/15/bits/stl_numeric.h:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt6WebEngineCoreTools/Qt6WebEngineCoreToolsDependencies.cmake:
-
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h:
-
 /usr/lib/gcc/x86_64-linux-gnu/15/include/amxtileintrin.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/15/include/amxint8intrin.h:
@@ -2270,9 +2395,13 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /usr/include/stdio.h:
 
+/home/marcel1237/Thunder/ThunderSDK/src/app/resources.qrc:
+
 /home/marcel1237/Thunder/ThunderSDK/src/kernel/thunder_simd_accelerator.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6QmlIntegration/Qt6QmlIntegrationTargets.cmake:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h:
 
 /usr/include/x86_64-linux-gnu/bits/in.h:
 
@@ -2289,8 +2418,6 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qsslcertificate.h:
-
-/usr/include/x86_64-linux-gnu/sys/socket.h:
 
 /usr/share/cmake-4.2/Modules/CheckIncludeFileCXX.cmake:
 
@@ -2313,6 +2440,12 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication.h:
 
 /usr/include/c++/15/bits/utility.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qprogressbar.h:
+
+/usr/include/wchar.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6WebEngineCoreTools/Qt6WebEngineCoreToolsAdditionalTargetInfo.cmake:
 
@@ -2392,10 +2525,6 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qlatin1stringview.h:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicPluginHelpers.cmake:
-
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/15/include/tbmintrin.h:
@@ -2462,6 +2591,8 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomGenerationHelpers.cmake:
 
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabbar.h:
+
 /usr/include/c++/15/bits/stl_algobase.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qeventloop.h:
@@ -2473,6 +2604,18 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /usr/include/x86_64-linux-gnu/c++/15/bits/gthr.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/15/include/avx512bwintrin.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/QObject:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/QTransform:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/QSize:
+
+/usr/include/c++/15/clocale:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qstdlibdetection.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/QSizeF:
 
@@ -2495,10 +2638,6 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /usr/include/c++/15/vector:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/q20iterator.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Positioning/Qt6PositioningTargets.cmake:
-
-/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/q20utility.h:
 
@@ -2533,6 +2672,8 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /usr/lib/x86_64-linux-gnu/cmake/Qt6DBusTools/Qt6DBusToolsTargets.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qbasictimer.h:
+
+/home/marcel1237/Thunder/ThunderSDK/src/adblock/adblockmanager.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qbindingstorage.h:
 
@@ -2571,6 +2712,8 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /home/marcel1237/Thunder/ThunderSDK/src/kernel/thunder_hex_utils.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainerfwd.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qslider.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainerinfo.h:
 
@@ -2626,10 +2769,6 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qmap.h:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt6PrintSupport/Qt6PrintSupportTargets.cmake:
-
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h:
-
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qmalloc.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h:
@@ -2639,6 +2778,8 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /usr/include/c++/15/memory:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qmargins.h:
+
+/usr/share/cmake-4.2/Modules/DartConfiguration.tcl.in:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
@@ -2656,6 +2797,10 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qprocessordetection.h:
 
+/usr/include/c++/15/bits/stl_construct.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qreadwritelock.h:
+
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qrefcount.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/15/include/immintrin.h:
@@ -2667,12 +2812,6 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qcursor.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qrgb.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/15/include/avx512bf16vlintrin.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qscopedpointer.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtWebEngineCore/QWebEngineUrlRequestInfo:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
@@ -2692,10 +2831,6 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedpointer.h:
 
-/usr/include/c++/15/clocale:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qstdlibdetection.h:
-
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qstring.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
@@ -2705,6 +2840,12 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /usr/include/c++/15/bits/stl_vector.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringbuilder.h:
+
+/usr/share/cmake-4.2/Modules/Platform/Linux.cmake:
+
+/usr/include/c++/15/bits/erase_if.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qevent.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringconverter_base.h:
 
@@ -2727,8 +2868,6 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qalgorithms.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qtcoreglobal.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qtdeprecationdefinitions.h:
 
@@ -2754,6 +2893,8 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qtversionchecks.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtCore/QReadWriteLock:
+
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qurl.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6PrintSupport/Qt6PrintSupportConfigVersionImpl.cmake:
@@ -2774,8 +2915,6 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qcolor.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h:
-
 /usr/lib/x86_64-linux-gnu/cmake/Qt6WebEngineWidgets/Qt6WebEngineWidgetsConfigVersionImpl.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontvariableaxis.h:
@@ -2789,6 +2928,12 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /usr/share/cmake-4.2/Modules/Platform/Linker/GNU.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qicon.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qinputdevice.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6QuickTools/Qt6QuickToolsConfig.cmake:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWebEngineCore/qwebenginepermission.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qpagelayout.h:
 
@@ -2806,7 +2951,13 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixelformat.h:
 
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicToolHelpers.cmake:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qpointingdevice.h:
+
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qpolygon.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qscreen_platform.h:
 
 /usr/share/cmake-4.2/Modules/FindPackageMessage.cmake:
 
@@ -2826,11 +2977,15 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qvalidator.h:
+
 /usr/include/x86_64-linux-gnu/qt6/QtWebEngineCore/QWebEngineUrlRequestInterceptor:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt6QuickTools/Qt6QuickToolsConfig.cmake:
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qapplication.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtWebEngineCore/qwebenginepermission.h:
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qsystemdetection.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWebEngineCore/qwebengineclientcertificateselection.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWebEngineCore/qwebenginequotarequest.h:
 
@@ -2847,35 +3002,3 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /usr/include/c++/15/bits/streambuf.tcc:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLineEdit:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qsystemdetection.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtWebEngineCore/qwebengineclientcertificateselection.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qapplication.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgridlayout.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayout.h:
-
-/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlineedit.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qhashfunctions.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h:
-
-/home/marcel1237/Thunder/ThunderSDK/src/kernel/kernel_bridge.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgets-config.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsexports.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/QString:
-
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h:

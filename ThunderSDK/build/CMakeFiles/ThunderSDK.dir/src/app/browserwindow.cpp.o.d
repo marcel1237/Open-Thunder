@@ -102,17 +102,13 @@ CMakeFiles/ThunderSDK.dir/src/app/browserwindow.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
- /usr/include/x86_64-linux-gnu/bits/select2.h \
- /usr/include/x86_64-linux-gnu/bits/select-decl.h \
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib.h \
  /usr/include/c++/15/bits/std_abs.h \
  /usr/include/c++/15/pstl/glue_algorithm_defs.h \
  /usr/include/c++/15/pstl/execution_defs.h \
@@ -225,8 +221,6 @@ CMakeFiles/ThunderSDK.dir/src/app/browserwindow.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
- /usr/include/x86_64-linux-gnu/bits/wchar2-decl.h \
- /usr/include/x86_64-linux-gnu/bits/wchar2.h \
  /usr/include/c++/15/bits/shared_ptr_base.h \
  /usr/include/c++/15/bits/allocated_ptr.h \
  /usr/include/c++/15/ext/atomicity.h \
@@ -267,8 +261,6 @@ CMakeFiles/ThunderSDK.dir/src/app/browserwindow.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydata.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qpair.h /usr/include/string.h \
  /usr/include/strings.h \
- /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
- /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydatapointer.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydataops.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainertools_impl.h \
@@ -293,11 +285,9 @@ CMakeFiles/ThunderSDK.dir/src/app/browserwindow.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
- /usr/include/x86_64-linux-gnu/bits/stdio2-decl.h \
- /usr/include/x86_64-linux-gnu/bits/stdio.h \
- /usr/include/x86_64-linux-gnu/bits/stdio2.h /usr/include/c++/15/cerrno \
- /usr/include/errno.h /usr/include/x86_64-linux-gnu/bits/errno.h \
- /usr/include/linux/errno.h /usr/include/x86_64-linux-gnu/asm/errno.h \
+ /usr/include/c++/15/cerrno /usr/include/errno.h \
+ /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
+ /usr/include/x86_64-linux-gnu/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/15/bits/charconv.h \
@@ -338,119 +328,6 @@ CMakeFiles/ThunderSDK.dir/src/app/browserwindow.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfloat16.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmath.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtformat_impl.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/immintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/x86gprintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/ia32intrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/adxintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/bmiintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/bmi2intrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/cetintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/cldemoteintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/clflushoptintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/clwbintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/clzerointrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/cmpccxaddintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/enqcmdintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/fxsrintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/lzcntintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/lwpintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/movdirintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/mwaitintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/mwaitxintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/pconfigintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/popcntintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/pkuintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/prfchiintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/raointintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/rdseedintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/rtmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/serializeintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/sgxintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/tbmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/tsxldtrkintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/uintrintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/waitpkgintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/wbnoinvdintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/xsaveintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/xsavecintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/xsaveoptintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/xsavesintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/xtestintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/hresetintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/usermsrintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/mmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/xmmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/mm_malloc.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/emmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/pmmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/tmmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/smmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/wmmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/avxintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/avxvnniintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/avxifmaintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/avxvnniint8intrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/avxvnniint16intrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/avx2intrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512fintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512cdintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512vlintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512bwintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512dqintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512vlbwintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512vldqintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512ifmaintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512ifmavlintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512vbmiintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512vbmivlintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512vpopcntdqintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512vbmi2intrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512vbmi2vlintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512vnniintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512vnnivlintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512vpopcntdqvlintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512bitalgintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512bitalgvlintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512vp2intersectintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512vp2intersectvlintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512fp16intrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512fp16vlintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/shaintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/sm3intrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/sha512intrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/sm4intrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/fmaintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/f16cintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/gfniintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/vaesintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/vpclmulqdqintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512bf16vlintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512bf16intrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/avxneconvertintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/amxtileintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/amxint8intrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/amxbf16intrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/amxcomplexintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/amxavx512intrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/amxtf32intrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/amxtransposeintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/amxfp8intrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/prfchwintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/keylockerintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/amxfp16intrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/avx10_2mediaintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/avx10_2-512mediaintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/avx10_2convertintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/avx10_2-512convertintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/avx10_2bf16intrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/avx10_2-512bf16intrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/avx10_2satcvtintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/avx10_2-512satcvtintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/avx10_2minmaxintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/avx10_2-512minmaxintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/avx10_2copyintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/movrsintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/amxmovrsintrin.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qiterable.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtaggedpointer.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmetacontainer.h \
@@ -583,17 +460,58 @@ CMakeFiles/ThunderSDK.dir/src/app/browserwindow.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QProgressBar \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qprogressbar.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QTabWidget \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QComboBox \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcombobox.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemdelegate.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyleoption.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractspinbox.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qvalidator.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qregularexpression.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qslider.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyle.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabbar.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qrubberband.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractitemmodel.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/QCloseEvent \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qevent.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreevent.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qbasictimer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstracteventdispatcher.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qeventloop.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qdeadlinetimer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevice.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qeventpoint.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qvector2d.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qvectornd.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qpointingdevice.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qinputdevice.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qscreen.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QRect \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qrect.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QSize \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/QTransform \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qnativeinterface.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qscreen_platform.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication_platform.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qinputmethod.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication_platform.h \
  /home/marcel1237/Thunder/ThunderSDK/src/app/thundercommon.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QDebug \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QFlags \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
- /home/marcel1237/Thunder/ThunderSDK/src/app/thunder_ui_constants.h \
  /home/marcel1237/Thunder/ThunderSDK/src/network/thunder_url_interceptor.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWebEngineCore/QWebEngineUrlRequestInterceptor \
  /usr/include/x86_64-linux-gnu/qt6/QtWebEngineCore/qwebengineurlrequestinterceptor.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWebEngineCore/qwebengineurlrequestinfo.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevice.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWebEngineCore/QWebEngineUrlRequestInfo \
  /usr/include/x86_64-linux-gnu/qt6/QtWebEngineCore/qwebengineurlrequestinfo.h \
  /home/marcel1237/Thunder/ThunderSDK/src/app/thundercommon.h \
@@ -608,31 +526,182 @@ CMakeFiles/ThunderSDK.dir/src/app/browserwindow.cpp.o: \
  /usr/include/x86_64-linux-gnu/asm/sockios.h \
  /usr/include/asm-generic/sockios.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
- /usr/include/x86_64-linux-gnu/bits/socket2.h /usr/include/netinet/in.h \
- /usr/include/x86_64-linux-gnu/bits/in.h /usr/include/netinet/tcp.h \
+ /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/bits/in.h \
+ /usr/include/netinet/tcp.h \
  /home/marcel1237/Thunder/ThunderSDK/src/kernel/thunder_simd_accelerator.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/immintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/x86gprintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/ia32intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/adxintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/bmiintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/bmi2intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/cetintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/cldemoteintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/clflushoptintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/clwbintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/clzerointrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/cmpccxaddintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/enqcmdintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/fxsrintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/lzcntintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/lwpintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/movdirintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/mwaitintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/mwaitxintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/pconfigintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/popcntintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/pkuintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/prfchiintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/raointintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/rdseedintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/rtmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/serializeintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/sgxintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/tbmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/tsxldtrkintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/uintrintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/waitpkgintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/wbnoinvdintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/xsaveintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/xsavecintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/xsaveoptintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/xsavesintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/xtestintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/hresetintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/usermsrintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/mmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/xmmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/mm_malloc.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/emmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/pmmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/tmmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/smmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/wmmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/avxintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/avxvnniintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/avxifmaintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/avxvnniint8intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/avxvnniint16intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/avx2intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512fintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512cdintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512vlintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512bwintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512dqintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512vlbwintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512vldqintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512ifmaintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512ifmavlintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512vbmiintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512vbmivlintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512vpopcntdqintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512vbmi2intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512vbmi2vlintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512vnniintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512vnnivlintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512vpopcntdqvlintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512bitalgintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512bitalgvlintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512vp2intersectintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512vp2intersectvlintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512fp16intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512fp16vlintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/shaintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/sm3intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/sha512intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/sm4intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/fmaintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/f16cintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/gfniintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/vaesintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/vpclmulqdqintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512bf16vlintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/avx512bf16intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/avxneconvertintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/amxtileintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/amxint8intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/amxbf16intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/amxcomplexintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/amxavx512intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/amxtf32intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/amxtransposeintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/amxfp8intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/prfchwintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/keylockerintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/amxfp16intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/avx10_2mediaintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/avx10_2-512mediaintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/avx10_2convertintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/avx10_2-512convertintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/avx10_2bf16intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/avx10_2-512bf16intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/avx10_2satcvtintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/avx10_2-512satcvtintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/avx10_2minmaxintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/avx10_2-512minmaxintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/avx10_2copyintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/movrsintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/amxmovrsintrin.h \
  /home/marcel1237/Thunder/ThunderSDK/src/kernel/thunder_hex_utils.h \
  /home/marcel1237/Thunder/ThunderSDK/src/kernel/thunder_prefetch.h \
+ /home/marcel1237/Thunder/ThunderSDK/src/app/thundercommon.h \
+ /home/marcel1237/Thunder/ThunderSDK/src/adblock/adblockmanager.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QReadWriteLock \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qreadwritelock.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QUrl \
+ /home/marcel1237/Thunder/ThunderSDK/src/adblock/adblockrule.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QRegularExpression \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qregularexpression.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
+ /home/marcel1237/Thunder/ThunderSDK/src/app/thunder_ui_constants.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWebEngineCore/QWebEngineProfile \
  /usr/include/x86_64-linux-gnu/qt6/QtWebEngineCore/qwebengineprofile.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWebEngineCore/QWebEngineSettings \
  /usr/include/x86_64-linux-gnu/qt6/QtWebEngineCore/qwebenginesettings.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWebEngineCore/QWebEnginePage \
  /usr/include/x86_64-linux-gnu/qt6/QtWebEngineCore/qwebenginepage.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLabel \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlabel.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qpicture.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QShortcut \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qshortcut.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPalette \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpalette.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qapplication.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreevent.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qbasictimer.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstracteventdispatcher.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qeventloop.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qdeadlinetimer.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qnativeinterface.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication_platform.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qinputmethod.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication_platform.h
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QTabBar \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabbar.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/QIcon \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qicon.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QSettings \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qsettings.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QStandardPaths \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qstandardpaths.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QDir \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qdir.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qdirlisting.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qfiledevice.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qfile.h \
+ /usr/include/c++/15/filesystem /usr/include/c++/15/bits/fs_fwd.h \
+ /usr/include/c++/15/bits/fs_path.h /usr/include/c++/15/locale \
+ /usr/include/c++/15/bits/locale_facets.h /usr/include/c++/15/cwctype \
+ /usr/include/wctype.h /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+ /usr/include/x86_64-linux-gnu/c++/15/bits/ctype_base.h \
+ /usr/include/x86_64-linux-gnu/c++/15/bits/ctype_inline.h \
+ /usr/include/c++/15/bits/locale_facets.tcc \
+ /usr/include/c++/15/bits/locale_facets_nonio.h \
+ /usr/include/x86_64-linux-gnu/c++/15/bits/time_members.h \
+ /usr/include/x86_64-linux-gnu/c++/15/bits/messages_members.h \
+ /usr/include/libintl.h /usr/include/c++/15/bits/codecvt.h \
+ /usr/include/c++/15/bits/locale_facets_nonio.tcc \
+ /usr/include/c++/15/bits/locale_conv.h /usr/include/c++/15/iomanip \
+ /usr/include/c++/15/bits/quoted_string.h /usr/include/c++/15/sstream \
+ /usr/include/c++/15/istream /usr/include/c++/15/ios \
+ /usr/include/c++/15/bits/basic_ios.h \
+ /usr/include/c++/15/bits/basic_ios.tcc /usr/include/c++/15/ostream \
+ /usr/include/c++/15/bits/ostream.h /usr/include/c++/15/bits/ostream.tcc \
+ /usr/include/c++/15/bits/istream.tcc \
+ /usr/include/c++/15/bits/sstream.tcc /usr/include/c++/15/codecvt \
+ /usr/include/c++/15/bits/fs_dir.h /usr/include/c++/15/bits/fs_ops.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qfileinfo.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimezone.h

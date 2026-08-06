@@ -5,7 +5,7 @@ Este documento define o padrão obrigatório de desenvolvimento para o ecossiste
 ---
 
 ## 🏛️ 1. A Regra de Ouro (Zero-Regression Policy)
-**A performance nunca pode cair.** Qualquer novo commit, pilar (TH) ou modificação de código que resulte em uma regressão de milissegundos em relação ao benchmark anterior deve ser sumariamente rejeitado e re-arquitetado.
+**A performance medida nunca deve regredir sem decisão documentada.** Comparações devem usar o mesmo compilador, flags, dados, trabalho observável, repetições e estatística. Segurança, correção e portabilidade são restrições obrigatórias; um ganho que introduz comportamento indefinido não é aceito.
 
 ## 🚀 2. Princípios de Desenvolvimento Enforced-Hardware
 Para garantir o domínio constante do hardware, todo código deve seguir estes quatro dogmas:
@@ -16,9 +16,8 @@ Sempre que possível, algoritmos de software (loops, condicionais, buscas) devem
 *   **Branching:** Evitar `if/else` complexos; usar lógica branchless ou dicas de hardware (`TD_LIKELY`).
 
 ### B. Soberania sobre o Kernel (NitroCore)
-O software não deve pedir permissão ao sistema operacional; ele deve impor seu estado.
-*   Prioridades devem ser `SCHED_FIFO` ou `SCHED_RR`.
-*   Afinidade de CPU deve ser fixa para evitar cache-misses por migração de núcleo.
+O software solicita capacidades ao sistema operacional, registra cada retorno e continua de forma segura quando não autorizado.
+*   Tempo real e afinidade são opt-in, medidos e limitados ao cpuset disponível.
 
 ### C. Alocação Determinística (OmniLock)
 O uso de memória dinâmica padrão (`malloc/std::vector`) deve ser minimizado em caminhos críticos.
@@ -26,14 +25,15 @@ O uso de memória dinâmica padrão (`malloc/std::vector`) deve ser minimizado e
 *   Páginas devem ser travadas no silício (`mlockall`) para eliminar latência de swap.
 
 ### D. Zero-Latência Térmica (ApexPower)
-A CPU e a GPU nunca devem entrar em estados de repouso (C-States) enquanto o software estiver ativo. A latência de DMA deve ser mantida em **0ns**.
+Políticas de energia são opt-in e devem ser restauráveis. O estado solicitado e o estado confirmado devem ser reportados separadamente.
 
 ---
 
 ## 📊 3. Validação de Performance
 Antes de finalizar qualquer fase, os seguintes testes são obrigatórios:
-1.  **Thunder_Hardware_Stress:** Validar se a vazão de vetores permanece acima de 20GB/s.
-2.  **Thunder_Ultimate_Benchmark:** Confirmar que o veredito permanece no patamar de **20x mais rápido** que o sistema baseline.
+1. **ThunderCoreTests:** correção, limites e regressões sob sanitizers.
+2. **Thunder_Hardware_Stress:** estabilidade e vazão observada, sem limiar universal inventado.
+3. **Thunder_Ultimate_Benchmark:** mediana de caminhos equivalentes; reporta o resultado mesmo quando a otimização perde.
 
 ---
 *Assinado: Thunder Core Architecture Team*

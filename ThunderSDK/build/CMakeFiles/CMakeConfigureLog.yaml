@@ -8299,3 +8299,1792 @@ events:
         
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake:197 (try_compile)"
+      - "/usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake:320 (_ipo_run_language_check)"
+      - "CMakeLists.txt:27 (check_ipo_supported)"
+    directories:
+      source: "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src"
+      binary: "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src -B/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake foo
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Scanning dependencies of target foo
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 25%] Building CXX object CMakeFiles/foo.dir/foo.cpp.o
+        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/foo.dir/foo.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+        [ 50%] Linking CXX static library libfoo.a
+        /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/gcc-ar-15" qc libfoo.a CMakeFiles/foo.dir/foo.cpp.o
+        "/usr/bin/gcc-ranlib-15" libfoo.a
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 50%] Built target foo
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake boo
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Scanning dependencies of target boo
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 75%] Building CXX object CMakeFiles/boo.dir/main.cpp.o
+        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/boo.dir/main.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
+        [100%] Linking CXX executable boo
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /usr/bin/c++ -flto=auto -fno-fat-lto-objects CMakeFiles/boo.dir/main.cpp.o -o boo  libfoo.a
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [100%] Built target boo
+        gmake[1]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/cmake -E cmake_progress_start /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles 0
+        
+      exitCode: 0
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/FindVulkan.cmake:415 (find_program)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/Qt6/FindWrapVulkanHeaders.cmake:13 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicDependencyHelpers.cmake:34 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiDependencies.cmake:37 (_qt_internal_find_third_party_dependencies)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiConfig.cmake:50 (include)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6Config.cmake:251 (find_package)"
+      - "CMakeLists.txt:37 (find_package)"
+    mode: "program"
+    variable: "Vulkan_GLSLANG_VALIDATOR_EXECUTABLE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "glslangValidator"
+    candidate_directories:
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+      - "/home/marcel1237/.dotnet/tools/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/"
+      - "/usr/bin/"
+      - "/usr/sbin/"
+      - "/usr/"
+      - "/bin/"
+      - "/sbin/"
+      - "/usr/X11R6/bin/"
+      - "/usr/X11R6/sbin/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/bin/"
+      - "/usr/pkg/sbin/"
+      - "/usr/pkg/"
+      - "/opt/bin/"
+      - "/opt/sbin/"
+      - "/opt/"
+    found: "/bin/glslangValidator"
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+        - "/home/marcel1237/.dotnet/tools"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CTest.cmake:188 (find_program)"
+      - "CMakeLists.txt:100 (include)"
+    mode: "program"
+    variable: "MEMORYCHECK_COMMAND"
+    description: "Path to the memory checking command, used for memory error detection."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "purify"
+      - "valgrind"
+      - "boundscheck"
+      - "drmemory"
+      - "cuda-memcheck"
+      - "compute-sanitizer"
+    candidate_directories:
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+      - "/home/marcel1237/.dotnet/tools/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/"
+      - "/usr/bin/"
+      - "/usr/sbin/"
+      - "/usr/"
+      - "/bin/"
+      - "/sbin/"
+      - "/usr/X11R6/bin/"
+      - "/usr/X11R6/sbin/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/bin/"
+      - "/usr/pkg/sbin/"
+      - "/usr/pkg/"
+      - "/opt/bin/"
+      - "/opt/sbin/"
+      - "/opt/"
+    searched_directories:
+      - "/usr/local/sbin/purify"
+      - "/usr/local/bin/purify"
+      - "/usr/sbin/purify"
+      - "/usr/bin/purify"
+      - "/sbin/purify"
+      - "/bin/purify"
+      - "/usr/games/purify"
+      - "/usr/local/games/purify"
+      - "/snap/bin/purify"
+      - "/home/marcel1237/.dotnet/tools/purify"
+      - "/usr/local/bin/purify"
+      - "/usr/local/sbin/purify"
+      - "/usr/local/purify"
+      - "/usr/bin/purify"
+      - "/usr/sbin/purify"
+      - "/usr/purify"
+      - "/bin/purify"
+      - "/sbin/purify"
+      - "/usr/X11R6/bin/purify"
+      - "/usr/X11R6/sbin/purify"
+      - "/usr/X11R6/purify"
+      - "/usr/pkg/bin/purify"
+      - "/usr/pkg/sbin/purify"
+      - "/usr/pkg/purify"
+      - "/opt/bin/purify"
+      - "/opt/sbin/purify"
+      - "/opt/purify"
+      - "/usr/local/sbin/valgrind"
+      - "/usr/local/bin/valgrind"
+      - "/usr/sbin/valgrind"
+      - "/usr/bin/valgrind"
+      - "/sbin/valgrind"
+      - "/bin/valgrind"
+      - "/usr/games/valgrind"
+      - "/usr/local/games/valgrind"
+      - "/snap/bin/valgrind"
+      - "/home/marcel1237/.dotnet/tools/valgrind"
+      - "/usr/local/bin/valgrind"
+      - "/usr/local/sbin/valgrind"
+      - "/usr/local/valgrind"
+      - "/usr/bin/valgrind"
+      - "/usr/sbin/valgrind"
+      - "/usr/valgrind"
+      - "/bin/valgrind"
+      - "/sbin/valgrind"
+      - "/usr/X11R6/bin/valgrind"
+      - "/usr/X11R6/sbin/valgrind"
+      - "/usr/X11R6/valgrind"
+      - "/usr/pkg/bin/valgrind"
+      - "/usr/pkg/sbin/valgrind"
+      - "/usr/pkg/valgrind"
+      - "/opt/bin/valgrind"
+      - "/opt/sbin/valgrind"
+      - "/opt/valgrind"
+      - "/usr/local/sbin/boundscheck"
+      - "/usr/local/bin/boundscheck"
+      - "/usr/sbin/boundscheck"
+      - "/usr/bin/boundscheck"
+      - "/sbin/boundscheck"
+      - "/bin/boundscheck"
+      - "/usr/games/boundscheck"
+      - "/usr/local/games/boundscheck"
+      - "/snap/bin/boundscheck"
+      - "/home/marcel1237/.dotnet/tools/boundscheck"
+      - "/usr/local/bin/boundscheck"
+      - "/usr/local/sbin/boundscheck"
+      - "/usr/local/boundscheck"
+      - "/usr/bin/boundscheck"
+      - "/usr/sbin/boundscheck"
+      - "/usr/boundscheck"
+      - "/bin/boundscheck"
+      - "/sbin/boundscheck"
+      - "/usr/X11R6/bin/boundscheck"
+      - "/usr/X11R6/sbin/boundscheck"
+      - "/usr/X11R6/boundscheck"
+      - "/usr/pkg/bin/boundscheck"
+      - "/usr/pkg/sbin/boundscheck"
+      - "/usr/pkg/boundscheck"
+      - "/opt/bin/boundscheck"
+      - "/opt/sbin/boundscheck"
+      - "/opt/boundscheck"
+      - "/usr/local/sbin/drmemory"
+      - "/usr/local/bin/drmemory"
+      - "/usr/sbin/drmemory"
+      - "/usr/bin/drmemory"
+      - "/sbin/drmemory"
+      - "/bin/drmemory"
+      - "/usr/games/drmemory"
+      - "/usr/local/games/drmemory"
+      - "/snap/bin/drmemory"
+      - "/home/marcel1237/.dotnet/tools/drmemory"
+      - "/usr/local/bin/drmemory"
+      - "/usr/local/sbin/drmemory"
+      - "/usr/local/drmemory"
+      - "/usr/bin/drmemory"
+      - "/usr/sbin/drmemory"
+      - "/usr/drmemory"
+      - "/bin/drmemory"
+      - "/sbin/drmemory"
+      - "/usr/X11R6/bin/drmemory"
+      - "/usr/X11R6/sbin/drmemory"
+      - "/usr/X11R6/drmemory"
+      - "/usr/pkg/bin/drmemory"
+      - "/usr/pkg/sbin/drmemory"
+      - "/usr/pkg/drmemory"
+      - "/opt/bin/drmemory"
+      - "/opt/sbin/drmemory"
+      - "/opt/drmemory"
+      - "/usr/local/sbin/cuda-memcheck"
+      - "/usr/local/bin/cuda-memcheck"
+      - "/usr/sbin/cuda-memcheck"
+      - "/usr/bin/cuda-memcheck"
+      - "/sbin/cuda-memcheck"
+      - "/bin/cuda-memcheck"
+      - "/usr/games/cuda-memcheck"
+      - "/usr/local/games/cuda-memcheck"
+      - "/snap/bin/cuda-memcheck"
+      - "/home/marcel1237/.dotnet/tools/cuda-memcheck"
+      - "/usr/local/bin/cuda-memcheck"
+      - "/usr/local/sbin/cuda-memcheck"
+      - "/usr/local/cuda-memcheck"
+      - "/usr/bin/cuda-memcheck"
+      - "/usr/sbin/cuda-memcheck"
+      - "/usr/cuda-memcheck"
+      - "/bin/cuda-memcheck"
+      - "/sbin/cuda-memcheck"
+      - "/usr/X11R6/bin/cuda-memcheck"
+      - "/usr/X11R6/sbin/cuda-memcheck"
+      - "/usr/X11R6/cuda-memcheck"
+      - "/usr/pkg/bin/cuda-memcheck"
+      - "/usr/pkg/sbin/cuda-memcheck"
+      - "/usr/pkg/cuda-memcheck"
+      - "/opt/bin/cuda-memcheck"
+      - "/opt/sbin/cuda-memcheck"
+      - "/opt/cuda-memcheck"
+      - "/usr/local/sbin/compute-sanitizer"
+      - "/usr/local/bin/compute-sanitizer"
+      - "/usr/sbin/compute-sanitizer"
+    found: "/usr/bin/compute-sanitizer"
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+        - "/home/marcel1237/.dotnet/tools"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CTest.cmake:196 (find_program)"
+      - "CMakeLists.txt:100 (include)"
+    mode: "program"
+    variable: "COVERAGE_COMMAND"
+    description: "Path to the coverage program that CTest uses for performing coverage inspection"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcov"
+    candidate_directories:
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+      - "/home/marcel1237/.dotnet/tools/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/"
+      - "/usr/bin/"
+      - "/usr/sbin/"
+      - "/usr/"
+      - "/bin/"
+      - "/sbin/"
+      - "/usr/X11R6/bin/"
+      - "/usr/X11R6/sbin/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/bin/"
+      - "/usr/pkg/sbin/"
+      - "/usr/pkg/"
+      - "/opt/bin/"
+      - "/opt/sbin/"
+      - "/opt/"
+    searched_directories:
+      - "/usr/local/sbin/gcov"
+      - "/usr/local/bin/gcov"
+      - "/usr/sbin/gcov"
+    found: "/usr/bin/gcov"
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+        - "/home/marcel1237/.dotnet/tools"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake:197 (try_compile)"
+      - "/usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake:320 (_ipo_run_language_check)"
+      - "CMakeLists.txt:27 (check_ipo_supported)"
+    directories:
+      source: "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src"
+      binary: "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src -B/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake foo
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Scanning dependencies of target foo
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 25%] Building CXX object CMakeFiles/foo.dir/foo.cpp.o
+        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/foo.dir/foo.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+        [ 50%] Linking CXX static library libfoo.a
+        /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/gcc-ar-15" qc libfoo.a CMakeFiles/foo.dir/foo.cpp.o
+        "/usr/bin/gcc-ranlib-15" libfoo.a
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 50%] Built target foo
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake boo
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Scanning dependencies of target boo
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 75%] Building CXX object CMakeFiles/boo.dir/main.cpp.o
+        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/boo.dir/main.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
+        [100%] Linking CXX executable boo
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /usr/bin/c++ -flto=auto -fno-fat-lto-objects CMakeFiles/boo.dir/main.cpp.o -o boo  libfoo.a
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [100%] Built target boo
+        gmake[1]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/cmake -E cmake_progress_start /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles 0
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake:197 (try_compile)"
+      - "/usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake:320 (_ipo_run_language_check)"
+      - "CMakeLists.txt:27 (check_ipo_supported)"
+    directories:
+      source: "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src"
+      binary: "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src -B/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake foo
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Scanning dependencies of target foo
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 25%] Building CXX object CMakeFiles/foo.dir/foo.cpp.o
+        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/foo.dir/foo.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+        [ 50%] Linking CXX static library libfoo.a
+        /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/gcc-ar-15" qc libfoo.a CMakeFiles/foo.dir/foo.cpp.o
+        "/usr/bin/gcc-ranlib-15" libfoo.a
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 50%] Built target foo
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake boo
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Scanning dependencies of target boo
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 75%] Building CXX object CMakeFiles/boo.dir/main.cpp.o
+        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/boo.dir/main.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
+        [100%] Linking CXX executable boo
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /usr/bin/c++ -flto=auto -fno-fat-lto-objects CMakeFiles/boo.dir/main.cpp.o -o boo  libfoo.a
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [100%] Built target boo
+        gmake[1]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/cmake -E cmake_progress_start /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles 0
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake:197 (try_compile)"
+      - "/usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake:320 (_ipo_run_language_check)"
+      - "CMakeLists.txt:27 (check_ipo_supported)"
+    directories:
+      source: "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src"
+      binary: "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src -B/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake foo
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Scanning dependencies of target foo
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 25%] Building CXX object CMakeFiles/foo.dir/foo.cpp.o
+        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/foo.dir/foo.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+        [ 50%] Linking CXX static library libfoo.a
+        /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/gcc-ar-15" qc libfoo.a CMakeFiles/foo.dir/foo.cpp.o
+        "/usr/bin/gcc-ranlib-15" libfoo.a
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 50%] Built target foo
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake boo
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Scanning dependencies of target boo
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 75%] Building CXX object CMakeFiles/boo.dir/main.cpp.o
+        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/boo.dir/main.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
+        [100%] Linking CXX executable boo
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /usr/bin/c++ -flto=auto -fno-fat-lto-objects CMakeFiles/boo.dir/main.cpp.o -o boo  libfoo.a
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [100%] Built target boo
+        gmake[1]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/cmake -E cmake_progress_start /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles 0
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake:197 (try_compile)"
+      - "/usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake:320 (_ipo_run_language_check)"
+      - "CMakeLists.txt:27 (check_ipo_supported)"
+    directories:
+      source: "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src"
+      binary: "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src -B/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake foo
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Scanning dependencies of target foo
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 25%] Building CXX object CMakeFiles/foo.dir/foo.cpp.o
+        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/foo.dir/foo.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+        [ 50%] Linking CXX static library libfoo.a
+        /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/gcc-ar-15" qc libfoo.a CMakeFiles/foo.dir/foo.cpp.o
+        "/usr/bin/gcc-ranlib-15" libfoo.a
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 50%] Built target foo
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake boo
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Scanning dependencies of target boo
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 75%] Building CXX object CMakeFiles/boo.dir/main.cpp.o
+        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/boo.dir/main.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
+        [100%] Linking CXX executable boo
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /usr/bin/c++ -flto=auto -fno-fat-lto-objects CMakeFiles/boo.dir/main.cpp.o -o boo  libfoo.a
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [100%] Built target boo
+        gmake[1]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/cmake -E cmake_progress_start /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles 0
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake:197 (try_compile)"
+      - "/usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake:320 (_ipo_run_language_check)"
+      - "CMakeLists.txt:27 (check_ipo_supported)"
+    directories:
+      source: "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src"
+      binary: "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src -B/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake foo
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Scanning dependencies of target foo
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 25%] Building CXX object CMakeFiles/foo.dir/foo.cpp.o
+        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/foo.dir/foo.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+        [ 50%] Linking CXX static library libfoo.a
+        /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/gcc-ar-15" qc libfoo.a CMakeFiles/foo.dir/foo.cpp.o
+        "/usr/bin/gcc-ranlib-15" libfoo.a
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 50%] Built target foo
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake boo
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Scanning dependencies of target boo
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 75%] Building CXX object CMakeFiles/boo.dir/main.cpp.o
+        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/boo.dir/main.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
+        [100%] Linking CXX executable boo
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /usr/bin/c++ -flto=auto -fno-fat-lto-objects CMakeFiles/boo.dir/main.cpp.o -o boo  libfoo.a
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [100%] Built target boo
+        gmake[1]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/cmake -E cmake_progress_start /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles 0
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake:197 (try_compile)"
+      - "/usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake:320 (_ipo_run_language_check)"
+      - "CMakeLists.txt:27 (check_ipo_supported)"
+    directories:
+      source: "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src"
+      binary: "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src -B/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake foo
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Scanning dependencies of target foo
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 25%] Building CXX object CMakeFiles/foo.dir/foo.cpp.o
+        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/foo.dir/foo.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+        [ 50%] Linking CXX static library libfoo.a
+        /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/gcc-ar-15" qc libfoo.a CMakeFiles/foo.dir/foo.cpp.o
+        "/usr/bin/gcc-ranlib-15" libfoo.a
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 50%] Built target foo
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake boo
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Scanning dependencies of target boo
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 75%] Building CXX object CMakeFiles/boo.dir/main.cpp.o
+        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/boo.dir/main.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
+        [100%] Linking CXX executable boo
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /usr/bin/c++ -flto=auto -fno-fat-lto-objects CMakeFiles/boo.dir/main.cpp.o -o boo  libfoo.a
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [100%] Built target boo
+        gmake[1]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/cmake -E cmake_progress_start /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles 0
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake:197 (try_compile)"
+      - "/usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake:320 (_ipo_run_language_check)"
+      - "CMakeLists.txt:27 (check_ipo_supported)"
+    directories:
+      source: "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src"
+      binary: "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src -B/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake foo
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Scanning dependencies of target foo
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 25%] Building CXX object CMakeFiles/foo.dir/foo.cpp.o
+        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/foo.dir/foo.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+        [ 50%] Linking CXX static library libfoo.a
+        /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/gcc-ar-15" qc libfoo.a CMakeFiles/foo.dir/foo.cpp.o
+        "/usr/bin/gcc-ranlib-15" libfoo.a
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 50%] Built target foo
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake boo
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Scanning dependencies of target boo
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 75%] Building CXX object CMakeFiles/boo.dir/main.cpp.o
+        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/boo.dir/main.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
+        [100%] Linking CXX executable boo
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /usr/bin/c++ -flto=auto -fno-fat-lto-objects CMakeFiles/boo.dir/main.cpp.o -o boo  libfoo.a
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [100%] Built target boo
+        gmake[1]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/cmake -E cmake_progress_start /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles 0
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake:197 (try_compile)"
+      - "/usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake:320 (_ipo_run_language_check)"
+      - "CMakeLists.txt:27 (check_ipo_supported)"
+    directories:
+      source: "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src"
+      binary: "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src -B/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake foo
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Scanning dependencies of target foo
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 25%] Building CXX object CMakeFiles/foo.dir/foo.cpp.o
+        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/foo.dir/foo.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+        [ 50%] Linking CXX static library libfoo.a
+        /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/gcc-ar-15" qc libfoo.a CMakeFiles/foo.dir/foo.cpp.o
+        "/usr/bin/gcc-ranlib-15" libfoo.a
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 50%] Built target foo
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake boo
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Scanning dependencies of target boo
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 75%] Building CXX object CMakeFiles/boo.dir/main.cpp.o
+        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/boo.dir/main.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
+        [100%] Linking CXX executable boo
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /usr/bin/c++ -flto=auto -fno-fat-lto-objects CMakeFiles/boo.dir/main.cpp.o -o boo  libfoo.a
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [100%] Built target boo
+        gmake[1]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/cmake -E cmake_progress_start /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles 0
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake:197 (try_compile)"
+      - "/usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake:320 (_ipo_run_language_check)"
+      - "CMakeLists.txt:27 (check_ipo_supported)"
+    directories:
+      source: "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src"
+      binary: "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src -B/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake foo
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Scanning dependencies of target foo
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 25%] Building CXX object CMakeFiles/foo.dir/foo.cpp.o
+        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/foo.dir/foo.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+        [ 50%] Linking CXX static library libfoo.a
+        /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/gcc-ar-15" qc libfoo.a CMakeFiles/foo.dir/foo.cpp.o
+        "/usr/bin/gcc-ranlib-15" libfoo.a
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 50%] Built target foo
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake boo
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Scanning dependencies of target boo
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 75%] Building CXX object CMakeFiles/boo.dir/main.cpp.o
+        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/boo.dir/main.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
+        [100%] Linking CXX executable boo
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /usr/bin/c++ -flto=auto -fno-fat-lto-objects CMakeFiles/boo.dir/main.cpp.o -o boo  libfoo.a
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [100%] Built target boo
+        gmake[1]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/cmake -E cmake_progress_start /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles 0
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake:197 (try_compile)"
+      - "/usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake:320 (_ipo_run_language_check)"
+      - "CMakeLists.txt:27 (check_ipo_supported)"
+    directories:
+      source: "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src"
+      binary: "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src -B/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake foo
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Scanning dependencies of target foo
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 25%] Building CXX object CMakeFiles/foo.dir/foo.cpp.o
+        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/foo.dir/foo.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+        [ 50%] Linking CXX static library libfoo.a
+        /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/gcc-ar-15" qc libfoo.a CMakeFiles/foo.dir/foo.cpp.o
+        "/usr/bin/gcc-ranlib-15" libfoo.a
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 50%] Built target foo
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake boo
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Scanning dependencies of target boo
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 75%] Building CXX object CMakeFiles/boo.dir/main.cpp.o
+        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/boo.dir/main.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
+        [100%] Linking CXX executable boo
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /usr/bin/c++ -flto=auto -fno-fat-lto-objects CMakeFiles/boo.dir/main.cpp.o -o boo  libfoo.a
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [100%] Built target boo
+        gmake[1]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/cmake -E cmake_progress_start /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles 0
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake:197 (try_compile)"
+      - "/usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake:320 (_ipo_run_language_check)"
+      - "CMakeLists.txt:27 (check_ipo_supported)"
+    directories:
+      source: "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src"
+      binary: "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src -B/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake foo
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Scanning dependencies of target foo
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 25%] Building CXX object CMakeFiles/foo.dir/foo.cpp.o
+        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/foo.dir/foo.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+        [ 50%] Linking CXX static library libfoo.a
+        /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/gcc-ar-15" qc libfoo.a CMakeFiles/foo.dir/foo.cpp.o
+        "/usr/bin/gcc-ranlib-15" libfoo.a
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 50%] Built target foo
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake boo
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Scanning dependencies of target boo
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 75%] Building CXX object CMakeFiles/boo.dir/main.cpp.o
+        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/boo.dir/main.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
+        [100%] Linking CXX executable boo
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /usr/bin/c++ -flto=auto -fno-fat-lto-objects CMakeFiles/boo.dir/main.cpp.o -o boo  libfoo.a
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [100%] Built target boo
+        gmake[1]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/cmake -E cmake_progress_start /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles 0
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake:197 (try_compile)"
+      - "/usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake:320 (_ipo_run_language_check)"
+      - "CMakeLists.txt:27 (check_ipo_supported)"
+    directories:
+      source: "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src"
+      binary: "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src -B/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake foo
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Scanning dependencies of target foo
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 25%] Building CXX object CMakeFiles/foo.dir/foo.cpp.o
+        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/foo.dir/foo.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+        [ 50%] Linking CXX static library libfoo.a
+        /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/gcc-ar-15" qc libfoo.a CMakeFiles/foo.dir/foo.cpp.o
+        "/usr/bin/gcc-ranlib-15" libfoo.a
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 50%] Built target foo
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake boo
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Scanning dependencies of target boo
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 75%] Building CXX object CMakeFiles/boo.dir/main.cpp.o
+        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/boo.dir/main.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
+        [100%] Linking CXX executable boo
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /usr/bin/c++ -flto=auto -fno-fat-lto-objects CMakeFiles/boo.dir/main.cpp.o -o boo  libfoo.a
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [100%] Built target boo
+        gmake[1]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/cmake -E cmake_progress_start /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles 0
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake:197 (try_compile)"
+      - "/usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake:320 (_ipo_run_language_check)"
+      - "CMakeLists.txt:27 (check_ipo_supported)"
+    directories:
+      source: "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src"
+      binary: "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src -B/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake foo
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Scanning dependencies of target foo
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 25%] Building CXX object CMakeFiles/foo.dir/foo.cpp.o
+        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/foo.dir/foo.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+        [ 50%] Linking CXX static library libfoo.a
+        /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/gcc-ar-15" qc libfoo.a CMakeFiles/foo.dir/foo.cpp.o
+        "/usr/bin/gcc-ranlib-15" libfoo.a
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 50%] Built target foo
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake boo
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Scanning dependencies of target boo
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 75%] Building CXX object CMakeFiles/boo.dir/main.cpp.o
+        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/boo.dir/main.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
+        [100%] Linking CXX executable boo
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /usr/bin/c++ -flto=auto -fno-fat-lto-objects CMakeFiles/boo.dir/main.cpp.o -o boo  libfoo.a
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [100%] Built target boo
+        gmake[1]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/cmake -E cmake_progress_start /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles 0
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake:197 (try_compile)"
+      - "/usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake:320 (_ipo_run_language_check)"
+      - "CMakeLists.txt:27 (check_ipo_supported)"
+    directories:
+      source: "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src"
+      binary: "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src -B/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake foo
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Scanning dependencies of target foo
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 25%] Building CXX object CMakeFiles/foo.dir/foo.cpp.o
+        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/foo.dir/foo.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+        [ 50%] Linking CXX static library libfoo.a
+        /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/gcc-ar-15" qc libfoo.a CMakeFiles/foo.dir/foo.cpp.o
+        "/usr/bin/gcc-ranlib-15" libfoo.a
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 50%] Built target foo
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake boo
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Scanning dependencies of target boo
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 75%] Building CXX object CMakeFiles/boo.dir/main.cpp.o
+        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/boo.dir/main.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
+        [100%] Linking CXX executable boo
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /usr/bin/c++ -flto=auto -fno-fat-lto-objects CMakeFiles/boo.dir/main.cpp.o -o boo  libfoo.a
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [100%] Built target boo
+        gmake[1]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/cmake -E cmake_progress_start /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles 0
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake:197 (try_compile)"
+      - "/usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake:320 (_ipo_run_language_check)"
+      - "CMakeLists.txt:27 (check_ipo_supported)"
+    directories:
+      source: "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src"
+      binary: "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src -B/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake foo
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Scanning dependencies of target foo
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 25%] Building CXX object CMakeFiles/foo.dir/foo.cpp.o
+        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/foo.dir/foo.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+        [ 50%] Linking CXX static library libfoo.a
+        /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/gcc-ar-15" qc libfoo.a CMakeFiles/foo.dir/foo.cpp.o
+        "/usr/bin/gcc-ranlib-15" libfoo.a
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 50%] Built target foo
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake boo
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Scanning dependencies of target boo
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 75%] Building CXX object CMakeFiles/boo.dir/main.cpp.o
+        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/boo.dir/main.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
+        [100%] Linking CXX executable boo
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /usr/bin/c++ -flto=auto -fno-fat-lto-objects CMakeFiles/boo.dir/main.cpp.o -o boo  libfoo.a
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [100%] Built target boo
+        gmake[1]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/cmake -E cmake_progress_start /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles 0
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake:197 (try_compile)"
+      - "/usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake:320 (_ipo_run_language_check)"
+      - "CMakeLists.txt:27 (check_ipo_supported)"
+    directories:
+      source: "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src"
+      binary: "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src -B/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake foo
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Scanning dependencies of target foo
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 25%] Building CXX object CMakeFiles/foo.dir/foo.cpp.o
+        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/foo.dir/foo.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+        [ 50%] Linking CXX static library libfoo.a
+        /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/gcc-ar-15" qc libfoo.a CMakeFiles/foo.dir/foo.cpp.o
+        "/usr/bin/gcc-ranlib-15" libfoo.a
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 50%] Built target foo
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake boo
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Scanning dependencies of target boo
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 75%] Building CXX object CMakeFiles/boo.dir/main.cpp.o
+        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/boo.dir/main.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
+        [100%] Linking CXX executable boo
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /usr/bin/c++ -flto=auto -fno-fat-lto-objects CMakeFiles/boo.dir/main.cpp.o -o boo  libfoo.a
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [100%] Built target boo
+        gmake[1]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/cmake -E cmake_progress_start /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles 0
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake:197 (try_compile)"
+      - "/usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake:320 (_ipo_run_language_check)"
+      - "CMakeLists.txt:27 (check_ipo_supported)"
+    directories:
+      source: "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src"
+      binary: "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src -B/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake foo
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Scanning dependencies of target foo
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 25%] Building CXX object CMakeFiles/foo.dir/foo.cpp.o
+        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/foo.dir/foo.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+        [ 50%] Linking CXX static library libfoo.a
+        /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/gcc-ar-15" qc libfoo.a CMakeFiles/foo.dir/foo.cpp.o
+        "/usr/bin/gcc-ranlib-15" libfoo.a
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 50%] Built target foo
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake boo
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Scanning dependencies of target boo
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 75%] Building CXX object CMakeFiles/boo.dir/main.cpp.o
+        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/boo.dir/main.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
+        [100%] Linking CXX executable boo
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /usr/bin/c++ -flto=auto -fno-fat-lto-objects CMakeFiles/boo.dir/main.cpp.o -o boo  libfoo.a
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [100%] Built target boo
+        gmake[1]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/cmake -E cmake_progress_start /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles 0
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake:197 (try_compile)"
+      - "/usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake:320 (_ipo_run_language_check)"
+      - "CMakeLists.txt:27 (check_ipo_supported)"
+    directories:
+      source: "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src"
+      binary: "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src -B/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake foo
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Scanning dependencies of target foo
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 25%] Building CXX object CMakeFiles/foo.dir/foo.cpp.o
+        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/foo.dir/foo.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+        [ 50%] Linking CXX static library libfoo.a
+        /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/gcc-ar-15" qc libfoo.a CMakeFiles/foo.dir/foo.cpp.o
+        "/usr/bin/gcc-ranlib-15" libfoo.a
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 50%] Built target foo
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake boo
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Scanning dependencies of target boo
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 75%] Building CXX object CMakeFiles/boo.dir/main.cpp.o
+        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/boo.dir/main.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
+        [100%] Linking CXX executable boo
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /usr/bin/c++ -flto=auto -fno-fat-lto-objects CMakeFiles/boo.dir/main.cpp.o -o boo  libfoo.a
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [100%] Built target boo
+        gmake[1]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/cmake -E cmake_progress_start /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles 0
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake:197 (try_compile)"
+      - "/usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake:320 (_ipo_run_language_check)"
+      - "CMakeLists.txt:27 (check_ipo_supported)"
+    directories:
+      source: "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src"
+      binary: "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src -B/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake foo
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Scanning dependencies of target foo
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 25%] Building CXX object CMakeFiles/foo.dir/foo.cpp.o
+        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/foo.dir/foo.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+        [ 50%] Linking CXX static library libfoo.a
+        /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/gcc-ar-15" qc libfoo.a CMakeFiles/foo.dir/foo.cpp.o
+        "/usr/bin/gcc-ranlib-15" libfoo.a
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 50%] Built target foo
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake boo
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Scanning dependencies of target boo
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 75%] Building CXX object CMakeFiles/boo.dir/main.cpp.o
+        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/boo.dir/main.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
+        [100%] Linking CXX executable boo
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /usr/bin/c++ -flto=auto -fno-fat-lto-objects CMakeFiles/boo.dir/main.cpp.o -o boo  libfoo.a
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [100%] Built target boo
+        gmake[1]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/cmake -E cmake_progress_start /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles 0
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake:197 (try_compile)"
+      - "/usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake:320 (_ipo_run_language_check)"
+      - "CMakeLists.txt:27 (check_ipo_supported)"
+    directories:
+      source: "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src"
+      binary: "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src -B/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake foo
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Scanning dependencies of target foo
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 25%] Building CXX object CMakeFiles/foo.dir/foo.cpp.o
+        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/foo.dir/foo.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+        [ 50%] Linking CXX static library libfoo.a
+        /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/gcc-ar-15" qc libfoo.a CMakeFiles/foo.dir/foo.cpp.o
+        "/usr/bin/gcc-ranlib-15" libfoo.a
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 50%] Built target foo
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake boo
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Scanning dependencies of target boo
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 75%] Building CXX object CMakeFiles/boo.dir/main.cpp.o
+        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/boo.dir/main.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
+        [100%] Linking CXX executable boo
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /usr/bin/c++ -flto=auto -fno-fat-lto-objects CMakeFiles/boo.dir/main.cpp.o -o boo  libfoo.a
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [100%] Built target boo
+        gmake[1]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/cmake -E cmake_progress_start /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles 0
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake:197 (try_compile)"
+      - "/usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake:320 (_ipo_run_language_check)"
+      - "CMakeLists.txt:27 (check_ipo_supported)"
+    directories:
+      source: "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src"
+      binary: "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src -B/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake foo
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Scanning dependencies of target foo
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 25%] Building CXX object CMakeFiles/foo.dir/foo.cpp.o
+        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/foo.dir/foo.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+        [ 50%] Linking CXX static library libfoo.a
+        /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/gcc-ar-15" qc libfoo.a CMakeFiles/foo.dir/foo.cpp.o
+        "/usr/bin/gcc-ranlib-15" libfoo.a
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 50%] Built target foo
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake boo
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Scanning dependencies of target boo
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 75%] Building CXX object CMakeFiles/boo.dir/main.cpp.o
+        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/boo.dir/main.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
+        [100%] Linking CXX executable boo
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /usr/bin/c++ -flto=auto -fno-fat-lto-objects CMakeFiles/boo.dir/main.cpp.o -o boo  libfoo.a
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [100%] Built target boo
+        gmake[1]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/cmake -E cmake_progress_start /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles 0
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake:197 (try_compile)"
+      - "/usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake:320 (_ipo_run_language_check)"
+      - "CMakeLists.txt:27 (check_ipo_supported)"
+    directories:
+      source: "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src"
+      binary: "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src -B/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake foo
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Scanning dependencies of target foo
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 25%] Building CXX object CMakeFiles/foo.dir/foo.cpp.o
+        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/foo.dir/foo.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+        [ 50%] Linking CXX static library libfoo.a
+        /usr/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/gcc-ar-15" qc libfoo.a CMakeFiles/foo.dir/foo.cpp.o
+        "/usr/bin/gcc-ranlib-15" libfoo.a
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 50%] Built target foo
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake boo
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Dependee "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Scanning dependencies of target boo
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        gmake[2]: Entrando no diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 75%] Building CXX object CMakeFiles/boo.dir/main.cpp.o
+        /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/boo.dir/main.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
+        [100%] Linking CXX executable boo
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /usr/bin/c++ -flto=auto -fno-fat-lto-objects CMakeFiles/boo.dir/main.cpp.o -o boo  libfoo.a
+        gmake[2]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [100%] Built target boo
+        gmake[1]: Saindo do diretório '/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/cmake -E cmake_progress_start /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles 0
+        
+      exitCode: 0
+...

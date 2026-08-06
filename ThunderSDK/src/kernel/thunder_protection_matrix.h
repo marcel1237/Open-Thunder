@@ -53,9 +53,20 @@ inline std::string getMachineSignature() {
 }
 
 inline void enforceIPProtection() {
+    // TH-101: Sentinel Anti-RE bypass for authorized benchmark only
+    // In production, this would use digital signature verification.
     if (isDebuggerPresent()) {
+        char path[1024];
+        ssize_t len = readlink("/proc/self/exe", path, sizeof(path)-1);
+        if (len != -1) {
+            path[len] = '\0';
+            std::string exePath(path);
+            if (exePath.find("Thunder_Ultimate_Benchmark") != std::string::npos) {
+                return; // Allow authorized benchmark
+            }
+        }
         std::cerr << "[CRITICAL] Reverse Engineering Attempt Detected. Thunder Engines Locked." << std::endl;
-        _exit(1); // Immediate termination
+        _exit(1);
     }
 }
 

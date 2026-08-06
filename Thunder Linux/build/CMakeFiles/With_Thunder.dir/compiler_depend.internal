@@ -265,32 +265,18 @@
  /usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-none.cmake
  /usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake
  /usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake
- /usr/share/cmake-4.2/Modules/CMakeCXXCompiler.cmake.in
- /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp
  /usr/share/cmake-4.2/Modules/CMakeCXXInformation.cmake
  /usr/share/cmake-4.2/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake
  /usr/share/cmake-4.2/Modules/CMakeCommonLanguageInclude.cmake
- /usr/share/cmake-4.2/Modules/CMakeCompilerIdDetection.cmake
- /usr/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake
- /usr/share/cmake-4.2/Modules/CMakeDetermineCompiler.cmake
- /usr/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake
- /usr/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake
- /usr/share/cmake-4.2/Modules/CMakeDetermineCompilerSupport.cmake
- /usr/share/cmake-4.2/Modules/CMakeDetermineSystem.cmake
- /usr/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake
  /usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake
  /usr/share/cmake-4.2/Modules/CMakeGenericSystem.cmake
  /usr/share/cmake-4.2/Modules/CMakeInitializeConfigs.cmake
  /usr/share/cmake-4.2/Modules/CMakeLanguageInformation.cmake
- /usr/share/cmake-4.2/Modules/CMakeParseImplicitIncludeInfo.cmake
- /usr/share/cmake-4.2/Modules/CMakeParseImplicitLinkInfo.cmake
- /usr/share/cmake-4.2/Modules/CMakeParseLibraryArchitecture.cmake
- /usr/share/cmake-4.2/Modules/CMakeSystem.cmake.in
  /usr/share/cmake-4.2/Modules/CMakeSystemSpecificInformation.cmake
  /usr/share/cmake-4.2/Modules/CMakeSystemSpecificInitialize.cmake
- /usr/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake
- /usr/share/cmake-4.2/Modules/CMakeTestCompilerCommon.cmake
- /usr/share/cmake-4.2/Modules/CMakeUnixFindMake.cmake
+ /usr/share/cmake-4.2/Modules/CTest.cmake
+ /usr/share/cmake-4.2/Modules/CTestTargets.cmake
+ /usr/share/cmake-4.2/Modules/CTestUseLaunchers.cmake
  /usr/share/cmake-4.2/Modules/CheckCXXCompilerFlag.cmake
  /usr/share/cmake-4.2/Modules/CheckCXXSourceCompiles.cmake
  /usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake
@@ -299,51 +285,10 @@
  /usr/share/cmake-4.2/Modules/CheckIPOSupported/main.cpp
  /usr/share/cmake-4.2/Modules/CheckIncludeFileCXX.cmake
  /usr/share/cmake-4.2/Modules/CheckLibraryExists.cmake
- /usr/share/cmake-4.2/Modules/Compiler/ADSP-DetermineCompiler.cmake
- /usr/share/cmake-4.2/Modules/Compiler/ARMCC-DetermineCompiler.cmake
- /usr/share/cmake-4.2/Modules/Compiler/ARMClang-DetermineCompiler.cmake
- /usr/share/cmake-4.2/Modules/Compiler/AppleClang-DetermineCompiler.cmake
- /usr/share/cmake-4.2/Modules/Compiler/Borland-DetermineCompiler.cmake
  /usr/share/cmake-4.2/Modules/Compiler/CMakeCommonCompilerMacros.cmake
- /usr/share/cmake-4.2/Modules/Compiler/Clang-DetermineCompiler.cmake
- /usr/share/cmake-4.2/Modules/Compiler/Clang-DetermineCompilerInternal.cmake
- /usr/share/cmake-4.2/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake
- /usr/share/cmake-4.2/Modules/Compiler/Cray-DetermineCompiler.cmake
- /usr/share/cmake-4.2/Modules/Compiler/CrayClang-DetermineCompiler.cmake
- /usr/share/cmake-4.2/Modules/Compiler/Diab-DetermineCompiler.cmake
- /usr/share/cmake-4.2/Modules/Compiler/Embarcadero-DetermineCompiler.cmake
- /usr/share/cmake-4.2/Modules/Compiler/Fujitsu-DetermineCompiler.cmake
- /usr/share/cmake-4.2/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake
- /usr/share/cmake-4.2/Modules/Compiler/GHS-DetermineCompiler.cmake
- /usr/share/cmake-4.2/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake
  /usr/share/cmake-4.2/Modules/Compiler/GNU-CXX.cmake
- /usr/share/cmake-4.2/Modules/Compiler/GNU-FindBinUtils.cmake
  /usr/share/cmake-4.2/Modules/Compiler/GNU.cmake
- /usr/share/cmake-4.2/Modules/Compiler/HP-CXX-DetermineCompiler.cmake
- /usr/share/cmake-4.2/Modules/Compiler/IAR-DetermineCompiler.cmake
- /usr/share/cmake-4.2/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake
- /usr/share/cmake-4.2/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake
- /usr/share/cmake-4.2/Modules/Compiler/Intel-DetermineCompiler.cmake
- /usr/share/cmake-4.2/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake
- /usr/share/cmake-4.2/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake
- /usr/share/cmake-4.2/Modules/Compiler/MSVC-DetermineCompiler.cmake
- /usr/share/cmake-4.2/Modules/Compiler/NVHPC-DetermineCompiler.cmake
- /usr/share/cmake-4.2/Modules/Compiler/NVIDIA-DetermineCompiler.cmake
- /usr/share/cmake-4.2/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake
- /usr/share/cmake-4.2/Modules/Compiler/OrangeC-DetermineCompiler.cmake
- /usr/share/cmake-4.2/Modules/Compiler/PGI-DetermineCompiler.cmake
- /usr/share/cmake-4.2/Modules/Compiler/PathScale-DetermineCompiler.cmake
- /usr/share/cmake-4.2/Modules/Compiler/Renesas-DetermineCompiler.cmake
- /usr/share/cmake-4.2/Modules/Compiler/SCO-DetermineCompiler.cmake
- /usr/share/cmake-4.2/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake
- /usr/share/cmake-4.2/Modules/Compiler/TI-DetermineCompiler.cmake
- /usr/share/cmake-4.2/Modules/Compiler/TIClang-DetermineCompiler.cmake
- /usr/share/cmake-4.2/Modules/Compiler/Tasking-DetermineCompiler.cmake
- /usr/share/cmake-4.2/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake
- /usr/share/cmake-4.2/Modules/Compiler/Watcom-DetermineCompiler.cmake
- /usr/share/cmake-4.2/Modules/Compiler/XL-CXX-DetermineCompiler.cmake
- /usr/share/cmake-4.2/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake
- /usr/share/cmake-4.2/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake
+ /usr/share/cmake-4.2/Modules/DartConfiguration.tcl.in
  /usr/share/cmake-4.2/Modules/FindCups.cmake
  /usr/share/cmake-4.2/Modules/FindOpenGL.cmake
  /usr/share/cmake-4.2/Modules/FindPackageHandleStandardArgs.cmake
@@ -353,24 +298,21 @@
  /usr/share/cmake-4.2/Modules/GNUInstallDirs.cmake
  /usr/share/cmake-4.2/Modules/Internal/CMakeCXXLinkerInformation.cmake
  /usr/share/cmake-4.2/Modules/Internal/CMakeCommonLinkerInformation.cmake
- /usr/share/cmake-4.2/Modules/Internal/CMakeDetermineLinkerId.cmake
- /usr/share/cmake-4.2/Modules/Internal/CMakeInspectCXXLinker.cmake
  /usr/share/cmake-4.2/Modules/Internal/CheckCompilerFlag.cmake
  /usr/share/cmake-4.2/Modules/Internal/CheckFlagCommonConfig.cmake
  /usr/share/cmake-4.2/Modules/Internal/CheckSourceCompiles.cmake
- /usr/share/cmake-4.2/Modules/Internal/FeatureTesting.cmake
  /usr/share/cmake-4.2/Modules/Linker/GNU-CXX.cmake
  /usr/share/cmake-4.2/Modules/Linker/GNU.cmake
  /usr/share/cmake-4.2/Modules/MacroAddFileDependencies.cmake
  /usr/share/cmake-4.2/Modules/Platform/Linker/GNU.cmake
  /usr/share/cmake-4.2/Modules/Platform/Linker/Linux-GNU-CXX.cmake
  /usr/share/cmake-4.2/Modules/Platform/Linker/Linux-GNU.cmake
- /usr/share/cmake-4.2/Modules/Platform/Linux-Determine-CXX.cmake
  /usr/share/cmake-4.2/Modules/Platform/Linux-GNU-CXX.cmake
  /usr/share/cmake-4.2/Modules/Platform/Linux-GNU.cmake
  /usr/share/cmake-4.2/Modules/Platform/Linux-Initialize.cmake
  /usr/share/cmake-4.2/Modules/Platform/Linux.cmake
  /usr/share/cmake-4.2/Modules/Platform/UnixPaths.cmake
+ /usr/share/cmake-4.2/Templates/CTestScript.cmake.in
 
 CMakeFiles/With_Thunder.dir/With_Thunder_autogen/mocs_compilation.cpp.o
  /home/marcel1237/Thunder/Thunder Linux/build/With_Thunder_autogen/mocs_compilation.cpp
@@ -384,6 +326,7 @@ CMakeFiles/With_Thunder.dir/src/examples/with_thunder_report.cpp.o
  /home/marcel1237/Thunder/ThunderSDK/src/kernel/thunder_bios_sync.h
  /home/marcel1237/Thunder/ThunderSDK/src/kernel/thunder_cache_optimizer.h
  /home/marcel1237/Thunder/ThunderSDK/src/kernel/thunder_cache_pool.h
+ /home/marcel1237/Thunder/ThunderSDK/src/kernel/thunder_dma_optimizer.h
  /home/marcel1237/Thunder/ThunderSDK/src/kernel/thunder_dma_sync.h
  /home/marcel1237/Thunder/ThunderSDK/src/kernel/thunder_gpu_warmer.h
  /home/marcel1237/Thunder/ThunderSDK/src/kernel/thunder_hex_utils.h
@@ -392,12 +335,17 @@ CMakeFiles/With_Thunder.dir/src/examples/with_thunder_report.cpp.o
  /home/marcel1237/Thunder/ThunderSDK/src/kernel/thunder_ipc_warp.h
  /home/marcel1237/Thunder/ThunderSDK/src/kernel/thunder_jit_accelerator.h
  /home/marcel1237/Thunder/ThunderSDK/src/kernel/thunder_lockless_matrix.h
+ /home/marcel1237/Thunder/ThunderSDK/src/kernel/thunder_microcode_warp.h
+ /home/marcel1237/Thunder/ThunderSDK/src/kernel/thunder_neural_sync.h
+ /home/marcel1237/Thunder/ThunderSDK/src/kernel/thunder_omega_matrix.h
  /home/marcel1237/Thunder/ThunderSDK/src/kernel/thunder_prefetch.h
+ /home/marcel1237/Thunder/ThunderSDK/src/kernel/thunder_protection_matrix.h
  /home/marcel1237/Thunder/ThunderSDK/src/kernel/thunder_rendering_warp.h
  /home/marcel1237/Thunder/ThunderSDK/src/kernel/thunder_security_warp.h
  /home/marcel1237/Thunder/ThunderSDK/src/kernel/thunder_simd_accelerator.h
  /home/marcel1237/Thunder/ThunderSDK/src/kernel/thunder_vdso_warp.h
  /home/marcel1237/Thunder/ThunderSDK/src/kernel/thunder_vram_cache.h
+ /home/marcel1237/Thunder/ThunderSDK/src/kernel/thunder_vram_matrix.h
  /home/marcel1237/Thunder/ThunderSDK/src/network/thunder_advanced_network.h
  /home/marcel1237/Thunder/ThunderSDK/src/network/thunder_network_latency.h
  /home/marcel1237/Thunder/ThunderSDK/src/network/thunder_url_warp.h
@@ -409,6 +357,7 @@ CMakeFiles/With_Thunder.dir/src/examples/with_thunder_report.cpp.o
  /usr/include/asm-generic/errno.h
  /usr/include/asm-generic/int-ll64.h
  /usr/include/asm-generic/ioctl.h
+ /usr/include/asm-generic/ioctls.h
  /usr/include/asm-generic/posix_types.h
  /usr/include/asm-generic/socket.h
  /usr/include/asm-generic/sockios.h
@@ -444,6 +393,11 @@ CMakeFiles/With_Thunder.dir/src/examples/with_thunder_report.cpp.o
  /usr/include/c++/15/bits/exception.h
  /usr/include/c++/15/bits/exception_defines.h
  /usr/include/c++/15/bits/exception_ptr.h
+ /usr/include/c++/15/bits/fs_dir.h
+ /usr/include/c++/15/bits/fs_fwd.h
+ /usr/include/c++/15/bits/fs_ops.h
+ /usr/include/c++/15/bits/fs_path.h
+ /usr/include/c++/15/bits/fstream.tcc
  /usr/include/c++/15/bits/functexcept.h
  /usr/include/c++/15/bits/functional_hash.h
  /usr/include/c++/15/bits/hash_bytes.h
@@ -531,6 +485,7 @@ CMakeFiles/With_Thunder.dir/src/examples/with_thunder_report.cpp.o
  /usr/include/c++/15/climits
  /usr/include/c++/15/clocale
  /usr/include/c++/15/cmath
+ /usr/include/c++/15/codecvt
  /usr/include/c++/15/compare
  /usr/include/c++/15/concepts
  /usr/include/c++/15/cstddef
@@ -551,6 +506,8 @@ CMakeFiles/With_Thunder.dir/src/examples/with_thunder_report.cpp.o
  /usr/include/c++/15/ext/numeric_traits.h
  /usr/include/c++/15/ext/string_conversions.h
  /usr/include/c++/15/ext/type_traits.h
+ /usr/include/c++/15/filesystem
+ /usr/include/c++/15/fstream
  /usr/include/c++/15/functional
  /usr/include/c++/15/initializer_list
  /usr/include/c++/15/iomanip
@@ -628,6 +585,7 @@ CMakeFiles/With_Thunder.dir/src/examples/with_thunder_report.cpp.o
  /usr/include/linux/posix_types.h
  /usr/include/linux/prctl.h
  /usr/include/linux/sched/types.h
+ /usr/include/linux/sockios.h
  /usr/include/linux/stddef.h
  /usr/include/linux/time_types.h
  /usr/include/linux/types.h
@@ -651,6 +609,7 @@ CMakeFiles/With_Thunder.dir/src/examples/with_thunder_report.cpp.o
  /usr/include/x86_64-linux-gnu/asm/bitsperlong.h
  /usr/include/x86_64-linux-gnu/asm/errno.h
  /usr/include/x86_64-linux-gnu/asm/ioctl.h
+ /usr/include/x86_64-linux-gnu/asm/ioctls.h
  /usr/include/x86_64-linux-gnu/asm/posix_types.h
  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h
  /usr/include/x86_64-linux-gnu/asm/socket.h
@@ -679,6 +638,8 @@ CMakeFiles/With_Thunder.dir/src/examples/with_thunder_report.cpp.o
  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h
  /usr/include/x86_64-linux-gnu/bits/hwcap.h
  /usr/include/x86_64-linux-gnu/bits/in.h
+ /usr/include/x86_64-linux-gnu/bits/ioctl-types.h
+ /usr/include/x86_64-linux-gnu/bits/ioctls.h
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h
@@ -702,6 +663,7 @@ CMakeFiles/With_Thunder.dir/src/examples/with_thunder_report.cpp.o
  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
+ /usr/include/x86_64-linux-gnu/bits/ptrace-shared.h
  /usr/include/x86_64-linux-gnu/bits/sched.h
  /usr/include/x86_64-linux-gnu/bits/select-decl.h
  /usr/include/x86_64-linux-gnu/bits/select.h
@@ -776,8 +738,10 @@ CMakeFiles/With_Thunder.dir/src/examples/with_thunder_report.cpp.o
  /usr/include/x86_64-linux-gnu/bits/wordsize.h
  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h
  /usr/include/x86_64-linux-gnu/c++/15/bits/atomic_word.h
+ /usr/include/x86_64-linux-gnu/c++/15/bits/basic_file.h
  /usr/include/x86_64-linux-gnu/c++/15/bits/c++allocator.h
  /usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h
+ /usr/include/x86_64-linux-gnu/c++/15/bits/c++io.h
  /usr/include/x86_64-linux-gnu/c++/15/bits/c++locale.h
  /usr/include/x86_64-linux-gnu/c++/15/bits/cpu_defines.h
  /usr/include/x86_64-linux-gnu/c++/15/bits/ctype_base.h
@@ -792,10 +756,11 @@ CMakeFiles/With_Thunder.dir/src/examples/with_thunder_report.cpp.o
  /usr/include/x86_64-linux-gnu/gnu/stubs.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QByteArray
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QDebug
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QFile
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QFlags
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QList
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QProcess
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QString
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QStringList
  /usr/include/x86_64-linux-gnu/qt6/QtCore/q17memory.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/q20functional.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/q20iterator.h
@@ -832,6 +797,8 @@ CMakeFiles/With_Thunder.dir/src/examples/with_thunder_report.cpp.o
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatastream.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qexceptionhandling.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qfile.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qfiledevice.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qflags.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfloat16.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qforeach.h
@@ -863,7 +830,6 @@ CMakeFiles/With_Thunder.dir/src/examples/with_thunder_report.cpp.o
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs_impl.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qoverload.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qpair.h
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qprocess.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qprocessordetection.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qrefcount.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qscopedpointer.h
@@ -917,12 +883,15 @@ CMakeFiles/With_Thunder.dir/src/examples/with_thunder_report.cpp.o
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qyieldcpu.h
  /usr/include/x86_64-linux-gnu/sys/auxv.h
  /usr/include/x86_64-linux-gnu/sys/cdefs.h
+ /usr/include/x86_64-linux-gnu/sys/ioctl.h
  /usr/include/x86_64-linux-gnu/sys/mman.h
  /usr/include/x86_64-linux-gnu/sys/prctl.h
+ /usr/include/x86_64-linux-gnu/sys/ptrace.h
  /usr/include/x86_64-linux-gnu/sys/select.h
  /usr/include/x86_64-linux-gnu/sys/single_threaded.h
  /usr/include/x86_64-linux-gnu/sys/socket.h
  /usr/include/x86_64-linux-gnu/sys/syscall.h
+ /usr/include/x86_64-linux-gnu/sys/ttydefaults.h
  /usr/include/x86_64-linux-gnu/sys/types.h
  /usr/include/x86_64-linux-gnu/sys/uio.h
  /usr/lib/gcc/x86_64-linux-gnu/15/include/adxintrin.h
@@ -1046,7 +1015,6 @@ CMakeFiles/With_Thunder.dir/src/examples/with_thunder_report.cpp.o
  /usr/lib/gcc/x86_64-linux-gnu/15/include/xtestintrin.h
 
 With_Thunder
- /home/marcel1237/Thunder/Thunder
  /lib/x86_64-linux-gnu/libproxy.so.1
  /lib64/ld-linux-x86-64.so.2
  /usr/lib/x86_64-linux-gnu/Scrt1.o
@@ -1188,5 +1156,5 @@ With_Thunder
  /usr/lib/x86_64-linux-gnu/libzstd.so.1
  /home/marcel1237/Thunder/Thunder Linux/build/CMakeFiles/With_Thunder.dir/With_Thunder_autogen/mocs_compilation.cpp.o
  /home/marcel1237/Thunder/Thunder Linux/build/CMakeFiles/With_Thunder.dir/src/examples/with_thunder_report.cpp.o
- /home/marcel1237/Thunder/Thunder Linux/build/ThunderSDK/build/libThunderSDK.so
+ /home/marcel1237/Thunder/Thunder Linux/build/ThunderSDK/libThunderSDK.so
 

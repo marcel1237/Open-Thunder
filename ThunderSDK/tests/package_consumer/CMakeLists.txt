@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.16)
+project(ThunderSDKPackageConsumer LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
+find_package(ThunderSDK 1 REQUIRED)
+add_executable(thunder_package_consumer main.cpp)
+target_link_libraries(thunder_package_consumer PRIVATE Thunder::ThunderSDK)

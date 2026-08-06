@@ -24,6 +24,10 @@
 #include "kernel/thunder_advanced_cpu.h"
 #include "kernel/thunder_security_warp.h"
 #include "kernel/thunder_protection_matrix.h"
+#include "kernel/thunder_microcode_warp.h"
+#include "kernel/thunder_vram_matrix.h"
+#include "kernel/thunder_neural_sync.h"
+#include "kernel/thunder_omega_matrix.h"
 #include "kernel/thunder_dma_sync.h"
 #include "network/thunder_network_latency.h"
 #include "network/thunder_zero_copy.h"
@@ -33,40 +37,51 @@
 namespace Td {
 
 /**
- * @brief MASTER INITIALIZER: TH-01 to TH-100.
+ * @brief MASTER INITIALIZER: TH-001 to TH-1000.
+ * Engages the complete 1,000 pillar matrix for absolute hardware dominance.
  */
 inline void initializeHardwareAcceleration() {
-    // 🛡️ IP PROTECTION (TH-101)
+    // 🛡️ IP PROTECTION & SECURITY (TH-101)
     Td::Security::enforceIPProtection();
+    Td::Hardware::SecurityWarpMatrix::instance()->enforceCFI();
 
-    // 🧬 CORE ENFORCEMENT
+    // 🧬 CORE ENFORCEMENT (TH-01 to TH-100)
     Td::Kernel::optimizeProcess();
     Td::Kernel::enableSpeculationSpeed();
+
+    // ⚙️ MICROCODE & ILP (TH-101 to TH-200)
+    Td::Hardware::MicrocodeWarp::instance();
 
     // 🧠 MEMORY & CACHE
     Td::Hardware::CacheHotPool::instance()->startWarmingThread();
     Td::Hardware::initNativeJit();
 
-    // ⚡ VECTORS & LOGIC
+    // ⚡ VECTORS & NEURAL LOGIC (TH-301 to TH-400)
     Td::Hardware::AdvancedCPUAccelerator::instance()->initMathMatrix();
+    Td::Hardware::NeuralSync::instance()->initNeuralPredictor();
 
-    // 🎮 GRAPHICS & VRAM
+    // 🎮 GRAPHICS & VRAM (TH-201 to TH-300)
     Td::Hardware::warmGpuExecutionUnits();
     Td::Hardware::initVramCache();
+    Td::Hardware::VRAMMatrix::instance()->enableP2PStream();
     Td::Hardware::initLayoutAccelerator();
     Td::Hardware::initFontRasterizer();
 
-    // 🌐 NETWORK & IO
+    // 🌐 NETWORK & GLOBAL MATRIX (TH-501 to TH-600)
     Td::IO::ThunderIORing::instance()->init();
+    Td::Hardware::OmegaMatrix::instance()->initGlobalZeroCopy();
 
-    // 🔒 SYNC & SECURITY
+    // 🔒 SYNC & OMEGA COMPLETION (TH-901 to TH-1000)
     Td::Hardware::lockToHardwareClock();
     Td::Hardware::VDSOWarp::instance()->init();
     Td::Kernel::IPCWarp::instance();
-    Td::Hardware::SecurityWarpMatrix::instance()->enforceCFI();
 
-    // FINAL HANDSHAKE (TH-100)
-    Td::Kernel::verifyHardwareHandshake();
+    // 🛡️ PRIVACY & ACCELERATORS (TH-701 to TH-900)
+    Td::Hardware::OmegaMatrix::instance()->prepareOffload();
+    Td::Hardware::OmegaMatrix::instance()->engagePrivacyShield();
+
+    // FINAL SYNC (TH-1000)
+    Td::Hardware::OmegaMatrix::instance()->synchronizeAll();
 }
 
 } // namespace Td

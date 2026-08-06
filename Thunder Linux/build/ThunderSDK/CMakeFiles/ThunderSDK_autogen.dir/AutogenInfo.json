@@ -1,0 +1,255 @@
+{
+	"BUILD_DIR" : "/home/marcel1237/Thunder/Thunder Linux/build/ThunderSDK/ThunderSDK_autogen",
+	"CMAKE_BINARY_DIR" : "/home/marcel1237/Thunder/Thunder Linux/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/marcel1237/Thunder/Thunder Linux/build/ThunderSDK",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/marcel1237/Thunder/ThunderSDK",
+	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
+	"CMAKE_LIST_FILES" : 
+	[
+		"/home/marcel1237/Thunder/ThunderSDK/CMakeLists.txt",
+		"/usr/share/cmake-4.2/Modules/GNUInstallDirs.cmake",
+		"/usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake",
+		"/usr/share/cmake-4.2/Modules/CheckIPOSupported/CMakeLists-CXX.txt.in",
+		"/usr/share/cmake-4.2/Modules/CheckIPOSupported/foo.cpp",
+		"/usr/share/cmake-4.2/Modules/CheckIPOSupported/main.cpp",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6ConfigVersion.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6ConfigVersionImpl.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6Config.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicCMakeEarlyPolicyHelpers.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicCMakeHelpers.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6ConfigExtras.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtInstallPaths.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6Targets.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6VersionlessAliasTargets.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtFeature.cmake",
+		"/usr/share/cmake-4.2/Modules/CheckCXXCompilerFlag.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtFeatureCommon.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicAndroidHelpers.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicAppleHelpers.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicCMakeHelpers.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicDependencyHelpers.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicExternalProjectHelpers.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicFinalizerHelpers.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicFindPackageHelpers.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicGitHelpers.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicPluginHelpers.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicPluginHelpers_v2.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomAttributionHelpers.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomCommonGenerationHelpers.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomCpeHelpers.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomCycloneDXHelpers.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomDocumentNamespaceHelpers.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomDepHelpers.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomFileHelpers.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomGenerationHelpers.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomGenerationCycloneDXHelpers.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomHelpers.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomLicenseHelpers.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomOpsHelpers.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomPurlHelpers.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomPythonHelpers.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomQtEntityHelpers.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomSystemDepHelpers.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicTargetHelpers.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicTestHelpers.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicToolHelpers.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicWalkLibsHelpers.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicWindowsHelpers.cmake",
+		"/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6Dependencies.cmake",
+		"/usr/share/cmake-4.2/Modules/CMakePackageConfigHelpers.cmake",
+		"/usr/share/cmake-4.2/Modules/WriteBasicConfigVersionFile.cmake",
+		"/home/marcel1237/Thunder/ThunderSDK/cmake/ThunderSDKConfig.cmake.in",
+		"/usr/share/cmake-4.2/Modules/BasicConfigVersion-SameMajorVersion.cmake.in",
+		"/usr/share/cmake-4.2/Modules/CTest.cmake",
+		"/usr/share/cmake-4.2/Modules/CTestUseLaunchers.cmake",
+		"/usr/share/cmake-4.2/Modules/CTestTargets.cmake",
+		"/usr/share/cmake-4.2/Modules/DartConfiguration.tcl.in",
+		"/usr/share/cmake-4.2/Templates/CTestScript.cmake.in",
+		"/home/marcel1237/Thunder/ThunderSDK/src/app/resources.qrc"
+	],
+	"CMAKE_SOURCE_DIR" : "/home/marcel1237/Thunder/Thunder Linux",
+	"CROSS_CONFIG" : false,
+	"DEP_FILE" : "/home/marcel1237/Thunder/Thunder Linux/build/ThunderSDK/ThunderSDK_autogen/deps",
+	"DEP_FILE_RULE_NAME" : "ThunderSDK_autogen/timestamp",
+	"HEADERS" : 
+	[
+		[
+			"/home/marcel1237/Thunder/ThunderSDK/src/adblock/adblockmanager.h",
+			"MU",
+			"3FX2G7XCKV/moc_adblockmanager.cpp",
+			null
+		],
+		[
+			"/home/marcel1237/Thunder/ThunderSDK/src/adblock/adblockrule.h",
+			"MU",
+			"3FX2G7XCKV/moc_adblockrule.cpp",
+			null
+		],
+		[
+			"/home/marcel1237/Thunder/ThunderSDK/src/app/browserwindow.h",
+			"MU",
+			"ISMKEKEPX5/moc_browserwindow.cpp",
+			null
+		],
+		[
+			"/home/marcel1237/Thunder/ThunderSDK/src/app/mainapplication.h",
+			"MU",
+			"ISMKEKEPX5/moc_mainapplication.cpp",
+			null
+		],
+		[
+			"/home/marcel1237/Thunder/ThunderSDK/src/app/thundercommon.h",
+			"MU",
+			"ISMKEKEPX5/moc_thundercommon.cpp",
+			null
+		],
+		[
+			"/home/marcel1237/Thunder/ThunderSDK/src/kernel/kernel_bridge.h",
+			"MU",
+			"MSAWC343OZ/moc_kernel_bridge.cpp",
+			null
+		],
+		[
+			"/home/marcel1237/Thunder/ThunderSDK/src/network/thunder_url_interceptor.h",
+			"MU",
+			"UFQQIFJZKK/moc_thunder_url_interceptor.cpp",
+			null
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/home/marcel1237/Thunder/Thunder Linux/build/ThunderSDK/ThunderSDK_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/marcel1237/Thunder/Thunder Linux/build/ThunderSDK/ThunderSDK_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : 
+	[
+		"QT_CORE_LIB",
+		"QT_GUI_LIB",
+		"QT_NETWORK_LIB",
+		"QT_NO_DEBUG",
+		"QT_OPENGL_LIB",
+		"QT_POSITIONING_LIB",
+		"QT_PRINTSUPPORT_LIB",
+		"QT_QMLINTEGRATION_LIB",
+		"QT_QML_LIB",
+		"QT_QUICK_LIB",
+		"QT_WEBCHANNEL_LIB",
+		"QT_WEBENGINECORE_LIB",
+		"QT_WEBENGINEWIDGETS_LIB",
+		"QT_WIDGETS_LIB",
+		"THUNDER_SHAREDLIBRARY",
+		"ThunderSDK_EXPORTS"
+	],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"/home/marcel1237/Thunder/ThunderSDK/src",
+		"/home/marcel1237/Thunder/ThunderSDK/src/app",
+		"/home/marcel1237/Thunder/ThunderSDK/src/kernel",
+		"/home/marcel1237/Thunder/ThunderSDK/src/network",
+		"/usr/include/x86_64-linux-gnu/qt6/QtCore",
+		"/usr/include/x86_64-linux-gnu/qt6",
+		"/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++",
+		"/usr/include/x86_64-linux-gnu/qt6/QtGui",
+		"/usr/include/x86_64-linux-gnu/qt6/QtWidgets",
+		"/usr/include/x86_64-linux-gnu/qt6/QtWebEngineWidgets",
+		"/usr/include/x86_64-linux-gnu/qt6/QtWebEngineCore",
+		"/usr/include/x86_64-linux-gnu/qt6/QtNetwork",
+		"/usr/include/x86_64-linux-gnu/qt6/QtQuick",
+		"/usr/include/x86_64-linux-gnu/qt6/QtQml",
+		"/usr/include/x86_64-linux-gnu/qt6/QtQmlIntegration",
+		"/usr/include/x86_64-linux-gnu/qt6/QtOpenGL",
+		"/usr/include/x86_64-linux-gnu/qt6/QtWebChannel",
+		"/usr/include/x86_64-linux-gnu/qt6/QtPositioning",
+		"/usr/include/x86_64-linux-gnu/qt6/QtPrintSupport",
+		"/usr/include",
+		"/usr/include/c++/15",
+		"/usr/include/x86_64-linux-gnu/c++/15",
+		"/usr/include/c++/15/backward",
+		"/usr/lib/gcc/x86_64-linux-gnu/15/include",
+		"/usr/local/include",
+		"/usr/include/x86_64-linux-gnu"
+	],
+	"MOC_MACRO_NAMES" : 
+	[
+		"Q_OBJECT",
+		"Q_GADGET",
+		"Q_NAMESPACE",
+		"Q_NAMESPACE_EXPORT",
+		"Q_GADGET_EXPORT",
+		"Q_ENUM_NS"
+	],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/usr/bin/c++",
+		"-std=c++17",
+		"-w",
+		"-dM",
+		"-E",
+		"/usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/home/marcel1237/Thunder/Thunder Linux/build/ThunderSDK/ThunderSDK_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 4,
+	"PARSE_CACHE_FILE" : "/home/marcel1237/Thunder/Thunder Linux/build/ThunderSDK/CMakeFiles/ThunderSDK_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/usr/lib/qt6/libexec/moc",
+	"QT_UIC_EXECUTABLE" : "/usr/lib/qt6/libexec/uic",
+	"QT_VERSION_MAJOR" : 6,
+	"QT_VERSION_MINOR" : 10,
+	"SETTINGS_FILE" : "/home/marcel1237/Thunder/Thunder Linux/build/ThunderSDK/CMakeFiles/ThunderSDK_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"/home/marcel1237/Thunder/ThunderSDK/src/adblock/adblockmanager.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/marcel1237/Thunder/ThunderSDK/src/adblock/adblockrule.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/marcel1237/Thunder/ThunderSDK/src/app/browserwindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/marcel1237/Thunder/ThunderSDK/src/app/mainapplication.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/marcel1237/Thunder/ThunderSDK/src/app/thundercommon.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/marcel1237/Thunder/ThunderSDK/src/kernel/kernel_bridge.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/marcel1237/Thunder/ThunderSDK/src/network/thunder_url_interceptor.cpp",
+			"MU",
+			null
+		]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
+	"USE_BETTER_GRAPH" : true,
+	"VERBOSITY" : 0
+}

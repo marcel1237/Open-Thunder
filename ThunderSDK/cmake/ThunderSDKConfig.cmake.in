@@ -1,0 +1,5 @@
+@PACKAGE_INIT@
+
+include(CMakeFindDependencyMacro)
+find_dependency(Qt6 REQUIRED COMPONENTS Core Gui Widgets WebEngineWidgets)
+include("${CMAKE_CURRENT_LIST_DIR}/ThunderSDKTargets.cmake")

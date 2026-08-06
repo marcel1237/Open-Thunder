@@ -8,7 +8,7 @@
 #define THUNDER_GPU_WARMER_H
 
 #include <QtCore/QString>
-#include <QtCore/QProcess>
+#include <QtCore/QFile>
 #include <iostream>
 
 namespace Td {
@@ -20,7 +20,7 @@ namespace Hardware {
  * Mathematically eliminates the "first-render stutter" by ensuring the GPU
  * is in its high-performance state before the first frame is requested.
  */
-inline void warmGpuExecutionUnits() {
+inline bool warmGpuExecutionUnits() {
 #ifdef Q_OS_LINUX
     // 1. Force Mesa Shader Cache Enablement (Modern API)
     qputenv("MESA_SHADER_CACHE_DISABLE", "0");
@@ -31,9 +31,12 @@ inline void warmGpuExecutionUnits() {
 
     // 3. AMD/Intel Specific Warming (Force Performance Levels)
     // This hints the kernel to ramp up GPU clocks immediately
-    system("echo high > /sys/class/drm/card0/device/power_dpm_force_performance_level 2>/dev/null");
+    QFile powerState("/sys/class/drm/card0/device/power_dpm_force_performance_level");
+    const bool powerStateSet = powerState.open(QIODevice::WriteOnly) && powerState.write("high") == 4;
 
-    std::cout << "[TH-14] GPU Execution Units warmed. Shader Cache ready." << std::endl;
+    return powerStateSet;
+#else
+    return false;
 #endif
 }
 

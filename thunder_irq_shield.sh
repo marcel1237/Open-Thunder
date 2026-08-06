@@ -1,21 +1,25 @@
-#!/bin/bash
-# Thunder IRQ Shield - Isolating Cores 0,1 for NitroCore Execution
-# Part of TH-01 Optimization Suite
+#!/usr/bin/env bash
+set -euo pipefail
 
-if [[ $EUID -ne 0 ]]; then
-   echo "This script must be run as root to modify IRQ affinity."
-   exit 1
+if [[ ${THUNDER_APPLY:-0} != 1 ]]; then
+    echo "Dry-run: defina THUNDER_APPLY=1 e THUNDER_IRQ_MASK com uma máscara válida."
+    echo "Nenhuma afinidade foi alterada."
+    exit 0
 fi
 
-echo "[NitroCore] Shielding Cores 0 and 1 from system interrupts..."
+if [[ ${EUID} -ne 0 ]]; then
+    echo "Execute como root para aplicar." >&2
+    exit 1
+fi
 
-# Move all IRQs to other cores (Mask: FFFFF...C -> Everything except 0,1)
-# 0x3 is binary 11 (Cores 0,1). ~0x3 is everything else.
-for irq in /proc/irq/*/smp_affinity; do
-    echo "f" > $irq 2>/dev/null
+: "${THUNDER_IRQ_MASK:?Defina a máscara das CPUs que devem receber IRQs (não use máscara presumida).}"
+[[ ${THUNDER_IRQ_MASK} =~ ^[0-9a-fA-F,]+$ ]] || { echo "Máscara inválida" >&2; exit 1; }
+
+changed=0
+for affinity in /proc/irq/*/smp_affinity; do
+    [[ -w ${affinity} ]] || continue
+    if printf '%s\n' "${THUNDER_IRQ_MASK}" > "${affinity}"; then
+        ((changed += 1))
+    fi
 done
-
-# Specifically ensure Cores 0,1 are not used by the system journal or common tasks
-echo 2 > /sys/bus/workqueue/devices/writeback/cpumask
-
-echo "[NitroCore] IRQ Shield Active. Cores 0,1 reserved for Thunder."
+echo "Afinidade atualizada em ${changed} IRQs; valide /proc/interrupts antes de executar carga crítica."

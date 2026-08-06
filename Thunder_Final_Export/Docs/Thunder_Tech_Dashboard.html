@@ -2,262 +2,376 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thunder Browser - Tech Architecture Dashboard (v1.0 - 100 Pillars)</title>
+    <title>Thunder Multiversal Matrix - 1,000,000 Pillars Dashboard</title>
     <style>
         :root {
-            --bg-color: #0d1117;
-            --card-bg: #161b22;
-            --accent-color: #58a6ff;
-            --text-primary: #c9d1d9;
-            --text-secondary: #8b949e;
-            --border-color: #30363d;
-            --header-bg: #1f242c;
-            --success-color: #238636;
-            --extreme-color: #bc8cff;
+            --bg: #02040a;
+            --card-bg: rgba(13, 17, 23, 0.95);
+            --acc: #00f2ff;
+            --extreme: #ff00ea;
+            --active-bg: #00ff41;
+            --text: #e6edf3;
+            --border: #30363d;
+            --glass: rgba(255, 255, 255, 0.05);
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-primary);
+            font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+            background: var(--bg);
+            background-image:
+                radial-gradient(at 0% 0%, rgba(0, 242, 255, 0.1) 0, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(255, 0, 234, 0.1) 0, transparent 50%);
+            color: var(--text);
             margin: 0;
-            padding: 20px;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Sidebar Glassmorphism */
+        #details-panel {
+            width: 480px;
+            background: var(--card-bg);
+            backdrop-filter: blur(20px);
+            border-right: 1px solid var(--border);
+            padding: 35px;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            box-shadow: 20px 0 50px rgba(0,0,0,0.5);
+            z-index: 100;
+        }
+
+        #details-panel h2 {
+            color: var(--acc);
+            border-bottom: 2px solid var(--acc);
+            padding-bottom: 20px;
+            margin-top: 0;
+            font-size: 2.5rem;
+            font-weight: 900;
+            letter-spacing: -1px;
+        }
+
+        .detail-item { margin: 30px 0; }
+        .detail-label { font-size: 0.85rem; color: #8b949e; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; }
+        .detail-value {
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-top: 10px;
+            color: var(--active-bg);
+            text-shadow: 0 0 10px rgba(0, 255, 65, 0.3);
+        }
+
+        main {
+            flex: 1;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+            scrollbar-width: thin;
+            scrollbar-color: var(--acc) transparent;
         }
 
         .header {
-            width: 100%;
-            max-width: 1400px;
             text-align: center;
-            padding-bottom: 40px;
-            border-bottom: 1px solid var(--border-color);
-            margin-bottom: 30px;
+            margin-bottom: 50px;
         }
 
         .header h1 {
-            color: var(--accent-color);
-            font-size: 2.5rem;
             margin: 0;
-            letter-spacing: 2px;
+            color: white;
+            letter-spacing: 12px;
+            font-size: 4rem;
+            font-weight: 900;
+            text-shadow: 0 0 40px rgba(0, 242, 255, 0.5);
             text-transform: uppercase;
         }
 
-        .dashboard-container {
-            width: 100%;
-            max-width: 1400px;
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        .controls {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 40px;
+            justify-content: center;
+            flex-wrap: wrap;
         }
 
-        .summary-stats {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-            width: 100%;
-            max-width: 1400px;
-            margin-bottom: 30px;
+        .tier-btn {
+            background: var(--glass);
+            border: 1px solid var(--border);
+            color: var(--text);
+            padding: 14px 28px;
+            cursor: pointer;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
         }
 
-        .stat-card {
-            background: var(--card-bg);
-            padding: 20px;
-            border-radius: 8px;
-            border: 1px solid var(--border-color);
+        .tier-btn:hover {
+            border-color: var(--acc);
+            background: rgba(0, 242, 255, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .tier-btn.active {
+            background: var(--acc);
+            color: black;
+            box-shadow: 0 0 30px var(--acc);
+            border-color: white;
+        }
+
+        .search-box {
+            padding: 22px;
+            border-radius: 15px;
+            border: 2px solid var(--border);
+            background: var(--glass);
+            color: white;
+            width: 600px;
             text-align: center;
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin-bottom: 40px;
+            outline: none;
+            transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+            backdrop-filter: blur(10px);
+        }
+        .search-box:focus {
+            border-color: var(--acc);
+            box-shadow: 0 0 40px rgba(0, 242, 255, 0.3);
+            width: 800px;
+            background: rgba(0, 0, 0, 0.5);
         }
 
-        .stat-value {
-            font-size: 2rem;
-            font-weight: bold;
-            color: var(--accent-color);
+        .matrix-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+            gap: 12px;
+            padding: 20px;
         }
 
-        .stat-label {
-            font-size: 0.8rem;
-            color: var(--text-secondary);
-            text-transform: uppercase;
+        .pillar {
+            aspect-ratio: 1;
+            background: #111;
+            border: 1px solid #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            font-weight: 800;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border-radius: 12px;
+            color: #444;
         }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        thead {
-            background-color: var(--header-bg);
-        }
-
-        th {
-            padding: 15px 20px;
-            color: var(--accent-color);
-            text-align: left;
-            text-transform: uppercase;
-            font-size: 0.85rem;
-            border-bottom: 2px solid var(--border-color);
-        }
-
-        td {
-            padding: 15px 20px;
-            border-bottom: 1px solid var(--border-color);
-            font-size: 0.95rem;
-        }
-
-        .id-badge {
+        .pillar:hover {
+            transform: scale(1.6) rotate(10deg);
+            border-color: var(--acc);
+            box-shadow: 0 0 30px var(--acc);
+            z-index: 10;
+            color: white;
             background: #1f242c;
-            color: var(--accent-color);
-            padding: 2px 8px;
-            border: 1px solid var(--accent-color);
-            border-radius: 4px;
-            font-weight: bold;
         }
 
-        .id-badge-special {
-            border-color: var(--extreme-color);
-            color: var(--extreme-color);
+        .pillar.active-node {
+            background: linear-gradient(135deg, #238636, #00ff41);
+            color: black;
+            border-color: #afffb0;
+            box-shadow: 0 0 15px rgba(0, 255, 65, 0.2);
         }
 
-        .hw-level {
-            color: var(--success-color);
+        .pillar.milestone {
+            background: linear-gradient(135deg, #1f6feb, var(--acc));
+            color: white;
+            border-color: white;
+            box-shadow: 0 0 20px var(--acc);
+        }
+
+        .pillar.god-mode {
+            background: linear-gradient(135deg, #8957e5, var(--extreme));
+            color: white;
+            animation: omegaPulse 1.2s infinite;
+        }
+
+        @keyframes omegaPulse {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 0, 234, 0.8); }
+            50% { transform: scale(1.2); box-shadow: 0 0 50px 15px rgba(255, 0, 234, 0.6); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 0, 234, 0.8); }
+        }
+
+        .stats-bar {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            background: var(--glass);
+            padding: 40px;
+            border-radius: 25px;
+            margin-bottom: 50px;
+            border: 1px solid var(--border);
+            backdrop-filter: blur(30px);
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+        .stat-val {
+            font-size: 3.5rem;
+            font-weight: 900;
+            color: white;
+            display: block;
+            margin-bottom: 10px;
+            background: linear-gradient(to bottom, #fff, #888);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .stat-lbl { font-size: 1rem; color: var(--acc); text-transform: uppercase; letter-spacing: 4px; font-weight: 800; }
+
+        .desc-text { font-size: 1.3rem; line-height: 1.8; color: #8b949e; margin-top: 20px; }
+
+        .footer-text {
+            margin-top: auto;
+            font-size: 1rem;
+            color: #555;
+            border-top: 1px solid var(--border);
+            padding-top: 30px;
             font-family: monospace;
-        }
-
-        .tech-merged {
-            color: var(--text-secondary);
-            font-size: 0.85rem;
-        }
-
-        .gain-badge {
-            background: rgba(35, 134, 54, 0.2);
-            color: #3fb950;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>Thunder Browser</h1>
-        <p>100 Pillars - Unified Hardware Dominance Matrix Dashboard</p>
-        <div style="margin-top: 15px;">
-            <span class="status-ready" style="background: rgba(35, 134, 54, 0.1); padding: 5px 15px; border-radius: 20px; border: 1px solid var(--success-color);">
-                Hardware Handshake: [TH-100 ABSOLUTE DOMINANCE REACHED]
-            </span>
+
+    <div id="details-panel">
+        <h2 id="det-id">COORD_SYS</h2>
+        <div class="detail-item">
+            <div class="detail-label">Multiversal Tier</div>
+            <div id="det-name" class="detail-value">Awaiting Input</div>
+        </div>
+        <div class="detail-item">
+            <div class="detail-label">Hardware Efficiency</div>
+            <div id="det-gain" class="detail-value" style="color: var(--extreme);">SYNCING...</div>
+        </div>
+        <div class="detail-item">
+            <div class="detail-label">Silicon Layer</div>
+            <div id="det-level" class="detail-value">N/A</div>
+        </div>
+        <div class="detail-item">
+            <div class="detail-label">Pillar Essence</div>
+            <p id="det-desc" class="desc-text">
+                Engage with the 1,000,000 node matrix. Click any coordinate to visualize the Thunder God Engine enforcement logic.
+            </p>
+        </div>
+        <div class="footer-text">
+            SYSTEM_ID: THUNDER_OMEGA_V11<br>
+            USER: MARCEL_ANDRADE<br>
+            STATUS: SUPREME_DOMINANCE
         </div>
     </div>
 
-    <div class="summary-stats">
-        <div class="stat-card">
-            <div class="stat-value">100</div>
-            <div class="stat-label">Active Pillars</div>
+    <main>
+        <div class="header">
+            <h1>THUNDER OMNICORE</h1>
+            <p style="font-size: 1.4rem; letter-spacing: 5px; color: var(--acc); font-weight: 800;">MULTIVERSAL HARDWARE MATRIX</p>
         </div>
-        <div class="stat-card">
-            <div class="stat-value">27.4x</div>
-            <div class="stat-label">Peak Velocity Factor</div>
-        </div>
-        <div class="stat-card">
-            <div class="stat-value">20.6 GB/s</div>
-            <div class="stat-label">Vector Throughput</div>
-        </div>
-        <div class="stat-card" style="border-color: var(--extreme-color);">
-            <div class="stat-value" style="color: var(--extreme-color);">0ns</div>
-            <div class="stat-label">Target DMA Latency</div>
-        </div>
-    </div>
 
-    <div class="dashboard-container">
-        <table>
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>System Name</th>
-                    <th>Gain</th>
-                    <th>Hardware Level</th>
-                    <th>Integrated Technologies</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><span class="id-badge">TH-01</span></td>
-                    <td><strong>NitroCore CPU-Matrix</strong></td>
-                    <td><span class="gain-badge">+38.0%</span></td>
-                    <td class="hw-level">Kernel/CPU/Cache</td>
-                    <td class="tech-merged">Turbo Scheduler, Core-Lock Pinning, Clock-Sync, RT-Warp, vDSO</td>
-                </tr>
-                <tr>
-                    <td><span class="id-badge">TH-02</span></td>
-                    <td><strong>OmniLock RAM Architecture</strong></td>
-                    <td><span class="gain-badge">+21.0%</span></td>
-                    <td class="hw-level">RAM/MMU</td>
-                    <td class="tech-merged">HugePages, RAM-Resident Shield, KSM-Silence, VMA-Infinity</td>
-                </tr>
-                <tr>
-                    <td><span class="id-badge">TH-06</span></td>
-                    <td><strong>VectorShield Engine</strong></td>
-                    <td><span class="gain-badge">+42.0%</span></td>
-                    <td class="hw-level">CPU/SIMD/Crypto</td>
-                    <td class="tech-merged">AVX-512 Unrolling, AVX2 Matrix, SIMD Bitmask, AES-NI</td>
-                </tr>
-                <tr>
-                    <td><span class="id-badge">TH-12</span></td>
-                    <td><strong>IO-Uring Warp Matrix</strong></td>
-                    <td><span class="gain-badge">+35.0%</span></td>
-                    <td class="hw-level">Storage/IO</td>
-                    <td class="tech-merged">io_uring, Zero-Copy IO, Async-Silicon, NVMe-Warp</td>
-                </tr>
-                <tr>
-                    <td><span class="id-badge">TH-19</span></td>
-                    <td><strong>VRAM-Pulse L5-Cache</strong></td>
-                    <td><span class="gain-badge">+27.0%</span></td>
-                    <td class="hw-level">VRAM/Cache</td>
-                    <td class="tech-merged">VRAM-Swap, GPU-Memory-Link, Resizable BAR Access</td>
-                </tr>
-                <tr>
-                    <td><span class="id-badge">TH-20</span></td>
-                    <td><strong>Silicon-Native JIT</strong></td>
-                    <td><span class="gain-badge">+15.0%</span></td>
-                    <td class="hw-level">CPU/Logic</td>
-                    <td class="tech-merged">HW-JIT, ISA-Optimization, Native-Execute, ICache-Sync</td>
-                </tr>
-                <tr>
-                    <td><span class="id-badge">TH-71</span></td>
-                    <td><strong>Kernel-Warp IPC Bypass</strong></td>
-                    <td><span class="gain-badge">+27.0%</span></td>
-                    <td class="hw-level">Kernel/IPC</td>
-                    <td class="tech-merged">Memfd-Warp, Zero-Copy-IPC, Shared Memory Matrix</td>
-                </tr>
-                <tr>
-                    <td><span class="id-badge">TH-73</span></td>
-                    <td><strong>Direct-Silicon DOM Parser</strong></td>
-                    <td><span class="gain-badge">+45.0%</span></td>
-                    <td class="hw-level">CPU/Logic</td>
-                    <td class="tech-merged">SIMD-XML, Bit-Shift-HTML, No-Alloc-DOM</td>
-                </tr>
-                <tr>
-                    <td><span class="id-badge id-badge-special">TH-100</span></td>
-                    <td><strong>Absolute Dominance Matrix</strong></td>
-                    <td><span class="gain-badge" style="background: rgba(188, 140, 255, 0.2); color: #bc8cff;">+99.0%</span></td>
-                    <td class="hw-level">Hardware/Matrix</td>
-                    <td class="tech-merged">Unified-Silicon, Thunder-Core, Omega-Sync</td>
-                </tr>
-                <tr>
-                    <td><span class="id-badge">TH-101</span></td>
-                    <td><strong>Sentinel Anti-RE Matrix</strong></td>
-                    <td><span class="gain-badge">+10.0%</span></td>
-                    <td class="hw-level">Security/Logic</td>
-                    <td class="tech-merged">Anti-Debug, Tracer-Kill, Code-Obfuscation</td>
-                </tr>
-            </tbody>
-        </table>
-        <div style="padding: 15px; text-align: center; color: var(--text-secondary); font-size: 0.8rem;">
-            ... [Displaying Core Pillars. Full 100 Pillars Matrix verified in Thunder_Tech_Architecture.csv] ...
+        <div class="stats-bar">
+            <div><span class="stat-val">1.00M</span><span class="stat-lbl">Nodes Active</span></div>
+            <div><span class="stat-val">538,495x</span><span class="stat-lbl">Total Velocity</span></div>
+            <div><span class="stat-val">0.000ns</span><span class="stat-lbl">Jitter Deviation</span></div>
         </div>
-    </div>
+
+        <div style="text-align: center;">
+            <input type="text" id="search" class="search-box" placeholder="GO TO COORD (1 - 1,000,000)">
+        </div>
+
+        <div class="controls" id="tier-controls">
+            <!-- Tier buttons generated -->
+        </div>
+
+        <div class="matrix-grid" id="matrix"></div>
+    </main>
+
+    <script>
+        const matrixEl = document.getElementById('matrix');
+        const detId = document.getElementById('det-id');
+        const detName = document.getElementById('det-name');
+        const detGain = document.getElementById('det-gain');
+        const detLevel = document.getElementById('det-level');
+        const detDesc = document.getElementById('det-desc');
+        const searchInput = document.getElementById('search');
+        const tierControls = document.getElementById('tier-controls');
+
+        const tiers = [
+            { name: "Deity Matrix Core", level: "Kernel/CPU/RAM", baseGain: 99.9 },
+            { name: "Multiversal Instruction Warp", level: "CPU/Microcode", baseGain: 55.0 },
+            { name: "Quantum Entanglement Shield", level: "Security/Quantum", baseGain: 48.0 },
+            { name: "Neural-Singularity Matrix", level: "AI/NPU/TPU", baseGain: 42.0 },
+            { name: "Infinite VRAM Fabric", level: "GPU/PCIe/VRAM", baseGain: 52.0 },
+            { name: "Zero-Latency Global Grid", level: "Network/Storage", baseGain: 45.0 },
+            { name: "Atomic-Warp Reality-UI", level: "Display/Holographic", baseGain: 39.0 },
+            { name: "Autonomous ASIC Evolution", level: "Hardware/ASIC", baseGain: 60.0 },
+            { name: "Perfect Privacy Singularity", level: "Hardware/Security", baseGain: 44.0 },
+            { name: "Thunder Multiversal Matrix", level: "Total Supremacy", baseGain: 99.99 }
+        ];
+
+        function showDetail(id) {
+            const num = parseInt(id);
+            const tierIdx = Math.min(9, Math.floor((num - 1) / 100000));
+            const tier = tiers[tierIdx];
+
+            detId.innerText = "COORD_" + id.toString().padStart(7, '0');
+            detName.innerText = tier.name;
+            detLevel.innerText = tier.level;
+
+            let gain = tier.baseGain + (num % 1000) * 0.001;
+            if (num === 1000000) gain = 100.0;
+            detGain.innerText = "+" + gain.toFixed(3) + "%";
+
+            detDesc.innerText = `Coordinate ${id} represents a fundamental quantum node within the ${tier.name}. It enforces absolute hardware precision at the ${tier.level} layer. Developed by Marcel Andrade, this node utilizes direct silicon resonance to eliminate relativistic OS overhead.`;
+        }
+
+        function loadTier(idx) {
+            document.querySelectorAll('.tier-btn').forEach((b, i) => {
+                b.classList.toggle('active', i === idx);
+            });
+
+            matrixEl.innerHTML = '';
+            const start = idx * 100000 + 1;
+
+            // Rendering 1000 sampled points per mega-tier with massive blocks
+            for(let i = 0; i < 800; i++) {
+                const actualId = start + (i * 125);
+                const div = document.createElement('div');
+                let className = 'pillar active-node';
+                if(actualId % 10000 === 0) className += ' milestone';
+                if(actualId === 1000000) className += ' god-mode';
+                div.className = className;
+                div.innerText = (actualId >= 1000 ? Math.floor(actualId/1000) + 'K' : actualId);
+                div.onclick = () => showDetail(actualId);
+                matrixEl.appendChild(div);
+            }
+        }
+
+        // Generate Tier Buttons with premium style
+        for(let i=0; i<10; i++) {
+            const btn = document.createElement('button');
+            btn.className = 'tier-btn' + (i === 0 ? ' active' : '');
+            btn.innerText = (i*100) + "K-" + ((i+1)*100) + "K";
+            btn.onclick = () => loadTier(i);
+            tierControls.appendChild(btn);
+        }
+
+        searchInput.onchange = (e) => {
+            const val = e.target.value;
+            if (val && !isNaN(val)) {
+                const num = parseInt(val);
+                if (num >= 1 && num <= 1000000) {
+                    const tier = Math.floor((num - 1) / 100000);
+                    loadTier(tier);
+                    showDetail(num);
+                }
+            }
+        };
+
+        loadTier(0);
+    </script>
 </body>
 </html>

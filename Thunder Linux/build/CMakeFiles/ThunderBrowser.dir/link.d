@@ -4,7 +4,7 @@ ThunderBrowser: \
   /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o \
   CMakeFiles/ThunderBrowser.dir/ThunderBrowser_autogen/mocs_compilation.cpp.o \
   CMakeFiles/ThunderBrowser.dir/src/main/main.cpp.o \
-  /home/marcel1237/Thunder/Thunder Linux/../ThunderSDK/build/libThunderSDK.so \
+  ThunderSDK/libThunderSDK.so \
   /usr/lib/x86_64-linux-gnu/libQt6WebEngineWidgets.so.6.10.2 \
   /usr/lib/x86_64-linux-gnu/libQt6WebEngineCore.so.6.10.2 \
   /usr/lib/x86_64-linux-gnu/libQt6WebChannel.so.6.10.2 \
@@ -13,11 +13,11 @@ ThunderBrowser: \
   /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.10.2 \
   /usr/lib/x86_64-linux-gnu/libQt6Quick.so.6.10.2 \
   /usr/lib/x86_64-linux-gnu/libQt6OpenGL.so.6.10.2 \
+  /usr/lib/x86_64-linux-gnu/libQt6Qml.so.6.10.2 \
+  /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.10.2 \
   /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.10.2 \
   /usr/lib/x86_64-linux-gnu/libGLX.so \
   /usr/lib/x86_64-linux-gnu/libOpenGL.so \
-  /usr/lib/x86_64-linux-gnu/libQt6Qml.so.6.10.2 \
-  /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.10.2 \
   /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.10.2 \
   /usr/lib/gcc/x86_64-linux-gnu/15/libstdc++.so \
   /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libm.so \
@@ -181,7 +181,7 @@ CMakeFiles/ThunderBrowser.dir/ThunderBrowser_autogen/mocs_compilation.cpp.o:
 
 CMakeFiles/ThunderBrowser.dir/src/main/main.cpp.o:
 
-/home/marcel1237/Thunder/Thunder Linux/../ThunderSDK/build/libThunderSDK.so:
+ThunderSDK/libThunderSDK.so:
 
 /usr/lib/x86_64-linux-gnu/libQt6WebEngineWidgets.so.6.10.2:
 
@@ -199,15 +199,15 @@ CMakeFiles/ThunderBrowser.dir/src/main/main.cpp.o:
 
 /usr/lib/x86_64-linux-gnu/libQt6OpenGL.so.6.10.2:
 
+/usr/lib/x86_64-linux-gnu/libQt6Qml.so.6.10.2:
+
+/usr/lib/x86_64-linux-gnu/libQt6Network.so.6.10.2:
+
 /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.10.2:
 
 /usr/lib/x86_64-linux-gnu/libGLX.so:
 
 /usr/lib/x86_64-linux-gnu/libOpenGL.so:
-
-/usr/lib/x86_64-linux-gnu/libQt6Qml.so.6.10.2:
-
-/usr/lib/x86_64-linux-gnu/libQt6Network.so.6.10.2:
 
 /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.10.2:
 

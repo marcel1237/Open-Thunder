@@ -10,6 +10,7 @@
 #include <QtCore/QString>
 #include <QtCore/QByteArray>
 #include <cstdint>
+#include <cstring>
 
 namespace Td {
 namespace Network {
@@ -18,17 +19,15 @@ namespace Network {
  * @brief TH-41: Bitwise-URL-Warp.
  * Fast path for URL segment detection using bitwise checks.
  */
-inline bool isHttps(const char* url) {
-    // Check "https" (0x7370747468 in LE hex)
-    uint64_t val = *reinterpret_cast<const uint64_t*>(url);
-    return (val & 0xFFFFFFFFFF) == 0x7370747468;
+inline bool isHttps(const char* url, size_t length) {
+    return url && length >= 8 && std::memcmp(url, "https://", 8) == 0;
 }
 
 inline const char* findPathStart(const char* url) {
-    // Bypasses QString::indexOf
+    if (!url) return nullptr;
     const char* p = url;
     while (*p) {
-        if (*p == '/' && *(p-1) != '/' && *(p+1) != '/') return p;
+        if (*p == '/' && (p == url || *(p - 1) != '/') && *(p + 1) != '/') return p;
         p++;
     }
     return nullptr;

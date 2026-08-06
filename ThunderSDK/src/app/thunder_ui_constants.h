@@ -12,17 +12,22 @@
 namespace Td {
 namespace UI {
 
-constexpr uint32_t ColorBackground  = 0xFF1A1A1A;
-constexpr uint32_t ColorToolbar     = 0xFF2D2D2D;
-constexpr uint32_t ColorAccent      = 0xFF007ACC;
-constexpr uint32_t ColorText        = 0xFFE0E0E0;
-constexpr uint32_t ColorBorder      = 0xFF3E3E3E;
+// Master Color Palette (Cyber-Scientist Theme)
+constexpr uint32_t ColorBackground  = 0xFF05070A;
+constexpr uint32_t ColorToolbar     = 0xFF0D1117;
+constexpr uint32_t ColorAccent      = 0xFF00F2FF;
+constexpr uint32_t ColorSecondary   = 0xFFFF00EA; // Pink/Magenta for special highlights
+constexpr uint32_t ColorText        = 0xFFE6EDF3;
+constexpr uint32_t ColorTextMuted   = 0xFF8B949E;
+constexpr uint32_t ColorBorder      = 0xFF30363D;
 
-constexpr int ToolbarHeight    = 0x28;
-constexpr int ButtonSize       = 0x1C;
-constexpr int AddressBarHeight = 0x18;
-constexpr int PaddingSmall     = 0x04;
-constexpr int PaddingMedium    = 0x08;
+// Geometry (Modern Spacing)
+constexpr int ToolbarHeight    = 54;
+constexpr int ButtonSize       = 36;
+constexpr int AddressBarHeight = 36;
+constexpr int PaddingSmall     = 6;
+constexpr int PaddingMedium    = 12;
+constexpr int BorderRadius     = 10;
 
 } // namespace UI
 } // namespace Td

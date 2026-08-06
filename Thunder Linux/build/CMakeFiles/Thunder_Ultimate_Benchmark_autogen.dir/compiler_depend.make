@@ -273,6 +273,9 @@ Thunder_Ultimate_Benchmark_autogen/timestamp: /home/marcel1237/Thunder/Thunder\ 
   /usr/share/cmake-4.2/Modules/CMakeLanguageInformation.cmake \
   /usr/share/cmake-4.2/Modules/CMakeSystemSpecificInformation.cmake \
   /usr/share/cmake-4.2/Modules/CMakeSystemSpecificInitialize.cmake \
+  /usr/share/cmake-4.2/Modules/CTest.cmake \
+  /usr/share/cmake-4.2/Modules/CTestTargets.cmake \
+  /usr/share/cmake-4.2/Modules/CTestUseLaunchers.cmake \
   /usr/share/cmake-4.2/Modules/CheckCXXCompilerFlag.cmake \
   /usr/share/cmake-4.2/Modules/CheckCXXSourceCompiles.cmake \
   /usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake \
@@ -284,6 +287,7 @@ Thunder_Ultimate_Benchmark_autogen/timestamp: /home/marcel1237/Thunder/Thunder\ 
   /usr/share/cmake-4.2/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
   /usr/share/cmake-4.2/Modules/Compiler/GNU-CXX.cmake \
   /usr/share/cmake-4.2/Modules/Compiler/GNU.cmake \
+  /usr/share/cmake-4.2/Modules/DartConfiguration.tcl.in \
   /usr/share/cmake-4.2/Modules/FindCups.cmake \
   /usr/share/cmake-4.2/Modules/FindOpenGL.cmake \
   /usr/share/cmake-4.2/Modules/FindPackageHandleStandardArgs.cmake \
@@ -306,8 +310,11 @@ Thunder_Ultimate_Benchmark_autogen/timestamp: /home/marcel1237/Thunder/Thunder\ 
   /usr/share/cmake-4.2/Modules/Platform/Linux-GNU.cmake \
   /usr/share/cmake-4.2/Modules/Platform/Linux-Initialize.cmake \
   /usr/share/cmake-4.2/Modules/Platform/Linux.cmake \
-  /usr/share/cmake-4.2/Modules/Platform/UnixPaths.cmake
+  /usr/share/cmake-4.2/Modules/Platform/UnixPaths.cmake \
+  /usr/share/cmake-4.2/Templates/CTestScript.cmake.in
 
+
+/usr/share/cmake-4.2/Templates/CTestScript.cmake.in:
 
 /usr/share/cmake-4.2/Modules/Platform/Linux-Initialize.cmake:
 
@@ -340,6 +347,8 @@ Thunder_Ultimate_Benchmark_autogen/timestamp: /home/marcel1237/Thunder/Thunder\ 
 /usr/share/cmake-4.2/Modules/FindPackageMessage.cmake:
 
 /usr/share/cmake-4.2/Modules/FindPackageHandleStandardArgs.cmake:
+
+/usr/share/cmake-4.2/Modules/DartConfiguration.tcl.in:
 
 /usr/share/cmake-4.2/Modules/Compiler/GNU-CXX.cmake:
 
@@ -665,6 +674,8 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Qml/Qt6QmlPlugins.cmake:
 
+/usr/share/cmake-4.2/Modules/CTest.cmake:
+
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreVersionlessAliasTargets.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6ConfigVersion.cmake:
@@ -714,6 +725,8 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Qml/Qt6QmlDependencies.cmake:
 
 /usr/share/cmake-4.2/Modules/Platform/Linker/Linux-GNU.cmake:
+
+/usr/share/cmake-4.2/Modules/CTestUseLaunchers.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Qml/Qt6QmlProperties.cmake:
 
@@ -872,6 +885,8 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /usr/lib/x86_64-linux-gnu/cmake/Qt6QmlWorkerScript/Qt6QmlWorkerScriptTargets-none.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6QuickWidgets/Qt6QuickWidgetsVersionlessAliasTargets.cmake:
+
+/usr/share/cmake-4.2/Modules/CTestTargets.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6WebChannel/Qt6WebChannelConfig.cmake:
 

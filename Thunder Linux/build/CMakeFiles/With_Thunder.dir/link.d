@@ -4,7 +4,7 @@ With_Thunder: \
   /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o \
   CMakeFiles/With_Thunder.dir/With_Thunder_autogen/mocs_compilation.cpp.o \
   CMakeFiles/With_Thunder.dir/src/examples/with_thunder_report.cpp.o \
-  /home/marcel1237/Thunder/Thunder Linux/../ThunderSDK/build/libThunderSDK.so \
+  ThunderSDK/libThunderSDK.so \
   /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.10.2 \
   /usr/lib/gcc/x86_64-linux-gnu/15/libstdc++.so \
   /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libm.so \
@@ -169,7 +169,7 @@ CMakeFiles/With_Thunder.dir/With_Thunder_autogen/mocs_compilation.cpp.o:
 
 CMakeFiles/With_Thunder.dir/src/examples/with_thunder_report.cpp.o:
 
-/home/marcel1237/Thunder/Thunder Linux/../ThunderSDK/build/libThunderSDK.so:
+ThunderSDK/libThunderSDK.so:
 
 /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.10.2:
 

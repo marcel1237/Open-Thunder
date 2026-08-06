@@ -8,6 +8,7 @@
 #define THUNDER_DMA_SYNC_H
 
 #include <iostream>
+#include "thunder_dma_optimizer.h"
 
 namespace Td {
 namespace Hardware {
@@ -15,11 +16,12 @@ namespace Hardware {
 /**
  * @brief TH-37: Direct-Silicon DMA-BUF Sync.
  */
-inline void syncDmaBuffer(int fd) {
+inline bool syncDmaBuffer(int fd) {
 #ifdef Q_OS_LINUX
-    // Simulate direct sync via DMA_BUF_IOCTL_SYNC
-    // This removes the need for kernel-side fences.
-    std::cout << "[TH-37] DMA-BUF Sync: [HARDWARE DIRECT]" << std::endl;
+    return Td::Kernel::hardwareSyncBuffer(fd, true) && Td::Kernel::hardwareSyncBuffer(fd, false);
+#else
+    (void)fd;
+    return false;
 #endif
 }
 

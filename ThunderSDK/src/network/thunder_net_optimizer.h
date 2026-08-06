@@ -100,13 +100,17 @@ enum class ImageType : uint32_t {
     UNKNOWN = 0x0
 };
 
-inline ImageType fastDetectImageType(const uint8_t* data) {
-    uint32_t magic = *reinterpret_cast<const uint32_t*>(data);
+inline ImageType fastDetectImageType(const uint8_t* data, size_t size) {
+    if (!data || size < sizeof(uint32_t)) return ImageType::UNKNOWN;
+    uint32_t magic;
+    memcpy(&magic, data, sizeof(magic));
 
     // Comparison in 1 clock cycle
     if ((magic & 0xFFFFFF00) == 0x474E5000) return ImageType::PNG;
     if ((magic & 0xFFFF) == 0xD8FF) return ImageType::JPEG;
     if (magic == 0x38464947) return ImageType::GIF;
+    if (size >= 12 && memcmp(data, "RIFF", 4) == 0 && memcmp(data + 8, "WEBP", 4) == 0)
+        return ImageType::WEBP;
 
     return ImageType::UNKNOWN;
 }
@@ -127,8 +131,11 @@ struct TlsRecordHeader {
  * Mathematically transforms O(N) rule checking into O(1) hardware-speed rejection.
  */
 inline bool parallelBitmaskFilter(uint64_t requestFlags, const uint64_t* ruleMasks, size_t count) {
+    if (!ruleMasks) return false;
+#ifdef __AVX2__
     __m256i req = _mm256_set1_epi64x(requestFlags);
-    for (size_t i = 0; i < count; i += 4) {
+    size_t i = 0;
+    for (; i + 4 <= count; i += 4) {
         __m256i rules = _mm256_loadu_si256(reinterpret_cast<const __m256i*>(ruleMasks + i));
         // Bitwise AND: requestFlags & ruleMask
         __m256i result = _mm256_and_si256(req, rules);
@@ -136,6 +143,11 @@ inline bool parallelBitmaskFilter(uint64_t requestFlags, const uint64_t* ruleMas
         __m256i cmp = _mm256_cmpeq_epi64(result, rules);
         if (!_mm256_testz_si256(cmp, cmp)) return true;
     }
+#else
+    size_t i = 0;
+#endif
+    for (; i < count; ++i)
+        if ((requestFlags & ruleMasks[i]) == ruleMasks[i]) return true;
     return false;
 }
 

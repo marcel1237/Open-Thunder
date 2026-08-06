@@ -23,6 +23,9 @@ namespace Hardware {
 template <typename T, size_t Capacity>
 class LocklessStream {
 public:
+    static_assert(Capacity > 1, "LocklessStream needs at least two slots");
+    // Single-producer/single-consumer queue. Concurrent producers or consumers
+    // require external serialization.
     LocklessStream() : m_head(0), m_tail(0) {}
 
     bool push(const T& item) {

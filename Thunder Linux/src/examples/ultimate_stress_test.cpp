@@ -28,11 +28,12 @@ int main() {
     std::cout << "[STRESS] Hardware RAM Secured at: " << hardware_ram << std::endl;
 
     auto start = std::chrono::high_resolution_clock::now();
-    std::cout << "[STRESS] Starting 512-bit Vector Saturation..." << std::endl;
+    std::cout << "[STRESS] Starting runtime-dispatched byte scans..." << std::endl;
 
     for (int i = 0; i < 100; ++i) {
         // Intensive Hardware Scan (AVX-512/AVX2)
-        Td::Hardware::fastScanByte(hardware_ram, 0xAA, test_size);
+        const void* result = Td::Hardware::fastScanByte(hardware_ram, 0xAA, test_size);
+        asm volatile("" : : "r"(result) : "memory");
     }
 
     auto end = std::chrono::high_resolution_clock::now();
@@ -41,6 +42,6 @@ int main() {
     std::cout << "[RESULT] Vector Throughput: " << (static_cast<double>(test_size) * 100 / (1024 * 1024) / diff.count()) << " MB/s" << std::endl;
     std::cout << "STATUS: HARDWARE DOMINATED." << std::endl;
 
-    munmap(hardware_ram, test_size);
+    Td::Hardware::freeHugeMemory(hardware_ram, test_size);
     return 0;
 }

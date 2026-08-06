@@ -8,11 +8,27 @@
 
 #include <QString>
 #include <cstdint>
+#include <QStringList>
 #include "thundercommon.h"
 
 namespace Td {
 namespace Kernel {
 
+struct THUNDER_EXPORT OptimizationReport {
+    bool cpuAffinity = false;
+    bool memoryLocked = false;
+    bool timerSlack = false;
+    bool realtimeScheduling = false;
+    bool dmaLatency = false;
+    bool addressLimit = false;
+    int successfulGovernors = 0;
+    QStringList errors;
+
+    bool anyApplied() const { return cpuAffinity || memoryLocked || timerSlack ||
+        realtimeScheduling || dmaLatency || addressLimit || successfulGovernors > 0; }
+};
+
+OptimizationReport THUNDER_EXPORT optimizeProcessWithReport();
 void THUNDER_EXPORT optimizeProcess();
 QString THUNDER_EXPORT initRamStorage();
 void THUNDER_EXPORT verifyHardwareHandshake();

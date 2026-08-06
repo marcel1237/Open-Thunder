@@ -119,7 +119,7 @@ ThunderBrowser: CMakeFiles/ThunderBrowser.dir/ThunderBrowser_autogen/mocs_compil
 ThunderBrowser: CMakeFiles/ThunderBrowser.dir/src/main/main.cpp.o
 ThunderBrowser: CMakeFiles/ThunderBrowser.dir/build.make
 ThunderBrowser: CMakeFiles/ThunderBrowser.dir/compiler_depend.ts
-ThunderBrowser: /home/marcel1237/Thunder/Thunder\ Linux/../ThunderSDK/build/libThunderSDK.so
+ThunderBrowser: ThunderSDK/libThunderSDK.so
 ThunderBrowser: /usr/lib/x86_64-linux-gnu/libQt6WebEngineWidgets.so.6.10.2
 ThunderBrowser: /usr/lib/x86_64-linux-gnu/libQt6WebEngineCore.so.6.10.2
 ThunderBrowser: /usr/lib/x86_64-linux-gnu/libQt6WebChannel.so.6.10.2
@@ -128,11 +128,11 @@ ThunderBrowser: /usr/lib/x86_64-linux-gnu/libQt6PrintSupport.so.6.10.2
 ThunderBrowser: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.10.2
 ThunderBrowser: /usr/lib/x86_64-linux-gnu/libQt6Quick.so.6.10.2
 ThunderBrowser: /usr/lib/x86_64-linux-gnu/libQt6OpenGL.so.6.10.2
+ThunderBrowser: /usr/lib/x86_64-linux-gnu/libQt6Qml.so.6.10.2
+ThunderBrowser: /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.10.2
 ThunderBrowser: /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.10.2
 ThunderBrowser: /usr/lib/x86_64-linux-gnu/libGLX.so
 ThunderBrowser: /usr/lib/x86_64-linux-gnu/libOpenGL.so
-ThunderBrowser: /usr/lib/x86_64-linux-gnu/libQt6Qml.so.6.10.2
-ThunderBrowser: /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.10.2
 ThunderBrowser: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.10.2
 ThunderBrowser: CMakeFiles/ThunderBrowser.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/marcel1237/Thunder/Thunder Linux/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable ThunderBrowser"

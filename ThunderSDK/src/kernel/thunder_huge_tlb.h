@@ -38,6 +38,7 @@ inline void prefaultMemory(void* ptr, size_t size) {
  * Includes TH-22 Page Prefaulting.
  */
 inline void* allocHugeMemory(size_t size) {
+    if (size == 0 || size > SIZE_MAX - 0x1FFFFF) return MAP_FAILED;
     size_t aligned_size = (size + 0x1FFFFF) & ~0x1FFFFF;
 
     // Attempt 1: Explicit HugeTLB
@@ -70,6 +71,13 @@ inline void* allocHugeMemory(size_t size) {
     }
 
     return MAP_FAILED;
+}
+
+inline bool freeHugeMemory(void* ptr, size_t size) {
+    if (!ptr || ptr == MAP_FAILED || size == 0 || size > SIZE_MAX - 0x1FFFFF)
+        return false;
+    const size_t alignedSize = (size + 0x1FFFFF) & ~static_cast<size_t>(0x1FFFFF);
+    return munmap(ptr, alignedSize) == 0;
 }
 
 } // namespace Hardware

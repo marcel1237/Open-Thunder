@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>icons/duckduckgo.ico</file>
+        <file>icons/brave.ico</file>
+        <file>icons/google.ico</file>
+        <file>icons/wikipedia.ico</file>
+        <file>icons/bing.ico</file>
+        <file>icons/yahoo.ico</file>
+    </qresource>
+</RCC>

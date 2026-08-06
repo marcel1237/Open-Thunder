@@ -6,13 +6,16 @@
  /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/4.2.3/CMakeCXXCompiler.cmake
  /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/4.2.3/CMakeSystem.cmake
  /home/marcel1237/Thunder/ThunderSDK/build/ThunderSDK_autogen/moc_predefs.h
+ /home/marcel1237/Thunder/ThunderSDK/cmake/ThunderSDKConfig.cmake.in
+ /home/marcel1237/Thunder/ThunderSDK/src/adblock/adblockmanager.cpp
+ /home/marcel1237/Thunder/ThunderSDK/src/adblock/adblockmanager.h
  /home/marcel1237/Thunder/ThunderSDK/src/adblock/adblockrule.cpp
  /home/marcel1237/Thunder/ThunderSDK/src/adblock/adblockrule.h
  /home/marcel1237/Thunder/ThunderSDK/src/app/browserwindow.cpp
  /home/marcel1237/Thunder/ThunderSDK/src/app/browserwindow.h
  /home/marcel1237/Thunder/ThunderSDK/src/app/mainapplication.cpp
  /home/marcel1237/Thunder/ThunderSDK/src/app/mainapplication.h
- /home/marcel1237/Thunder/ThunderSDK/src/app/thunder_ui_constants.h
+ /home/marcel1237/Thunder/ThunderSDK/src/app/resources.qrc
  /home/marcel1237/Thunder/ThunderSDK/src/app/thundercommon.cpp
  /home/marcel1237/Thunder/ThunderSDK/src/app/thundercommon.h
  /home/marcel1237/Thunder/ThunderSDK/src/kernel/kernel_bridge.cpp
@@ -313,6 +316,11 @@
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QDebug
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QFlags
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QList
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QReadWriteLock
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QRect
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QRegularExpression
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QSize
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QSizeF
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QString
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QUrl
@@ -326,6 +334,7 @@
  /usr/include/x86_64-linux-gnu/qt6/QtCore/q23type_traits.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/q23utility.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstracteventdispatcher.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractitemmodel.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qalgorithms.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qalloc.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qanystringview.h
@@ -404,8 +413,10 @@
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qpair.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qpoint.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qprocessordetection.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qreadwritelock.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qrect.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qrefcount.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qregularexpression.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qscopedpointer.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qscopeguard.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qset.h
@@ -458,12 +469,16 @@
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qxptype_traits.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qyieldcpu.h
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/QCloseEvent
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPageLayout
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/QTransform
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qaction.h
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qbitmap.h
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qbrush.h
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qcolor.h
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qcursor.h
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qevent.h
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qeventpoint.h
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qfont.h
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontinfo.h
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontmetrics.h
@@ -472,6 +487,7 @@
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication_platform.h
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qicon.h
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qimage.h
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qinputdevice.h
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qinputmethod.h
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qkeysequence.h
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpagelayout.h
@@ -482,10 +498,13 @@
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixelformat.h
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixmap.h
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qpointingdevice.h
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpolygon.h
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qregion.h
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qrgb.h
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qrgba64.h
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qscreen.h
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qscreen_platform.h
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextcursor.h
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextdocument.h
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextformat.h
@@ -494,6 +513,9 @@
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiexports.h
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qvalidator.h
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qvector2d.h
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qvectornd.h
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h
  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qssl.h
  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qsslcertificate.h
@@ -516,15 +538,21 @@
  /usr/include/x86_64-linux-gnu/qt6/QtWebEngineWidgets/qtwebenginewidgetsglobal.h
  /usr/include/x86_64-linux-gnu/qt6/QtWebEngineWidgets/qwebengineview.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QComboBox
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QHBoxLayout
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLineEdit
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QProgressBar
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QTabWidget
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemdelegate.h
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractspinbox.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qapplication.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcombobox.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgridlayout.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayout.h
@@ -533,7 +561,12 @@
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qprogressbar.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qrubberband.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qslider.h
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyle.h
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyleoption.h
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabbar.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgets-config.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsexports.h
@@ -918,6 +951,7 @@
  /usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-none.cmake
  /usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake
  /usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake
+ /usr/share/cmake-4.2/Modules/BasicConfigVersion-SameMajorVersion.cmake.in
  /usr/share/cmake-4.2/Modules/CMakeCXXInformation.cmake
  /usr/share/cmake-4.2/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake
  /usr/share/cmake-4.2/Modules/CMakeCommonLanguageInclude.cmake
@@ -925,8 +959,12 @@
  /usr/share/cmake-4.2/Modules/CMakeGenericSystem.cmake
  /usr/share/cmake-4.2/Modules/CMakeInitializeConfigs.cmake
  /usr/share/cmake-4.2/Modules/CMakeLanguageInformation.cmake
+ /usr/share/cmake-4.2/Modules/CMakePackageConfigHelpers.cmake
  /usr/share/cmake-4.2/Modules/CMakeSystemSpecificInformation.cmake
  /usr/share/cmake-4.2/Modules/CMakeSystemSpecificInitialize.cmake
+ /usr/share/cmake-4.2/Modules/CTest.cmake
+ /usr/share/cmake-4.2/Modules/CTestTargets.cmake
+ /usr/share/cmake-4.2/Modules/CTestUseLaunchers.cmake
  /usr/share/cmake-4.2/Modules/CheckCXXCompilerFlag.cmake
  /usr/share/cmake-4.2/Modules/CheckCXXSourceCompiles.cmake
  /usr/share/cmake-4.2/Modules/CheckIPOSupported.cmake
@@ -938,6 +976,7 @@
  /usr/share/cmake-4.2/Modules/Compiler/CMakeCommonCompilerMacros.cmake
  /usr/share/cmake-4.2/Modules/Compiler/GNU-CXX.cmake
  /usr/share/cmake-4.2/Modules/Compiler/GNU.cmake
+ /usr/share/cmake-4.2/Modules/DartConfiguration.tcl.in
  /usr/share/cmake-4.2/Modules/FindCups.cmake
  /usr/share/cmake-4.2/Modules/FindOpenGL.cmake
  /usr/share/cmake-4.2/Modules/FindPackageHandleStandardArgs.cmake
@@ -961,4 +1000,6 @@
  /usr/share/cmake-4.2/Modules/Platform/Linux-Initialize.cmake
  /usr/share/cmake-4.2/Modules/Platform/Linux.cmake
  /usr/share/cmake-4.2/Modules/Platform/UnixPaths.cmake
+ /usr/share/cmake-4.2/Modules/WriteBasicConfigVersionFile.cmake
+ /usr/share/cmake-4.2/Templates/CTestScript.cmake.in
 

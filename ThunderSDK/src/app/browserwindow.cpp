@@ -3,8 +3,6 @@
  * Thunder - Hardware-Enforced Next-Gen Intelligence
  *
  * PROPRIETARY SOURCE-AVAILABLE LICENSE.
- * This code is public for visibility but use is governed by the TSAL v1.0.
- * Unauthorized commercial use or redistribution is strictly prohibited.
  */
 #include "browserwindow.h"
 #include "thunder_url_interceptor.h"
@@ -15,181 +13,284 @@
 #include <QWebEngineSettings>
 #include <QWebEnginePage>
 #include <QLineEdit>
+#include <QPushButton>
+#include <QLabel>
 #include <QShortcut>
 #include <QPalette>
 #include <QApplication>
-#include <QShortcut>
-#include <QPalette>
-#include <QApplication>
+#include <QHBoxLayout>
+#include <QVBoxLayout>
+#include <QProgressBar>
+#include <QTabBar>
+#include <QComboBox>
+#include <QIcon>
+#include <QSettings>
+#include <QStandardPaths>
+#include <QDir>
 
 BrowserWindow::BrowserWindow(QWidget* parent)
     : QMainWindow(parent)
 {
     setupUi();
-    applyHexStyle();
+    applyModernStyle();
 
     // Low-latency UI Flags
     setAttribute(Qt::WA_OpaquePaintEvent);
     setAttribute(Qt::WA_NoSystemBackground);
 
-    // Application-wide performance attributes
-    QApplication::setAttribute(Qt::AA_DontCreateNativeWidgetSiblings);
+    // Initial Tab / Restore Session
+    restoreSession();
 
-    // Install Hex-Accelerated Network Interceptor
-    QWebEngineProfile *profile = m_view->page()->profile();
-    profile->setUrlRequestInterceptor(new Td::Network::ThunderUrlInterceptor(this));
-
-    // Performance Optimizations for "Fastest Browser"
-    QWebEngineSettings *settings = m_view->settings();
-    settings->setAttribute(QWebEngineSettings::AutoLoadImages, true);
-    settings->setAttribute(QWebEngineSettings::JavascriptEnabled, true);
-    settings->setAttribute(QWebEngineSettings::LocalStorageEnabled, true);
-    settings->setAttribute(QWebEngineSettings::ScrollAnimatorEnabled, false); // Disabled for instant response
-    settings->setAttribute(QWebEngineSettings::ErrorPageEnabled, false);
-
-    // Enable hardware acceleration
-    settings->setAttribute(QWebEngineSettings::Accelerated2dCanvasEnabled, true);
-    settings->setAttribute(QWebEngineSettings::WebGLEnabled, true);
-
-    // Low-level Chromium optimizations via Environment (Kernel/Process level)
-    // --enable-native-gpu-memory-buffers: Enables DMA-BUF for zero-copy hardware path
-    // --enable-gpu-rasterization: Bypasses CPU for all drawing
-    // --use-gl=egl: Direct hardware interface to EGL (Linux native)
-    // --canvas-msaa-sample-count=4: Multi-sample anti-aliasing for text
-    // --enable-font-antialiasing: HW accelerated font smoothing
-    qputenv("QTWEBENGINE_CHROMIUM_FLAGS",
-            "--disable-gpu-vsync "
-            "--enable-threaded-compositing "
-            "--enable-zero-copy "
-            "--ignore-gpu-blocklist "
-            "--enable-native-gpu-memory-buffers "
-            "--enable-gpu-rasterization "
-            "--enable-oop-rasterization "
-            "--use-gl=egl "
-            "--canvas-msaa-sample-count=4 "
-            "--enable-font-antialiasing "
-            "--enable-subpixel-font-scaling "
-            "--enable-features=CanvasOopRasterization,GpuRasterization,SkiaRenderer,ZstdContentEncoding,BrotliContentEncoding,Vulkan,VulkanFromANGLE,DefaultAngleVulkan,RawDraw "
-            "--enable-hardware-cursors "
-            "--enable-low-delay-input "
-            "--use-vulkan "
-            "--use-angle=vulkan "
-            "--enable-native-gpu-memory-buffers "
-            "--enable-gpu-memory-buffer-video-frames "
-            "--use-vulkan=native "
-            "--disable-vulkan-fallback-to-gl-for-testing "
-            "--vulkan-heap-memory-limit=0 "
-            "--enable-skia-graphite "
-            "--enable-features=SkiaGraphite,VulkanBindless,VulkanFromANGLE,CanvasOopRasterization,GpuRasterization,SkiaRenderer,ZstdContentEncoding,BrotliContentEncoding,Vulkan,DefaultAngleVulkan,RawDraw,VulkanPipelineCache,PersistentShaderCache,VulkanImagelessFramebuffer,VulkanMemoryModel,VaapiVideoDecoder,VaapiIgnoreDriverChecks,AcceleratedVideoDecodeLinuxZeroCopyGL,VulkanSharedImage,VulkanDescriptorIndexing,VulkanQueuePriority "
-            "--enable-zero-copy "
-            "--enable-native-gpu-memory-buffers "
-            "--use-gl=egl "
-            "--enable-gpu-memory-buffer-video-frames "
-            "--disable-vulkan-surface-intermediate-buffer "
-            "--force-vulkan-full-screen-surface "
-            "--disable-vulkan-fallback-to-gl-for-testing "
-            "--gpu-program-cache-size-kb=1048576 "
-            "--disable-gpu-watchdog");
-
-    // [TH-11] Mesa Zero-Error & [TH-13] Pre-Compiled Shaders
-    qputenv("MESA_NO_ERROR", "1");
-    qputenv("MESA_VK_WSI_PRESENT_MODE", "mailbox");
-    qputenv("RADV_PERFTEST", "nggc,sam,nogttspill,extra_queues"); // AMD Parallel Queues
-    qputenv("ANV_ENABLE_PIPELINE_CACHE", "1"); // Intel Pipeline Cache
-
-    // Pre-Compiled Hardware Shader Cache (Warming)
-    qputenv("QTWEBENGINE_DISABLE_GPU_WATCHDOG", "1");
+    // Environment-level hardware forcing
     qputenv("MESA_SHADER_CACHE_DISABLE", "0");
     qputenv("MESA_SHADER_CACHE_MAX_SIZE", "1G");
 
-    // VA-API Hardware Acceleration for Linux Kernel
-    qputenv("QT_VIDEO_ALLOW_HW_ACCEL", "1");
-    qputenv("LIBVA_DRIVER_NAME", "iHD");
-
     connect(m_addressBar, &QLineEdit::returnPressed, this, &BrowserWindow::loadUrl);
-    connect(m_view, &QWebEngineView::loadProgress, this, &BrowserWindow::updateProgress);
-    connect(m_view, &QWebEngineView::titleChanged, this, &BrowserWindow::updateTitle);
+    connect(m_searchBar, &QLineEdit::returnPressed, this, &BrowserWindow::executeSearch);
+    connect(m_tabs, &QTabWidget::currentChanged, this, &BrowserWindow::currentTabChanged);
+    connect(m_tabs, &QTabWidget::tabCloseRequested, this, &BrowserWindow::closeTab);
 
-    m_view->load(QUrl(QStringLiteral("https://www.google.com")));
+    // Shortcuts
+    new QShortcut(QKeySequence(Qt::CTRL | Qt::Key_T), this, SLOT(addNewTab()));
+    new QShortcut(QKeySequence(Qt::CTRL | Qt::Key_W), this, [this](){ closeTab(m_tabs->currentIndex()); });
+}
+
+QWebEngineView* BrowserWindow::currentView() const
+{
+    return qobject_cast<QWebEngineView*>(m_tabs->currentWidget());
+}
+
+void BrowserWindow::addNewTab(const QUrl &url)
+{
+    QWebEngineView* view = new QWebEngineView(this);
+    view->page()->setBackgroundColor(QColor::fromRgba(Td::UI::ColorBackground));
+
+    // Configure Persistent Profile for Auth/Logins (Google, Microsoft, Yahoo, etc.)
+    QString profilePath = QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) + "/ThunderProfile";
+    QDir().mkpath(profilePath);
+
+    QWebEngineProfile* profile = new QWebEngineProfile("ThunderDefault", view);
+    profile->setPersistentStoragePath(profilePath);
+    profile->setPersistentCookiesPolicy(QWebEngineProfile::ForcePersistentCookies);
+    profile->setHttpCacheType(QWebEngineProfile::DiskHttpCache);
+    profile->setHttpCacheMaximumSize(1024 * 1024 * 512); // 512MB Cache
+
+    // Set page to use the persistent profile
+    QWebEnginePage* page = new QWebEnginePage(profile, view);
+    view->setPage(page);
+
+    // Install Hex-Accelerated Network Interceptor per profile/view
+    profile->setUrlRequestInterceptor(new Td::Network::ThunderUrlInterceptor(this));
+
+    // Performance Settings
+    QWebEngineSettings *settings = view->settings();
+    settings->setAttribute(QWebEngineSettings::AutoLoadImages, true);
+    settings->setAttribute(QWebEngineSettings::JavascriptEnabled, true);
+    settings->setAttribute(QWebEngineSettings::LocalStorageEnabled, true);
+    settings->setAttribute(QWebEngineSettings::ScrollAnimatorEnabled, false);
+    settings->setAttribute(QWebEngineSettings::Accelerated2dCanvasEnabled, true);
+    settings->setAttribute(QWebEngineSettings::WebGLEnabled, true);
+
+    int index = m_tabs->addTab(view, "New Coordinate");
+    m_tabs->setCurrentIndex(index);
+
+    connect(view, &QWebEngineView::loadProgress, this, &BrowserWindow::updateProgress);
+    connect(view, &QWebEngineView::titleChanged, this, &BrowserWindow::updateTitle);
+    connect(view, &QWebEngineView::urlChanged, this, &BrowserWindow::updateTitle);
+
+    if (!url.isEmpty()) {
+        view->load(url);
+    }
+}
+
+void BrowserWindow::closeTab(int index)
+{
+    if (m_tabs->count() > 1) {
+        QWidget* widget = m_tabs->widget(index);
+        m_tabs->removeTab(index);
+        delete widget;
+    } else {
+        close();
+    }
+}
+
+void BrowserWindow::currentTabChanged(int index)
+{
+    Q_UNUSED(index);
+    updateTitle();
 }
 
 void BrowserWindow::setupUi()
 {
     QWidget* centralWidget = new QWidget(this);
+    centralWidget->setObjectName("centralWidget");
     QVBoxLayout* layout = new QVBoxLayout(centralWidget);
     layout->setContentsMargins(0, 0, 0, 0);
     layout->setSpacing(0);
 
-    // Toolbar (Minimalist)
+    // --- Modern Toolbar ---
     m_toolbar = new QWidget(this);
+    m_toolbar->setObjectName("mainToolbar");
     m_toolbar->setFixedHeight(Td::UI::ToolbarHeight);
     QHBoxLayout* toolbarLayout = new QHBoxLayout(m_toolbar);
     toolbarLayout->setContentsMargins(Td::UI::PaddingMedium, 0, Td::UI::PaddingMedium, 0);
     toolbarLayout->setSpacing(Td::UI::PaddingSmall);
 
-    m_backButton = new QPushButton(QStringLiteral("<"), m_toolbar);
-    m_forwardButton = new QPushButton(QStringLiteral(">"), m_toolbar);
-    m_reloadButton = new QPushButton(QStringLiteral("R"), m_toolbar);
-    m_addressBar = new QLineEdit(m_toolbar);
+    m_backButton = new QPushButton("←", m_toolbar);
+    m_forwardButton = new QPushButton("→", m_toolbar);
+    m_reloadButton = new QPushButton("⟳", m_toolbar);
+    m_addTabButton = new QPushButton("+", m_toolbar);
 
     m_backButton->setFixedSize(Td::UI::ButtonSize, Td::UI::ButtonSize);
     m_forwardButton->setFixedSize(Td::UI::ButtonSize, Td::UI::ButtonSize);
     m_reloadButton->setFixedSize(Td::UI::ButtonSize, Td::UI::ButtonSize);
-    m_addressBar->setFixedHeight(Td::UI::AddressBarHeight);
+    m_addTabButton->setFixedSize(Td::UI::ButtonSize, Td::UI::ButtonSize);
+
+    m_addressBar = new QLineEdit(m_toolbar);
+    m_addressBar->setPlaceholderText("Enter coordinate (URL) or search query...");
+    m_addressBar->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Preferred);
+
+    m_searchEngineSelector = new QComboBox(m_toolbar);
+    m_searchEngineSelector->addItem(QIcon(":/icons/icons/duckduckgo.ico"), "DuckDuckGo");
+    m_searchEngineSelector->addItem(QIcon(":/icons/icons/brave.ico"), "Brave");
+    m_searchEngineSelector->addItem(QIcon(":/icons/icons/google.ico"), "Google");
+    m_searchEngineSelector->addItem(QIcon(":/icons/icons/bing.ico"), "Bing");
+    m_searchEngineSelector->addItem(QIcon(":/icons/icons/yahoo.ico"), "Yahoo");
+    m_searchEngineSelector->addItem(QIcon(":/icons/icons/wikipedia.ico"), "Wikipedia");
+    m_searchEngineSelector->setFixedWidth(160);
+    m_searchEngineSelector->setIconSize(QSize(16, 16));
+
+    m_searchBar = new QLineEdit(m_toolbar);
+    m_searchBar->setPlaceholderText("Search...");
+    m_searchBar->setFixedWidth(200);
 
     toolbarLayout->addWidget(m_backButton);
     toolbarLayout->addWidget(m_forwardButton);
     toolbarLayout->addWidget(m_reloadButton);
+    toolbarLayout->addWidget(m_addTabButton);
     toolbarLayout->addWidget(m_addressBar);
+    toolbarLayout->addWidget(m_searchEngineSelector);
+    toolbarLayout->addWidget(m_searchBar);
 
-    // Progress Bar (Hex height 0x2)
+    connect(m_addTabButton, &QPushButton::clicked, this, [this](){ addNewTab(); });
+    connect(m_backButton, &QPushButton::clicked, this, [this](){ if(currentView()) currentView()->back(); });
+    connect(m_forwardButton, &QPushButton::clicked, this, [this](){ if(currentView()) currentView()->forward(); });
+    connect(m_reloadButton, &QPushButton::clicked, this, [this](){ if(currentView()) currentView()->reload(); });
+
+    // --- Progress Bar ---
     m_progressBar = new QProgressBar(this);
-    m_progressBar->setFixedHeight(0x2);
+    m_progressBar->setFixedHeight(3);
     m_progressBar->setTextVisible(false);
     m_progressBar->setMaximum(100);
+    m_progressBar->setStyleSheet("QProgressBar { background: transparent; border: none; } QProgressBar::chunk { background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #00f2ff, stop:1 #ff00ea); }");
 
-    // WebView
-    m_view = new QWebEngineView(this);
-    m_view->page()->setBackgroundColor(QColor::fromRgba(Td::UI::ColorBackground));
+    // --- Tab Widget ---
+    m_tabs = new QTabWidget(this);
+    m_tabs->setTabsClosable(true);
+    m_tabs->setMovable(true);
+    m_tabs->setObjectName("mainTabs");
 
     layout->addWidget(m_toolbar);
     layout->addWidget(m_progressBar);
-    layout->addWidget(m_view);
+    layout->addWidget(m_tabs);
 
     setCentralWidget(centralWidget);
-    resize(1280, 720);
+    resize(1280, 800);
 }
 
-void BrowserWindow::applyHexStyle()
+void BrowserWindow::applyModernStyle()
 {
-    // Use Hex Palette for lightning fast UI rendering (bypassing heavy CSS engine)
+    // Global Palette
     QPalette pal = palette();
     pal.setColor(QPalette::Window, QColor::fromRgba(Td::UI::ColorBackground));
     pal.setColor(QPalette::WindowText, QColor::fromRgba(Td::UI::ColorText));
-    pal.setColor(QPalette::Base, QColor::fromRgba(Td::UI::ColorToolbar));
+    pal.setColor(QPalette::Base, QColor::fromRgba(Td::UI::ColorBackground));
     pal.setColor(QPalette::Text, QColor::fromRgba(Td::UI::ColorText));
-    pal.setColor(QPalette::Button, QColor::fromRgba(Td::UI::ColorToolbar));
-    pal.setColor(QPalette::Highlight, QColor::fromRgba(Td::UI::ColorAccent));
     setPalette(pal);
 
-    // Minimal CSS for borders and padding, hex-driven
-    m_addressBar->setStyleSheet(QString("QLineEdit { background-color: #%1; color: #%2; border: 1px solid #%3; padding-left: 5px; }")
-        .arg(Td::UI::ColorBackground & 0xFFFFFF, 6, 16, QChar('0'))
-        .arg(Td::UI::ColorText & 0xFFFFFF, 6, 16, QChar('0'))
-        .arg(Td::UI::ColorBorder & 0xFFFFFF, 6, 16, QChar('0')));
+    // CSS Styling for UI Elements
+    QString style = QString(
+        "QWidget#centralWidget { background-color: #%1; }"
+        "QWidget#mainToolbar { background-color: #%2; border-bottom: 1px solid #%3; }"
+        "QLineEdit { background-color: #1a1f26; color: white; border: 1px solid #30363d; border-radius: %4px; padding: 0 15px; font-size: 14px; height: %5px; }"
+        "QLineEdit:focus { border: 1px solid #00f2ff; background-color: #000000; }"
+        "QComboBox { background-color: #1a1f26; color: white; border: 1px solid #30363d; border-radius: %4px; padding-left: 10px; font-size: 13px; height: %5px; }"
+        "QComboBox::drop-down { border: none; }"
+        "QComboBox QAbstractItemView { background-color: #0d1117; color: white; selection-background-color: #1f242c; }"
+        "QPushButton { background-color: transparent; color: #c9d1d9; border: none; border-radius: %4px; font-size: 20px; font-weight: bold; }"
+        "QPushButton:hover { background-color: #1f242c; color: #00f2ff; }"
+        "QPushButton:pressed { background-color: #0d1117; }"
+        "QTabWidget::pane { border: none; }"
+        "QTabBar::tab { background: #161b22; color: #8b949e; padding: 10px 20px; border-top-left-radius: 8px; border-top-right-radius: 8px; margin-right: 2px; font-weight: bold; }"
+        "QTabBar::tab:selected { background: #1f242c; color: #00f2ff; border-bottom: 2px solid #00f2ff; }"
+        "QTabBar::tab:hover { background: #1f242c; color: white; }"
+        "QTabBar::close-button { image: url(none); subcontrol-position: right; }"
+    )
+    .arg(Td::UI::ColorBackground & 0xFFFFFF, 6, 16, QChar('0'))
+    .arg(Td::UI::ColorToolbar & 0xFFFFFF, 6, 16, QChar('0'))
+    .arg(Td::UI::ColorBorder & 0xFFFFFF, 6, 16, QChar('0'))
+    .arg(Td::UI::BorderRadius)
+    .arg(Td::UI::AddressBarHeight);
 
-    m_toolbar->setAutoFillBackground(true);
-    m_progressBar->setStyleSheet(QString("QProgressBar::chunk { background-color: #%1; } QProgressBar { border: none; background: transparent; }")
-        .arg(Td::UI::ColorAccent & 0xFFFFFF, 6, 16, QChar('0')));
+    setStyleSheet(style);
 }
 
 void BrowserWindow::loadUrl()
 {
-    QString url = m_addressBar->text();
-    if (!url.startsWith("http")) {
-        url = "https://" + url;
+    if (!currentView()) return;
+    QString input = m_addressBar->text().trimmed();
+    if (input.isEmpty()) return;
+
+    // Logic to distinguish between URL and Search Query
+    bool isUrl = input.contains('.') && !input.contains(' ');
+    if (input.startsWith("http://") || input.startsWith("https://") || input.startsWith("file://")) {
+        isUrl = true;
     }
-    m_view->load(QUrl(url));
+
+    if (isUrl) {
+        if (!input.contains("://")) {
+            input = "https://" + input;
+        }
+        currentView()->load(QUrl(input));
+    } else {
+        // Redirect to search engine
+        QString engine = m_searchEngineSelector->currentText();
+        QString searchUrl;
+        if (engine == "Brave") searchUrl = "https://search.brave.com/search?q=%1";
+        else if (engine == "Google") searchUrl = "https://www.google.com/search?q=%1";
+        else if (engine == "Bing") searchUrl = "https://www.bing.com/search?q=%1";
+        else if (engine == "Yahoo") searchUrl = "https://search.yahoo.com/search?p=%1";
+        else if (engine == "Wikipedia") searchUrl = "https://en.wikipedia.org/wiki/Special:Search?search=%1";
+        else searchUrl = "https://duckduckgo.com/?q=%1";
+
+        currentView()->load(QUrl(searchUrl.arg(input)));
+    }
+}
+
+void BrowserWindow::executeSearch()
+{
+    if (!currentView()) return;
+    QString query = m_searchBar->text();
+    if (query.isEmpty()) return;
+
+    QString engine = m_searchEngineSelector->currentText();
+    QString searchUrl;
+
+    if (engine == "Brave") {
+        searchUrl = "https://search.brave.com/search?q=%1";
+    } else if (engine == "Google") {
+        searchUrl = "https://www.google.com/search?q=%1";
+    } else if (engine == "Bing") {
+        searchUrl = "https://www.bing.com/search?q=%1";
+    } else if (engine == "Yahoo") {
+        searchUrl = "https://search.yahoo.com/search?p=%1";
+    } else if (engine == "Wikipedia") {
+        searchUrl = "https://en.wikipedia.org/wiki/Special:Search?search=%1";
+    } else {
+        searchUrl = "https://duckduckgo.com/?q=%1";
+    }
+
+    currentView()->load(QUrl(searchUrl.arg(query)));
 }
 
 void BrowserWindow::updateProgress(int progress)
@@ -201,8 +302,53 @@ void BrowserWindow::updateProgress(int progress)
 
 void BrowserWindow::updateTitle()
 {
-    setWindowTitle(QString("Thunder - %1").arg(m_view->title()));
-    m_addressBar->setText(m_view->url().toString());
+    if (!currentView()) return;
+    QString title = currentView()->title();
+    if (title.isEmpty()) title = "Thunder Node";
+
+    int index = m_tabs->currentIndex();
+    m_tabs->setTabText(index, title);
+
+    setWindowTitle(QString("Thunder - %1").arg(title));
+    m_addressBar->setText(currentView()->url().toString());
+}
+
+void BrowserWindow::saveSession()
+{
+    QSettings settings("Thunder", "Session");
+    QStringList urls;
+    for (int i = 0; i < m_tabs->count(); ++i) {
+        QWebEngineView* view = qobject_cast<QWebEngineView*>(m_tabs->widget(i));
+        if (view) {
+            urls.append(view->url().toString());
+        }
+    }
+    settings.setValue("urls", urls);
+    settings.setValue("currentIndex", m_tabs->currentIndex());
+}
+
+void BrowserWindow::restoreSession()
+{
+    QSettings settings("Thunder", "Session");
+    QStringList urls = settings.value("urls").toStringList();
+    int currentIndex = settings.value("currentIndex", 0).toInt();
+
+    if (urls.isEmpty()) {
+        addNewTab(QUrl(QStringLiteral("https://duckduckgo.com")));
+    } else {
+        for (const QString& urlStr : urls) {
+            addNewTab(QUrl(urlStr));
+        }
+        if (currentIndex < m_tabs->count()) {
+            m_tabs->setCurrentIndex(currentIndex);
+        }
+    }
+}
+
+void BrowserWindow::closeEvent(QCloseEvent *event)
+{
+    saveSession();
+    QMainWindow::closeEvent(event);
 }
 
 BrowserWindow::~BrowserWindow()

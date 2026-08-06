@@ -17,24 +17,28 @@ namespace Utils {
  * Pure bit-arithmetic to eliminate CPU stalls.
  */
 inline char nibbleToHex(uint8_t nibble) {
-    // Mathematically: c = n + '0' + (n > 9 ? 7 : 0)
-    return nibble + 0x30 + (( (static_cast<int>(nibble) - 10) >> 31) & 0x0 ? 0x7 : 0x0);
+    nibble &= 0x0F;
+    return static_cast<char>(nibble + '0' + (nibble > 9 ? 7 : 0));
 }
 
 /**
  * @brief Fast Hex-based string to integer conversion.
  */
-inline uint32_t hexToUint32(const char* hex) {
+inline bool hexToUint32(const char* hex, uint32_t& value) {
+    if (!hex || !*hex) return false;
     uint32_t val = 0;
     while (*hex) {
-        uint8_t byte = static_cast<uint8_t>(*hex++);
-        // Branchless subtraction
-        uint8_t mask1 = (byte >= 0x41) & (byte <= 0x46); // A-F
-        uint8_t mask2 = (byte >= 0x61) & (byte <= 0x66); // a-f
-        byte -= (0x30 + (mask1 * 7) + (mask2 * 39));
-        val = (val << 0x4) | (byte & 0xF);
+        const char c = *hex++;
+        uint8_t digit;
+        if (c >= '0' && c <= '9') digit = static_cast<uint8_t>(c - '0');
+        else if (c >= 'A' && c <= 'F') digit = static_cast<uint8_t>(c - 'A' + 10);
+        else if (c >= 'a' && c <= 'f') digit = static_cast<uint8_t>(c - 'a' + 10);
+        else return false;
+        if (val > 0x0FFFFFFFU) return false;
+        val = (val << 4U) | digit;
     }
-    return val;
+    value = val;
+    return true;
 }
 
 } // namespace Utils

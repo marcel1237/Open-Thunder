@@ -9,6 +9,7 @@
 
 #include <immintrin.h>
 #include <cstdint>
+#include <cstring>
 #include <sys/socket.h>
 #include <linux/if_xdp.h>
 #include "app/thundercommon.h"
@@ -43,9 +44,10 @@ public:
      * @brief TH-54: Silicon-Native HTTP/3 Parser.
      * Decompressão SIMD em tempo real.
      */
-    THUNDER_HOT uint64_t decodeQPACK(const uint8_t* stream) {
-        __m128i data = _mm_loadu_si128(reinterpret_cast<const __m128i*>(stream));
-        return _mm_extract_epi64(data, 0) & 0xFFFFFFFFFFFFFFFF;
+    THUNDER_HOT bool readQpackPrefix(const uint8_t* stream, size_t size, uint64_t& prefix) {
+        if (!stream || size < sizeof(prefix)) return false;
+        std::memcpy(&prefix, stream, sizeof(prefix));
+        return true;
     }
 };
 

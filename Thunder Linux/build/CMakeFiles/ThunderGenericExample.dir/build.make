@@ -119,7 +119,7 @@ ThunderGenericExample: CMakeFiles/ThunderGenericExample.dir/ThunderGenericExampl
 ThunderGenericExample: CMakeFiles/ThunderGenericExample.dir/src/examples/generic_app.cpp.o
 ThunderGenericExample: CMakeFiles/ThunderGenericExample.dir/build.make
 ThunderGenericExample: CMakeFiles/ThunderGenericExample.dir/compiler_depend.ts
-ThunderGenericExample: /home/marcel1237/Thunder/Thunder\ Linux/../ThunderSDK/build/libThunderSDK.so
+ThunderGenericExample: ThunderSDK/libThunderSDK.so
 ThunderGenericExample: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.10.2
 ThunderGenericExample: CMakeFiles/ThunderGenericExample.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/marcel1237/Thunder/Thunder Linux/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable ThunderGenericExample"

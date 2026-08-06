@@ -34,8 +34,8 @@ public:
      */
     void* createSegment(const char* name, size_t size) {
 #ifdef Q_OS_LINUX
-        // memfd_create (syscall 319 or 356 depending on arch)
-        int fd = syscall(319, name, 0x1 /* MFD_CLOEXEC */);
+        if (!name || size == 0) return nullptr;
+        int fd = memfd_create(name, MFD_CLOEXEC);
         if (fd == -1) return nullptr;
 
         if (ftruncate(fd, size) == -1) {
@@ -47,6 +47,7 @@ public:
         void* ptr = mmap(NULL, size, PROT_READ | PROT_WRITE,
                          MAP_SHARED | MAP_LOCKED, fd, 0);
 
+        close(fd);
         if (ptr != MAP_FAILED) {
             std::cout << "[TH-71] IPC Segment Created: " << name << " at " << ptr << std::endl;
             return ptr;

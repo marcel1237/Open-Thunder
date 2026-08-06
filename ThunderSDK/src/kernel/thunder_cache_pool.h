@@ -32,18 +32,24 @@ public:
     }
 
     void startWarmingThread() {
-        m_running = true;
+        bool expected = false;
+        if (!m_running.compare_exchange_strong(expected, true)) return;
         m_warmer = std::thread([this]() {
             while (m_running) {
                 // Background touch logic to keep caches hot
                 std::this_thread::sleep_for(std::chrono::milliseconds(100));
             }
         });
-        m_warmer.detach();
     }
 
 private:
     CacheHotPool() : m_running(false) {}
+    ~CacheHotPool() {
+        m_running.store(false, std::memory_order_release);
+        if (m_warmer.joinable()) m_warmer.join();
+    }
+    CacheHotPool(const CacheHotPool&) = delete;
+    CacheHotPool& operator=(const CacheHotPool&) = delete;
     std::atomic<bool> m_running;
     std::thread m_warmer;
 };

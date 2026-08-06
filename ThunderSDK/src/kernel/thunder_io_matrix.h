@@ -12,6 +12,7 @@
 #include <sys/mman.h>
 #include <linux/io_uring.h>
 #include <unistd.h>
+#include <cstring>
 #endif
 #include "app/thundercommon.h"
 
@@ -30,18 +31,24 @@ public:
         return &inst;
     }
 
-    void init() {
+    bool init() {
 #ifdef Q_OS_LINUX
+        if (m_ringFd >= 0) return true;
         struct io_uring_params p;
         memset(&p, 0, sizeof(p));
-        // Syscall 425 is io_uring_setup
-        int fd = syscall(425, 0x1000, &p);
+        int fd = syscall(SYS_io_uring_setup, 0x100, &p);
         if (fd != -1) m_ringFd = fd;
+        return m_ringFd >= 0;
+#else
+        return false;
 #endif
     }
 
 private:
     ThunderIORing() : m_ringFd(-1) {}
+    ~ThunderIORing() { if (m_ringFd >= 0) close(m_ringFd); }
+    ThunderIORing(const ThunderIORing&) = delete;
+    ThunderIORing& operator=(const ThunderIORing&) = delete;
     int m_ringFd;
 };
 

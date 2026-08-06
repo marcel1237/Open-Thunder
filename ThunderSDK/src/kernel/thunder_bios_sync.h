@@ -48,8 +48,8 @@ inline uint64_t getHardwareEntropy() {
     if (_rdrand64_step(&val)) {
         return static_cast<uint64_t>(val);
     }
-    // Fallback to time-based seed if hardware entropy fails (Unlikely on 2026 hardware)
-    return __rdtsc();
+    // Failure must be handled by the caller; TSC is not cryptographic entropy.
+    return 0;
 }
 
 } // namespace Hardware
