@@ -28,6 +28,8 @@
 #include "kernel/thunder_vram_matrix.h"
 #include "kernel/thunder_neural_sync.h"
 #include "kernel/thunder_omega_matrix.h"
+#include "kernel/thunder_multiversal_paging.h"
+#include "kernel/thunder_multiversal_threading.h"
 #include "kernel/thunder_dma_sync.h"
 #include "network/thunder_network_latency.h"
 #include "network/thunder_zero_copy.h"
@@ -82,6 +84,25 @@ inline void initializeHardwareAcceleration() {
 
     // FINAL SYNC (TH-1000)
     Td::Hardware::OmegaMatrix::instance()->synchronizeAll();
+
+    // 🧬 MULTIVERSAL VIRTUAL PAGING (TH-1001+)
+    Td::Hardware::MultiversalPaging::instance();
+
+    // 🧵 MULTIVERSAL TASK WARP (TH-1020+)
+    Td::Hardware::MultiversalThreading::instance();
+}
+
+/**
+ * @brief PUBLIC MEMORY API: Access to Multiversal Virtual Paging.
+ */
+namespace Memory {
+    inline void* allocate(size_t size) {
+        return Td::Hardware::MultiversalPaging::instance()->allocateUniversal(size);
+    }
+
+    inline void synchronize(void* ptr, size_t size) {
+        Td::Hardware::MultiversalPaging::instance()->synchronizePages(ptr, size);
+    }
 }
 
 } // namespace Td

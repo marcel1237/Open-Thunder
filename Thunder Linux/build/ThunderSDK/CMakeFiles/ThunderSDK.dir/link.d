@@ -5,6 +5,9 @@ libThunderSDK.so: \
   CMakeFiles/ThunderSDK.dir/src/app/thundercommon.cpp.o \
   CMakeFiles/ThunderSDK.dir/src/app/mainapplication.cpp.o \
   CMakeFiles/ThunderSDK.dir/src/app/browserwindow.cpp.o \
+  CMakeFiles/ThunderSDK.dir/src/app/thundertray.cpp.o \
+  CMakeFiles/ThunderSDK.dir/src/app/thundermemorymonitor.cpp.o \
+  CMakeFiles/ThunderSDK.dir/src/app/sdkwindow.cpp.o \
   CMakeFiles/ThunderSDK.dir/src/adblock/adblockrule.cpp.o \
   CMakeFiles/ThunderSDK.dir/src/adblock/adblockmanager.cpp.o \
   CMakeFiles/ThunderSDK.dir/src/kernel/kernel_bridge.cpp.o \
@@ -60,6 +63,12 @@ CMakeFiles/ThunderSDK.dir/src/app/thundercommon.cpp.o:
 CMakeFiles/ThunderSDK.dir/src/app/mainapplication.cpp.o:
 
 CMakeFiles/ThunderSDK.dir/src/app/browserwindow.cpp.o:
+
+CMakeFiles/ThunderSDK.dir/src/app/thundertray.cpp.o:
+
+CMakeFiles/ThunderSDK.dir/src/app/thundermemorymonitor.cpp.o:
+
+CMakeFiles/ThunderSDK.dir/src/app/sdkwindow.cpp.o:
 
 CMakeFiles/ThunderSDK.dir/src/adblock/adblockrule.cpp.o:
 

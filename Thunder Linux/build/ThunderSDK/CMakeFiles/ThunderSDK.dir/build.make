@@ -148,10 +148,52 @@ ThunderSDK/CMakeFiles/ThunderSDK.dir/src/app/browserwindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ThunderSDK.dir/src/app/browserwindow.cpp.s"
 	cd "/home/marcel1237/Thunder/Thunder Linux/build/ThunderSDK" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcel1237/Thunder/ThunderSDK/src/app/browserwindow.cpp -o CMakeFiles/ThunderSDK.dir/src/app/browserwindow.cpp.s
 
+ThunderSDK/CMakeFiles/ThunderSDK.dir/src/app/thundertray.cpp.o: ThunderSDK/CMakeFiles/ThunderSDK.dir/flags.make
+ThunderSDK/CMakeFiles/ThunderSDK.dir/src/app/thundertray.cpp.o: /home/marcel1237/Thunder/ThunderSDK/src/app/thundertray.cpp
+ThunderSDK/CMakeFiles/ThunderSDK.dir/src/app/thundertray.cpp.o: ThunderSDK/CMakeFiles/ThunderSDK.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/marcel1237/Thunder/Thunder Linux/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object ThunderSDK/CMakeFiles/ThunderSDK.dir/src/app/thundertray.cpp.o"
+	cd "/home/marcel1237/Thunder/Thunder Linux/build/ThunderSDK" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT ThunderSDK/CMakeFiles/ThunderSDK.dir/src/app/thundertray.cpp.o -MF CMakeFiles/ThunderSDK.dir/src/app/thundertray.cpp.o.d -o CMakeFiles/ThunderSDK.dir/src/app/thundertray.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/src/app/thundertray.cpp
+
+ThunderSDK/CMakeFiles/ThunderSDK.dir/src/app/thundertray.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ThunderSDK.dir/src/app/thundertray.cpp.i"
+	cd "/home/marcel1237/Thunder/Thunder Linux/build/ThunderSDK" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcel1237/Thunder/ThunderSDK/src/app/thundertray.cpp > CMakeFiles/ThunderSDK.dir/src/app/thundertray.cpp.i
+
+ThunderSDK/CMakeFiles/ThunderSDK.dir/src/app/thundertray.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ThunderSDK.dir/src/app/thundertray.cpp.s"
+	cd "/home/marcel1237/Thunder/Thunder Linux/build/ThunderSDK" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcel1237/Thunder/ThunderSDK/src/app/thundertray.cpp -o CMakeFiles/ThunderSDK.dir/src/app/thundertray.cpp.s
+
+ThunderSDK/CMakeFiles/ThunderSDK.dir/src/app/thundermemorymonitor.cpp.o: ThunderSDK/CMakeFiles/ThunderSDK.dir/flags.make
+ThunderSDK/CMakeFiles/ThunderSDK.dir/src/app/thundermemorymonitor.cpp.o: /home/marcel1237/Thunder/ThunderSDK/src/app/thundermemorymonitor.cpp
+ThunderSDK/CMakeFiles/ThunderSDK.dir/src/app/thundermemorymonitor.cpp.o: ThunderSDK/CMakeFiles/ThunderSDK.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/marcel1237/Thunder/Thunder Linux/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object ThunderSDK/CMakeFiles/ThunderSDK.dir/src/app/thundermemorymonitor.cpp.o"
+	cd "/home/marcel1237/Thunder/Thunder Linux/build/ThunderSDK" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT ThunderSDK/CMakeFiles/ThunderSDK.dir/src/app/thundermemorymonitor.cpp.o -MF CMakeFiles/ThunderSDK.dir/src/app/thundermemorymonitor.cpp.o.d -o CMakeFiles/ThunderSDK.dir/src/app/thundermemorymonitor.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/src/app/thundermemorymonitor.cpp
+
+ThunderSDK/CMakeFiles/ThunderSDK.dir/src/app/thundermemorymonitor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ThunderSDK.dir/src/app/thundermemorymonitor.cpp.i"
+	cd "/home/marcel1237/Thunder/Thunder Linux/build/ThunderSDK" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcel1237/Thunder/ThunderSDK/src/app/thundermemorymonitor.cpp > CMakeFiles/ThunderSDK.dir/src/app/thundermemorymonitor.cpp.i
+
+ThunderSDK/CMakeFiles/ThunderSDK.dir/src/app/thundermemorymonitor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ThunderSDK.dir/src/app/thundermemorymonitor.cpp.s"
+	cd "/home/marcel1237/Thunder/Thunder Linux/build/ThunderSDK" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcel1237/Thunder/ThunderSDK/src/app/thundermemorymonitor.cpp -o CMakeFiles/ThunderSDK.dir/src/app/thundermemorymonitor.cpp.s
+
+ThunderSDK/CMakeFiles/ThunderSDK.dir/src/app/sdkwindow.cpp.o: ThunderSDK/CMakeFiles/ThunderSDK.dir/flags.make
+ThunderSDK/CMakeFiles/ThunderSDK.dir/src/app/sdkwindow.cpp.o: /home/marcel1237/Thunder/ThunderSDK/src/app/sdkwindow.cpp
+ThunderSDK/CMakeFiles/ThunderSDK.dir/src/app/sdkwindow.cpp.o: ThunderSDK/CMakeFiles/ThunderSDK.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/marcel1237/Thunder/Thunder Linux/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object ThunderSDK/CMakeFiles/ThunderSDK.dir/src/app/sdkwindow.cpp.o"
+	cd "/home/marcel1237/Thunder/Thunder Linux/build/ThunderSDK" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT ThunderSDK/CMakeFiles/ThunderSDK.dir/src/app/sdkwindow.cpp.o -MF CMakeFiles/ThunderSDK.dir/src/app/sdkwindow.cpp.o.d -o CMakeFiles/ThunderSDK.dir/src/app/sdkwindow.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/src/app/sdkwindow.cpp
+
+ThunderSDK/CMakeFiles/ThunderSDK.dir/src/app/sdkwindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ThunderSDK.dir/src/app/sdkwindow.cpp.i"
+	cd "/home/marcel1237/Thunder/Thunder Linux/build/ThunderSDK" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcel1237/Thunder/ThunderSDK/src/app/sdkwindow.cpp > CMakeFiles/ThunderSDK.dir/src/app/sdkwindow.cpp.i
+
+ThunderSDK/CMakeFiles/ThunderSDK.dir/src/app/sdkwindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ThunderSDK.dir/src/app/sdkwindow.cpp.s"
+	cd "/home/marcel1237/Thunder/Thunder Linux/build/ThunderSDK" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcel1237/Thunder/ThunderSDK/src/app/sdkwindow.cpp -o CMakeFiles/ThunderSDK.dir/src/app/sdkwindow.cpp.s
+
 ThunderSDK/CMakeFiles/ThunderSDK.dir/src/adblock/adblockrule.cpp.o: ThunderSDK/CMakeFiles/ThunderSDK.dir/flags.make
 ThunderSDK/CMakeFiles/ThunderSDK.dir/src/adblock/adblockrule.cpp.o: /home/marcel1237/Thunder/ThunderSDK/src/adblock/adblockrule.cpp
 ThunderSDK/CMakeFiles/ThunderSDK.dir/src/adblock/adblockrule.cpp.o: ThunderSDK/CMakeFiles/ThunderSDK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/marcel1237/Thunder/Thunder Linux/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object ThunderSDK/CMakeFiles/ThunderSDK.dir/src/adblock/adblockrule.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/marcel1237/Thunder/Thunder Linux/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object ThunderSDK/CMakeFiles/ThunderSDK.dir/src/adblock/adblockrule.cpp.o"
 	cd "/home/marcel1237/Thunder/Thunder Linux/build/ThunderSDK" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT ThunderSDK/CMakeFiles/ThunderSDK.dir/src/adblock/adblockrule.cpp.o -MF CMakeFiles/ThunderSDK.dir/src/adblock/adblockrule.cpp.o.d -o CMakeFiles/ThunderSDK.dir/src/adblock/adblockrule.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/src/adblock/adblockrule.cpp
 
 ThunderSDK/CMakeFiles/ThunderSDK.dir/src/adblock/adblockrule.cpp.i: cmake_force
@@ -165,7 +207,7 @@ ThunderSDK/CMakeFiles/ThunderSDK.dir/src/adblock/adblockrule.cpp.s: cmake_force
 ThunderSDK/CMakeFiles/ThunderSDK.dir/src/adblock/adblockmanager.cpp.o: ThunderSDK/CMakeFiles/ThunderSDK.dir/flags.make
 ThunderSDK/CMakeFiles/ThunderSDK.dir/src/adblock/adblockmanager.cpp.o: /home/marcel1237/Thunder/ThunderSDK/src/adblock/adblockmanager.cpp
 ThunderSDK/CMakeFiles/ThunderSDK.dir/src/adblock/adblockmanager.cpp.o: ThunderSDK/CMakeFiles/ThunderSDK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/marcel1237/Thunder/Thunder Linux/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object ThunderSDK/CMakeFiles/ThunderSDK.dir/src/adblock/adblockmanager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/marcel1237/Thunder/Thunder Linux/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object ThunderSDK/CMakeFiles/ThunderSDK.dir/src/adblock/adblockmanager.cpp.o"
 	cd "/home/marcel1237/Thunder/Thunder Linux/build/ThunderSDK" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT ThunderSDK/CMakeFiles/ThunderSDK.dir/src/adblock/adblockmanager.cpp.o -MF CMakeFiles/ThunderSDK.dir/src/adblock/adblockmanager.cpp.o.d -o CMakeFiles/ThunderSDK.dir/src/adblock/adblockmanager.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/src/adblock/adblockmanager.cpp
 
 ThunderSDK/CMakeFiles/ThunderSDK.dir/src/adblock/adblockmanager.cpp.i: cmake_force
@@ -179,7 +221,7 @@ ThunderSDK/CMakeFiles/ThunderSDK.dir/src/adblock/adblockmanager.cpp.s: cmake_for
 ThunderSDK/CMakeFiles/ThunderSDK.dir/src/kernel/kernel_bridge.cpp.o: ThunderSDK/CMakeFiles/ThunderSDK.dir/flags.make
 ThunderSDK/CMakeFiles/ThunderSDK.dir/src/kernel/kernel_bridge.cpp.o: /home/marcel1237/Thunder/ThunderSDK/src/kernel/kernel_bridge.cpp
 ThunderSDK/CMakeFiles/ThunderSDK.dir/src/kernel/kernel_bridge.cpp.o: ThunderSDK/CMakeFiles/ThunderSDK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/marcel1237/Thunder/Thunder Linux/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object ThunderSDK/CMakeFiles/ThunderSDK.dir/src/kernel/kernel_bridge.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/marcel1237/Thunder/Thunder Linux/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object ThunderSDK/CMakeFiles/ThunderSDK.dir/src/kernel/kernel_bridge.cpp.o"
 	cd "/home/marcel1237/Thunder/Thunder Linux/build/ThunderSDK" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT ThunderSDK/CMakeFiles/ThunderSDK.dir/src/kernel/kernel_bridge.cpp.o -MF CMakeFiles/ThunderSDK.dir/src/kernel/kernel_bridge.cpp.o.d -o CMakeFiles/ThunderSDK.dir/src/kernel/kernel_bridge.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/src/kernel/kernel_bridge.cpp
 
 ThunderSDK/CMakeFiles/ThunderSDK.dir/src/kernel/kernel_bridge.cpp.i: cmake_force
@@ -193,7 +235,7 @@ ThunderSDK/CMakeFiles/ThunderSDK.dir/src/kernel/kernel_bridge.cpp.s: cmake_force
 ThunderSDK/CMakeFiles/ThunderSDK.dir/src/network/thunder_url_interceptor.cpp.o: ThunderSDK/CMakeFiles/ThunderSDK.dir/flags.make
 ThunderSDK/CMakeFiles/ThunderSDK.dir/src/network/thunder_url_interceptor.cpp.o: /home/marcel1237/Thunder/ThunderSDK/src/network/thunder_url_interceptor.cpp
 ThunderSDK/CMakeFiles/ThunderSDK.dir/src/network/thunder_url_interceptor.cpp.o: ThunderSDK/CMakeFiles/ThunderSDK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/marcel1237/Thunder/Thunder Linux/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object ThunderSDK/CMakeFiles/ThunderSDK.dir/src/network/thunder_url_interceptor.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/marcel1237/Thunder/Thunder Linux/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object ThunderSDK/CMakeFiles/ThunderSDK.dir/src/network/thunder_url_interceptor.cpp.o"
 	cd "/home/marcel1237/Thunder/Thunder Linux/build/ThunderSDK" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT ThunderSDK/CMakeFiles/ThunderSDK.dir/src/network/thunder_url_interceptor.cpp.o -MF CMakeFiles/ThunderSDK.dir/src/network/thunder_url_interceptor.cpp.o.d -o CMakeFiles/ThunderSDK.dir/src/network/thunder_url_interceptor.cpp.o -c /home/marcel1237/Thunder/ThunderSDK/src/network/thunder_url_interceptor.cpp
 
 ThunderSDK/CMakeFiles/ThunderSDK.dir/src/network/thunder_url_interceptor.cpp.i: cmake_force
@@ -207,7 +249,7 @@ ThunderSDK/CMakeFiles/ThunderSDK.dir/src/network/thunder_url_interceptor.cpp.s: 
 ThunderSDK/CMakeFiles/ThunderSDK.dir/ThunderSDK_autogen/ISMKEKEPX5/qrc_resources.cpp.o: ThunderSDK/CMakeFiles/ThunderSDK.dir/flags.make
 ThunderSDK/CMakeFiles/ThunderSDK.dir/ThunderSDK_autogen/ISMKEKEPX5/qrc_resources.cpp.o: ThunderSDK/ThunderSDK_autogen/ISMKEKEPX5/qrc_resources.cpp
 ThunderSDK/CMakeFiles/ThunderSDK.dir/ThunderSDK_autogen/ISMKEKEPX5/qrc_resources.cpp.o: ThunderSDK/CMakeFiles/ThunderSDK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/marcel1237/Thunder/Thunder Linux/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object ThunderSDK/CMakeFiles/ThunderSDK.dir/ThunderSDK_autogen/ISMKEKEPX5/qrc_resources.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/marcel1237/Thunder/Thunder Linux/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object ThunderSDK/CMakeFiles/ThunderSDK.dir/ThunderSDK_autogen/ISMKEKEPX5/qrc_resources.cpp.o"
 	cd "/home/marcel1237/Thunder/Thunder Linux/build/ThunderSDK" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT ThunderSDK/CMakeFiles/ThunderSDK.dir/ThunderSDK_autogen/ISMKEKEPX5/qrc_resources.cpp.o -MF CMakeFiles/ThunderSDK.dir/ThunderSDK_autogen/ISMKEKEPX5/qrc_resources.cpp.o.d -o CMakeFiles/ThunderSDK.dir/ThunderSDK_autogen/ISMKEKEPX5/qrc_resources.cpp.o -c "/home/marcel1237/Thunder/Thunder Linux/build/ThunderSDK/ThunderSDK_autogen/ISMKEKEPX5/qrc_resources.cpp"
 
 ThunderSDK/CMakeFiles/ThunderSDK.dir/ThunderSDK_autogen/ISMKEKEPX5/qrc_resources.cpp.i: cmake_force
@@ -224,6 +266,9 @@ ThunderSDK_OBJECTS = \
 "CMakeFiles/ThunderSDK.dir/src/app/thundercommon.cpp.o" \
 "CMakeFiles/ThunderSDK.dir/src/app/mainapplication.cpp.o" \
 "CMakeFiles/ThunderSDK.dir/src/app/browserwindow.cpp.o" \
+"CMakeFiles/ThunderSDK.dir/src/app/thundertray.cpp.o" \
+"CMakeFiles/ThunderSDK.dir/src/app/thundermemorymonitor.cpp.o" \
+"CMakeFiles/ThunderSDK.dir/src/app/sdkwindow.cpp.o" \
 "CMakeFiles/ThunderSDK.dir/src/adblock/adblockrule.cpp.o" \
 "CMakeFiles/ThunderSDK.dir/src/adblock/adblockmanager.cpp.o" \
 "CMakeFiles/ThunderSDK.dir/src/kernel/kernel_bridge.cpp.o" \
@@ -237,6 +282,9 @@ ThunderSDK/libThunderSDK.so: ThunderSDK/CMakeFiles/ThunderSDK.dir/ThunderSDK_aut
 ThunderSDK/libThunderSDK.so: ThunderSDK/CMakeFiles/ThunderSDK.dir/src/app/thundercommon.cpp.o
 ThunderSDK/libThunderSDK.so: ThunderSDK/CMakeFiles/ThunderSDK.dir/src/app/mainapplication.cpp.o
 ThunderSDK/libThunderSDK.so: ThunderSDK/CMakeFiles/ThunderSDK.dir/src/app/browserwindow.cpp.o
+ThunderSDK/libThunderSDK.so: ThunderSDK/CMakeFiles/ThunderSDK.dir/src/app/thundertray.cpp.o
+ThunderSDK/libThunderSDK.so: ThunderSDK/CMakeFiles/ThunderSDK.dir/src/app/thundermemorymonitor.cpp.o
+ThunderSDK/libThunderSDK.so: ThunderSDK/CMakeFiles/ThunderSDK.dir/src/app/sdkwindow.cpp.o
 ThunderSDK/libThunderSDK.so: ThunderSDK/CMakeFiles/ThunderSDK.dir/src/adblock/adblockrule.cpp.o
 ThunderSDK/libThunderSDK.so: ThunderSDK/CMakeFiles/ThunderSDK.dir/src/adblock/adblockmanager.cpp.o
 ThunderSDK/libThunderSDK.so: ThunderSDK/CMakeFiles/ThunderSDK.dir/src/kernel/kernel_bridge.cpp.o
@@ -259,7 +307,7 @@ ThunderSDK/libThunderSDK.so: /usr/lib/x86_64-linux-gnu/libQt6Qml.so.6.10.2
 ThunderSDK/libThunderSDK.so: /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.10.2
 ThunderSDK/libThunderSDK.so: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.10.2
 ThunderSDK/libThunderSDK.so: ThunderSDK/CMakeFiles/ThunderSDK.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/marcel1237/Thunder/Thunder Linux/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX shared library libThunderSDK.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/marcel1237/Thunder/Thunder Linux/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX shared library libThunderSDK.so"
 	cd "/home/marcel1237/Thunder/Thunder Linux/build/ThunderSDK" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ThunderSDK.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

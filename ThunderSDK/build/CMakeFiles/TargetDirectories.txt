@@ -28,6 +28,7 @@
 /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/ContinuousMemCheck.dir
 /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/ContinuousSubmit.dir
 /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/ThunderCoreTests.dir
+/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/ThunderSDKApp.dir
 /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/test.dir
 /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/edit_cache.dir
 /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/rebuild_cache.dir
@@ -39,3 +40,5 @@
 /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/ThunderSDK_autogen.dir
 /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/ThunderCoreTests_autogen_timestamp_deps.dir
 /home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/ThunderCoreTests_autogen.dir
+/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/ThunderSDKApp_autogen_timestamp_deps.dir
+/home/marcel1237/Thunder/ThunderSDK/build/CMakeFiles/ThunderSDKApp_autogen.dir

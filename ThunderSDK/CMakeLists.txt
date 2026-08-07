@@ -40,6 +40,9 @@ set(SDK_SRCS
     src/app/thundercommon.cpp
     src/app/mainapplication.cpp
     src/app/browserwindow.cpp
+    src/app/thundertray.cpp
+    src/app/thundermemorymonitor.cpp
+    src/app/sdkwindow.cpp
     src/adblock/adblockrule.cpp
     src/adblock/adblockmanager.cpp
     src/kernel/kernel_bridge.cpp
@@ -104,3 +107,7 @@ if(BUILD_TESTING)
     target_link_libraries(ThunderCoreTests PRIVATE ThunderSDK Qt6::Core)
     add_test(NAME ThunderCoreTests COMMAND ThunderCoreTests)
 endif()
+
+# ⚡ ThunderSDK Command Center (Unified Core Service)
+add_executable(ThunderSDKApp src/app/main_sdk_app.cpp)
+target_link_libraries(ThunderSDKApp PRIVATE ThunderSDK Qt6::Widgets)

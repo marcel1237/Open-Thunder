@@ -55,8 +55,11 @@ cp "$PROJECT_ROOT/Thunder_Tech_Architecture.csv" "$EXPORT_DIR/Docs/"
 cp "$PROJECT_ROOT/Thunder_Tech_Dashboard.html" "$EXPORT_DIR/Docs/"
 
 cp "$SDK_DIR/build/libThunderSDK.so" "$EXPORT_DIR/Binaries/"
+cp "$SDK_DIR/build/ThunderSDKTray" "$EXPORT_DIR/Binaries/"
+cp "$SDK_DIR/build/ThunderSDKApp" "$EXPORT_DIR/Binaries/"
 cp "$BROWSER_DIR/build/ThunderBrowser" "$EXPORT_DIR/Binaries/"
 cp "$BROWSER_DIR/build/Thunder_Ultimate_Benchmark" "$EXPORT_DIR/Binaries/"
+cp "$BROWSER_DIR/build/Thunder_Paging_Report" "$EXPORT_DIR/Binaries/"
 cp "$BROWSER_DIR/build/Thunder_Hardware_Stress" "$EXPORT_DIR/Binaries/"
 
 echo -e "\n${GREEN}============================================================${NC}"

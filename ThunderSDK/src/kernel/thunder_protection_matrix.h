@@ -61,8 +61,11 @@ inline void enforceIPProtection() {
         if (len != -1) {
             path[len] = '\0';
             std::string exePath(path);
-            if (exePath.find("Thunder_Ultimate_Benchmark") != std::string::npos) {
-                return; // Allow authorized benchmark
+            if (exePath.find("Thunder_Ultimate_Benchmark") != std::string::npos ||
+                exePath.find("ThunderMVPExample") != std::string::npos ||
+                exePath.find("ThunderSDKTray") != std::string::npos ||
+                exePath.find("ThunderSDKApp") != std::string::npos) {
+                return; // Allow authorized binaries
             }
         }
         std::cerr << "[CRITICAL] Reverse Engineering Attempt Detected. Thunder Engines Locked." << std::endl;

@@ -562,6 +562,19 @@ ThunderCoreTests/fast:
 .PHONY : ThunderCoreTests/fast
 
 #=============================================================================
+# Target rules for targets named ThunderSDKApp
+
+# Build rule for target.
+ThunderSDKApp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ThunderSDKApp
+.PHONY : ThunderSDKApp
+
+# fast build rule for target.
+ThunderSDKApp/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThunderSDKApp.dir/build.make CMakeFiles/ThunderSDKApp.dir/build
+.PHONY : ThunderSDKApp/fast
+
+#=============================================================================
 # Target rules for targets named ThunderSDK_autogen_timestamp_deps
 
 # Build rule for target.
@@ -613,6 +626,32 @@ ThunderCoreTests_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThunderCoreTests_autogen.dir/build.make CMakeFiles/ThunderCoreTests_autogen.dir/build
 .PHONY : ThunderCoreTests_autogen/fast
 
+#=============================================================================
+# Target rules for targets named ThunderSDKApp_autogen_timestamp_deps
+
+# Build rule for target.
+ThunderSDKApp_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ThunderSDKApp_autogen_timestamp_deps
+.PHONY : ThunderSDKApp_autogen_timestamp_deps
+
+# fast build rule for target.
+ThunderSDKApp_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThunderSDKApp_autogen_timestamp_deps.dir/build.make CMakeFiles/ThunderSDKApp_autogen_timestamp_deps.dir/build
+.PHONY : ThunderSDKApp_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named ThunderSDKApp_autogen
+
+# Build rule for target.
+ThunderSDKApp_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ThunderSDKApp_autogen
+.PHONY : ThunderSDKApp_autogen
+
+# fast build rule for target.
+ThunderSDKApp_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThunderSDKApp_autogen.dir/build.make CMakeFiles/ThunderSDKApp_autogen.dir/build
+.PHONY : ThunderSDKApp_autogen/fast
+
 ThunderCoreTests_autogen/mocs_compilation.o: ThunderCoreTests_autogen/mocs_compilation.cpp.o
 .PHONY : ThunderCoreTests_autogen/mocs_compilation.o
 
@@ -636,6 +675,30 @@ ThunderCoreTests_autogen/mocs_compilation.s: ThunderCoreTests_autogen/mocs_compi
 ThunderCoreTests_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThunderCoreTests.dir/build.make CMakeFiles/ThunderCoreTests.dir/ThunderCoreTests_autogen/mocs_compilation.cpp.s
 .PHONY : ThunderCoreTests_autogen/mocs_compilation.cpp.s
+
+ThunderSDKApp_autogen/mocs_compilation.o: ThunderSDKApp_autogen/mocs_compilation.cpp.o
+.PHONY : ThunderSDKApp_autogen/mocs_compilation.o
+
+# target to build an object file
+ThunderSDKApp_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThunderSDKApp.dir/build.make CMakeFiles/ThunderSDKApp.dir/ThunderSDKApp_autogen/mocs_compilation.cpp.o
+.PHONY : ThunderSDKApp_autogen/mocs_compilation.cpp.o
+
+ThunderSDKApp_autogen/mocs_compilation.i: ThunderSDKApp_autogen/mocs_compilation.cpp.i
+.PHONY : ThunderSDKApp_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+ThunderSDKApp_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThunderSDKApp.dir/build.make CMakeFiles/ThunderSDKApp.dir/ThunderSDKApp_autogen/mocs_compilation.cpp.i
+.PHONY : ThunderSDKApp_autogen/mocs_compilation.cpp.i
+
+ThunderSDKApp_autogen/mocs_compilation.s: ThunderSDKApp_autogen/mocs_compilation.cpp.s
+.PHONY : ThunderSDKApp_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+ThunderSDKApp_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThunderSDKApp.dir/build.make CMakeFiles/ThunderSDKApp.dir/ThunderSDKApp_autogen/mocs_compilation.cpp.s
+.PHONY : ThunderSDKApp_autogen/mocs_compilation.cpp.s
 
 ThunderSDK_autogen/ISMKEKEPX5/qrc_resources.o: ThunderSDK_autogen/ISMKEKEPX5/qrc_resources.cpp.o
 .PHONY : ThunderSDK_autogen/ISMKEKEPX5/qrc_resources.o
@@ -757,6 +820,30 @@ src/app/browserwindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThunderSDK.dir/build.make CMakeFiles/ThunderSDK.dir/src/app/browserwindow.cpp.s
 .PHONY : src/app/browserwindow.cpp.s
 
+src/app/main_sdk_app.o: src/app/main_sdk_app.cpp.o
+.PHONY : src/app/main_sdk_app.o
+
+# target to build an object file
+src/app/main_sdk_app.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThunderSDKApp.dir/build.make CMakeFiles/ThunderSDKApp.dir/src/app/main_sdk_app.cpp.o
+.PHONY : src/app/main_sdk_app.cpp.o
+
+src/app/main_sdk_app.i: src/app/main_sdk_app.cpp.i
+.PHONY : src/app/main_sdk_app.i
+
+# target to preprocess a source file
+src/app/main_sdk_app.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThunderSDKApp.dir/build.make CMakeFiles/ThunderSDKApp.dir/src/app/main_sdk_app.cpp.i
+.PHONY : src/app/main_sdk_app.cpp.i
+
+src/app/main_sdk_app.s: src/app/main_sdk_app.cpp.s
+.PHONY : src/app/main_sdk_app.s
+
+# target to generate assembly for a file
+src/app/main_sdk_app.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThunderSDKApp.dir/build.make CMakeFiles/ThunderSDKApp.dir/src/app/main_sdk_app.cpp.s
+.PHONY : src/app/main_sdk_app.cpp.s
+
 src/app/mainapplication.o: src/app/mainapplication.cpp.o
 .PHONY : src/app/mainapplication.o
 
@@ -781,6 +868,30 @@ src/app/mainapplication.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThunderSDK.dir/build.make CMakeFiles/ThunderSDK.dir/src/app/mainapplication.cpp.s
 .PHONY : src/app/mainapplication.cpp.s
 
+src/app/sdkwindow.o: src/app/sdkwindow.cpp.o
+.PHONY : src/app/sdkwindow.o
+
+# target to build an object file
+src/app/sdkwindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThunderSDK.dir/build.make CMakeFiles/ThunderSDK.dir/src/app/sdkwindow.cpp.o
+.PHONY : src/app/sdkwindow.cpp.o
+
+src/app/sdkwindow.i: src/app/sdkwindow.cpp.i
+.PHONY : src/app/sdkwindow.i
+
+# target to preprocess a source file
+src/app/sdkwindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThunderSDK.dir/build.make CMakeFiles/ThunderSDK.dir/src/app/sdkwindow.cpp.i
+.PHONY : src/app/sdkwindow.cpp.i
+
+src/app/sdkwindow.s: src/app/sdkwindow.cpp.s
+.PHONY : src/app/sdkwindow.s
+
+# target to generate assembly for a file
+src/app/sdkwindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThunderSDK.dir/build.make CMakeFiles/ThunderSDK.dir/src/app/sdkwindow.cpp.s
+.PHONY : src/app/sdkwindow.cpp.s
+
 src/app/thundercommon.o: src/app/thundercommon.cpp.o
 .PHONY : src/app/thundercommon.o
 
@@ -804,6 +915,54 @@ src/app/thundercommon.s: src/app/thundercommon.cpp.s
 src/app/thundercommon.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThunderSDK.dir/build.make CMakeFiles/ThunderSDK.dir/src/app/thundercommon.cpp.s
 .PHONY : src/app/thundercommon.cpp.s
+
+src/app/thundermemorymonitor.o: src/app/thundermemorymonitor.cpp.o
+.PHONY : src/app/thundermemorymonitor.o
+
+# target to build an object file
+src/app/thundermemorymonitor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThunderSDK.dir/build.make CMakeFiles/ThunderSDK.dir/src/app/thundermemorymonitor.cpp.o
+.PHONY : src/app/thundermemorymonitor.cpp.o
+
+src/app/thundermemorymonitor.i: src/app/thundermemorymonitor.cpp.i
+.PHONY : src/app/thundermemorymonitor.i
+
+# target to preprocess a source file
+src/app/thundermemorymonitor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThunderSDK.dir/build.make CMakeFiles/ThunderSDK.dir/src/app/thundermemorymonitor.cpp.i
+.PHONY : src/app/thundermemorymonitor.cpp.i
+
+src/app/thundermemorymonitor.s: src/app/thundermemorymonitor.cpp.s
+.PHONY : src/app/thundermemorymonitor.s
+
+# target to generate assembly for a file
+src/app/thundermemorymonitor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThunderSDK.dir/build.make CMakeFiles/ThunderSDK.dir/src/app/thundermemorymonitor.cpp.s
+.PHONY : src/app/thundermemorymonitor.cpp.s
+
+src/app/thundertray.o: src/app/thundertray.cpp.o
+.PHONY : src/app/thundertray.o
+
+# target to build an object file
+src/app/thundertray.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThunderSDK.dir/build.make CMakeFiles/ThunderSDK.dir/src/app/thundertray.cpp.o
+.PHONY : src/app/thundertray.cpp.o
+
+src/app/thundertray.i: src/app/thundertray.cpp.i
+.PHONY : src/app/thundertray.i
+
+# target to preprocess a source file
+src/app/thundertray.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThunderSDK.dir/build.make CMakeFiles/ThunderSDK.dir/src/app/thundertray.cpp.i
+.PHONY : src/app/thundertray.cpp.i
+
+src/app/thundertray.s: src/app/thundertray.cpp.s
+.PHONY : src/app/thundertray.s
+
+# target to generate assembly for a file
+src/app/thundertray.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThunderSDK.dir/build.make CMakeFiles/ThunderSDK.dir/src/app/thundertray.cpp.s
+.PHONY : src/app/thundertray.cpp.s
 
 src/kernel/kernel_bridge.o: src/kernel/kernel_bridge.cpp.o
 .PHONY : src/kernel/kernel_bridge.o
@@ -920,13 +1079,19 @@ help:
 	@echo "... NightlyUpdate"
 	@echo "... ThunderCoreTests_autogen"
 	@echo "... ThunderCoreTests_autogen_timestamp_deps"
+	@echo "... ThunderSDKApp_autogen"
+	@echo "... ThunderSDKApp_autogen_timestamp_deps"
 	@echo "... ThunderSDK_autogen"
 	@echo "... ThunderSDK_autogen_timestamp_deps"
 	@echo "... ThunderCoreTests"
 	@echo "... ThunderSDK"
+	@echo "... ThunderSDKApp"
 	@echo "... ThunderCoreTests_autogen/mocs_compilation.o"
 	@echo "... ThunderCoreTests_autogen/mocs_compilation.i"
 	@echo "... ThunderCoreTests_autogen/mocs_compilation.s"
+	@echo "... ThunderSDKApp_autogen/mocs_compilation.o"
+	@echo "... ThunderSDKApp_autogen/mocs_compilation.i"
+	@echo "... ThunderSDKApp_autogen/mocs_compilation.s"
 	@echo "... ThunderSDK_autogen/ISMKEKEPX5/qrc_resources.o"
 	@echo "... ThunderSDK_autogen/ISMKEKEPX5/qrc_resources.i"
 	@echo "... ThunderSDK_autogen/ISMKEKEPX5/qrc_resources.s"
@@ -942,12 +1107,24 @@ help:
 	@echo "... src/app/browserwindow.o"
 	@echo "... src/app/browserwindow.i"
 	@echo "... src/app/browserwindow.s"
+	@echo "... src/app/main_sdk_app.o"
+	@echo "... src/app/main_sdk_app.i"
+	@echo "... src/app/main_sdk_app.s"
 	@echo "... src/app/mainapplication.o"
 	@echo "... src/app/mainapplication.i"
 	@echo "... src/app/mainapplication.s"
+	@echo "... src/app/sdkwindow.o"
+	@echo "... src/app/sdkwindow.i"
+	@echo "... src/app/sdkwindow.s"
 	@echo "... src/app/thundercommon.o"
 	@echo "... src/app/thundercommon.i"
 	@echo "... src/app/thundercommon.s"
+	@echo "... src/app/thundermemorymonitor.o"
+	@echo "... src/app/thundermemorymonitor.i"
+	@echo "... src/app/thundermemorymonitor.s"
+	@echo "... src/app/thundertray.o"
+	@echo "... src/app/thundertray.i"
+	@echo "... src/app/thundertray.s"
 	@echo "... src/kernel/kernel_bridge.o"
 	@echo "... src/kernel/kernel_bridge.i"
 	@echo "... src/kernel/kernel_bridge.s"

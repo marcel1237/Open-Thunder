@@ -101,9 +101,27 @@
 			null
 		],
 		[
+			"/home/marcel1237/Thunder/ThunderSDK/src/app/sdkwindow.h",
+			"MU",
+			"ISMKEKEPX5/moc_sdkwindow.cpp",
+			null
+		],
+		[
 			"/home/marcel1237/Thunder/ThunderSDK/src/app/thundercommon.h",
 			"MU",
 			"ISMKEKEPX5/moc_thundercommon.cpp",
+			null
+		],
+		[
+			"/home/marcel1237/Thunder/ThunderSDK/src/app/thundermemorymonitor.h",
+			"MU",
+			"ISMKEKEPX5/moc_thundermemorymonitor.cpp",
+			null
+		],
+		[
+			"/home/marcel1237/Thunder/ThunderSDK/src/app/thundertray.h",
+			"MU",
+			"ISMKEKEPX5/moc_thundertray.cpp",
 			null
 		],
 		[
@@ -231,7 +249,22 @@
 			null
 		],
 		[
+			"/home/marcel1237/Thunder/ThunderSDK/src/app/sdkwindow.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/marcel1237/Thunder/ThunderSDK/src/app/thundercommon.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/marcel1237/Thunder/ThunderSDK/src/app/thundermemorymonitor.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/marcel1237/Thunder/ThunderSDK/src/app/thundertray.cpp",
 			"MU",
 			null
 		],

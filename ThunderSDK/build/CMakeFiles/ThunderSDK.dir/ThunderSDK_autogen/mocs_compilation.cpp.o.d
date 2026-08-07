@@ -516,6 +516,36 @@ CMakeFiles/ThunderSDK.dir/ThunderSDK_autogen/mocs_compilation.cpp.o: \
  /home/marcel1237/Thunder/ThunderSDK/build/ThunderSDK_autogen/ISMKEKEPX5/../../../src/app/mainapplication.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qapplication.h \
+ /home/marcel1237/Thunder/ThunderSDK/build/ThunderSDK_autogen/ISMKEKEPX5/moc_sdkwindow.cpp \
+ /home/marcel1237/Thunder/ThunderSDK/build/ThunderSDK_autogen/ISMKEKEPX5/../../../src/app/sdkwindow.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLabel \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlabel.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qpicture.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QTextEdit \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtextedit.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractscrollarea.h \
+ /home/marcel1237/Thunder/ThunderSDK/build/ThunderSDK_autogen/ISMKEKEPX5/../../../src/app/thundertray.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSystemTrayIcon \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsystemtrayicon.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMenu \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmenu.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/QAction \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qaction.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
+ /home/marcel1237/Thunder/ThunderSDK/build/ThunderSDK_autogen/ISMKEKEPX5/../../../src/app/thundermemorymonitor.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QTableWidget \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtablewidget.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtableview.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemview.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qitemselectionmodel.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimer.h \
+ /home/marcel1237/Thunder/ThunderSDK/build/ThunderSDK_autogen/ISMKEKEPX5/moc_thundermemorymonitor.cpp \
+ /home/marcel1237/Thunder/ThunderSDK/build/ThunderSDK_autogen/ISMKEKEPX5/../../../src/app/thundermemorymonitor.h \
+ /home/marcel1237/Thunder/ThunderSDK/build/ThunderSDK_autogen/ISMKEKEPX5/moc_thundertray.cpp \
+ /home/marcel1237/Thunder/ThunderSDK/build/ThunderSDK_autogen/ISMKEKEPX5/../../../src/app/thundertray.h \
  /home/marcel1237/Thunder/ThunderSDK/build/ThunderSDK_autogen/UFQQIFJZKK/moc_thunder_url_interceptor.cpp \
  /home/marcel1237/Thunder/ThunderSDK/build/ThunderSDK_autogen/UFQQIFJZKK/../../../src/network/thunder_url_interceptor.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWebEngineCore/QWebEngineUrlRequestInterceptor \

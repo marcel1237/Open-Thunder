@@ -468,7 +468,9 @@
 	[
 		"/home/marcel1237/Thunder/Thunder Linux/build/ThunderBrowser_autogen/mocs_compilation.cpp",
 		"/home/marcel1237/Thunder/Thunder Linux/build/ThunderGenericExample_autogen/mocs_compilation.cpp",
+		"/home/marcel1237/Thunder/Thunder Linux/build/ThunderMVPExample_autogen/mocs_compilation.cpp",
 		"/home/marcel1237/Thunder/Thunder Linux/build/Thunder_Hardware_Stress_autogen/mocs_compilation.cpp",
+		"/home/marcel1237/Thunder/Thunder Linux/build/Thunder_Paging_Report_autogen/mocs_compilation.cpp",
 		"/home/marcel1237/Thunder/Thunder Linux/build/Thunder_Ultimate_Benchmark_autogen/mocs_compilation.cpp"
 	],
 	"MULTI_CONFIG" : false,
@@ -493,7 +495,9 @@
 	[
 		"/home/marcel1237/Thunder/Thunder Linux/build/ThunderBrowser_autogen/mocs_compilation.cpp",
 		"/home/marcel1237/Thunder/Thunder Linux/build/ThunderGenericExample_autogen/mocs_compilation.cpp",
+		"/home/marcel1237/Thunder/Thunder Linux/build/ThunderMVPExample_autogen/mocs_compilation.cpp",
 		"/home/marcel1237/Thunder/Thunder Linux/build/Thunder_Hardware_Stress_autogen/mocs_compilation.cpp",
+		"/home/marcel1237/Thunder/Thunder Linux/build/Thunder_Paging_Report_autogen/mocs_compilation.cpp",
 		"/home/marcel1237/Thunder/Thunder Linux/build/Thunder_Ultimate_Benchmark_autogen/mocs_compilation.cpp"
 	],
 	"UIC_UI_FILES" : [],

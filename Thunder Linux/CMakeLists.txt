@@ -52,6 +52,17 @@ if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/src/examples/ultimate_stress_test.cpp")
     target_link_libraries(Thunder_Hardware_Stress PRIVATE ThunderSDK Qt6::Core)
 endif()
 
+# MVP Memory Example
+if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/src/examples/thunder_mvp_example.cpp")
+    add_executable(ThunderMVPExample src/examples/thunder_mvp_example.cpp)
+    target_link_libraries(ThunderMVPExample PRIVATE ThunderSDK Qt6::Core)
+endif()
+
+# Paging CLI Report
+if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/src/examples/thunder_paging_report.cpp")
+    add_executable(Thunder_Paging_Report src/examples/thunder_paging_report.cpp)
+endif()
+
 # Detailed Reports
 if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/src/examples/with_thunder_report.cpp")
     add_executable(With_Thunder src/examples/with_thunder_report.cpp)
