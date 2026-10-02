@@ -2,9 +2,9 @@
 
 **Proprietário:** Marcel Aparecido de Andrade  
 **Data de Registro:** 05/08/2026  
-**Status:** Propriedade Intelectual Privada / Segredo Industrial  
+**Status:** Software de Código Aberto Multi-licenciado / Inovação Tecnológica  
 
-Este documento formaliza as inovações técnicas proprietárias do ecossistema Thunder para fins de proteção de patente e auditoria de autoria.
+Este documento formaliza as inovações técnicas do ecossistema Thunder, agora disponibilizadas sob o modelo de multi-licenciamento (GPL, MIT, Apache, etc.).
 
 ---
 

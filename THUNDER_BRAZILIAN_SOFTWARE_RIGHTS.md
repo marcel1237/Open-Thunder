@@ -12,7 +12,7 @@ A autoria do ecossistema Thunder é garantida automaticamente no momento da cria
 *   **Prazo de Validade**: Os direitos de exploração e proteção duram por **50 anos**, contados a partir de 1º de janeiro do ano seguinte ao da publicação ou criação das tecnologias (2025-2026).
 *   **Divisão de Direitos**:
     *   **Direitos Morais**: Ligados ao autor criador (Marcel Andrade), sendo inalienáveis, irrenunciáveis e permanentes.
-    *   **Direitos Patrimoniais**: Direito exclusivo de uso, licenciamento e comercialização do SDK e Browser.
+    *   **Direitos Patrimoniais**: Marcel Andrade optou por disponibilizar o Thunder sob um modelo de **Multi-licenciamento (13 Licenças)**, permitindo o uso amplo conforme os termos escolhidos pelo usuário.
 
 ---
 

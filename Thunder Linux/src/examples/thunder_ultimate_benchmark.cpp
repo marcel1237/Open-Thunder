@@ -2,7 +2,8 @@
  * Copyright (C) 2025 Marcel Aparecido de Andrade.
  * Thunder - Hardware-Enforced Next-Gen Intelligence
  *
- * PROPRIETARY SOURCE-AVAILABLE LICENSE.
+ * Licensed under the terms of the Multi-License Agreement (13 licenses).
+ * See LICENSE.md in the project root for full license details.
  */
 #include <iostream>
 #include <iomanip>

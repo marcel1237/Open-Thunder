@@ -23,9 +23,9 @@ For a full list of technologies, see the [Thunder Tech Architecture Dashboard](.
 *   **Dark Volt Kernel Technology/**: experimental systemd/EGLFS integration components.
 
 ## 🔒 Licensing
-Thunder is **Proprietary Software**. Use is subject to the terms of the End User License Agreement (EULA). Unauthorized copying, modification, or distribution is strictly prohibited.
+Thunder is **Multi-Licensed Open Source Software**. It is available under the terms of 13 different licenses, including GPL v3.0, MIT, Apache 2.0, MPL 2.0, and others. You may choose the license that best suits your needs.
 
-See [LICENSE.md](./LICENSE.md) for the full EULA.
+See [LICENSE.md](./LICENSE.md) for the full list of licenses and their terms.
 
 ## 🏗️ Development (Internal Use Only)
 
