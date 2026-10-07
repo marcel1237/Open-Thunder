@@ -1,8 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/home/marcel1237/Thunder/Thunder Linux/build/cmake_install.cmake",
-		"/home/marcel1237/Thunder/Thunder Linux/build/ThunderSDK/cmake_install.cmake"
-	],
-	"Parallel" : false
-}

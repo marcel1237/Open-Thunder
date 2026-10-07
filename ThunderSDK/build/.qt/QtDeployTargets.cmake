@@ -1,6 +1,0 @@
-set(__QT_DEPLOY_TARGET_ThunderSDK_FILE /home/marcel1237/Thunder/ThunderSDK/build/libThunderSDK.so)
-set(__QT_DEPLOY_TARGET_ThunderSDK_TYPE SHARED_LIBRARY)
-set(__QT_DEPLOY_TARGET_ThunderCoreTests_FILE /home/marcel1237/Thunder/ThunderSDK/build/ThunderCoreTests)
-set(__QT_DEPLOY_TARGET_ThunderCoreTests_TYPE EXECUTABLE)
-set(__QT_DEPLOY_TARGET_ThunderSDKApp_FILE /home/marcel1237/Thunder/ThunderSDK/build/ThunderSDKApp)
-set(__QT_DEPLOY_TARGET_ThunderSDKApp_TYPE EXECUTABLE)
